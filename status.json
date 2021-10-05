@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "label": "ldms-test (weekly)",
-  "message": "100% passed",
-  "color": "green"
+  "label": "weekly test on 9a4a545",
+  "message": "25/25 tests pased",
+  "color": "brightgreen"
 }
