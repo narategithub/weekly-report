@@ -4,3 +4,13 @@
 /mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
 /mnt/cygnus/narate/ldms-test/weekly-report /mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
 HEAD is now at 6e46d2b 2021-10-06-152841
+[master e541fb4] 2021-10-06-230001
+ 2 files changed, 8 insertions(+), 1267 deletions(-)
+ rewrite test-all.log (99%)
+/mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
+2021-10-06 23:00:05 INFO: NEW_GIT_SHA: 796f784510e004aeebe27c1aa547882f2104af61
+2021-10-06 23:00:05 INFO: OLD_GIT_SHA: 796f784510e004aeebe27c1aa547882f2104af61
+/mnt/cygnus/data/2021-10-06-230001 /mnt/cygnus/narate/ldms-test ~
+2021-10-06 23:00:05 INFO: skip building because GIT SHA has not changed: 796f784510e004aeebe27c1aa547882f2104af61
+2021-10-06 23:00:05 INFO: Skip the test. SHA does not change: 796f784510e004aeebe27c1aa547882f2104af61
+2021-10-06 23:00:05 INFO: ----------------------------------------------
