@@ -1,16 +1,6 @@
-2021-10-16 23:00:01 INFO: WORK_DIR: /mnt/cygnus/data/2021-10-16-230001
-2021-10-16 23:00:01 INFO: LOG: /mnt/cygnus/data/2021-10-16-230001/cygnus-weekly.log
+2021-10-17 23:00:01 INFO: WORK_DIR: /mnt/cygnus/data/2021-10-17-230001
+2021-10-17 23:00:01 INFO: LOG: /mnt/cygnus/data/2021-10-17-230001/cygnus-weekly.log
 /mnt/cygnus/narate/ldms-test ~
 /mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
 /mnt/cygnus/narate/ldms-test/weekly-report /mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
-HEAD is now at fa7d161 2021-10-15-230001
-[master 49f8812] 2021-10-16-230001
- 1 file changed, 6 insertions(+), 16 deletions(-)
- rewrite test-all.log (79%)
-/mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
-2021-10-16 23:00:06 INFO: NEW_GIT_SHA: fac97953ab152e340d1fc2aabebc26cf7f7413cd
-2021-10-16 23:00:06 INFO: OLD_GIT_SHA: fac97953ab152e340d1fc2aabebc26cf7f7413cd
-/mnt/cygnus/data/2021-10-16-230001 /mnt/cygnus/narate/ldms-test ~
-2021-10-16 23:00:06 INFO: skip building because GIT SHA has not changed: fac97953ab152e340d1fc2aabebc26cf7f7413cd
-2021-10-16 23:00:06 INFO: Skip the test. SHA does not change: fac97953ab152e340d1fc2aabebc26cf7f7413cd
-2021-10-16 23:00:06 INFO: ----------------------------------------------
+HEAD is now at 5e69075 2021-10-16-230001
