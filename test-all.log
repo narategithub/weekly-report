@@ -1,6 +1,6 @@
-2021-11-05 23:00:01 INFO: WORK_DIR: /mnt/cygnus/data/2021-11-05-230001
-2021-11-05 23:00:01 INFO: LOG: /mnt/cygnus/data/2021-11-05-230001/cygnus-weekly.log
+2021-11-06 23:00:02 INFO: WORK_DIR: /mnt/cygnus/data/2021-11-06-230002
+2021-11-06 23:00:02 INFO: LOG: /mnt/cygnus/data/2021-11-06-230002/cygnus-weekly.log
 /mnt/cygnus/narate/ldms-test ~
 /mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
 /mnt/cygnus/narate/ldms-test/weekly-report /mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
-HEAD is now at 288c5ed 2021-11-04-230001
+HEAD is now at 64f5fab 2021-11-05-230001
