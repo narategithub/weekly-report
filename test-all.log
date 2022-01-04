@@ -1,21 +1,33 @@
-2022-01-04 09:42:40 INFO: WORK_DIR: /mnt/cygnus/data/2022-01-04-094240
-2022-01-04 09:42:40 INFO: LOG: /mnt/cygnus/data/2022-01-04-094240/cygnus-weekly.log
+2022-01-04 09:50:28 INFO: WORK_DIR: /mnt/cygnus/data/2022-01-04-095028
+2022-01-04 09:50:28 INFO: LOG: /mnt/cygnus/data/2022-01-04-095028/cygnus-weekly.log
 /mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
-2022-01-04 09:42:41 INFO: NEW_GIT_SHA: 99b4e6e1ae52a8bfce2670cb8193e9064054631e
-2022-01-04 09:42:41 INFO: OLD_GIT_SHA: 
-/mnt/cygnus/data/2022-01-04-094240 /mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
-2022-01-04 09:42:41 INFO: == Checking out SOS ==
+2022-01-04 09:50:29 INFO: NEW_GIT_SHA: 99b4e6e1ae52a8bfce2670cb8193e9064054631e
+2022-01-04 09:50:29 INFO: OLD_GIT_SHA: 
+/mnt/cygnus/data/2022-01-04-095028 /mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
+2022-01-04 09:50:29 INFO: == Checking out SOS ==
 Cloning into 'sos'...
-2022-01-04 09:42:45 INFO: == Checking out OVIS ==
+2022-01-04 09:50:34 INFO: == Checking out OVIS ==
 Cloning into 'ovis'...
-2022-01-04 09:42:51 INFO: == Checkout maestro ==
+2022-01-04 09:50:41 INFO: == Checkout maestro ==
 Cloning into 'maestro'...
-2022-01-04 09:42:52 INFO: checking out maestro commit id: 78af06a
-/mnt/cygnus/data/2022-01-04-094240/maestro /mnt/cygnus/data/2022-01-04-094240 /mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
-/mnt/cygnus/data/2022-01-04-094240 /mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
-2022-01-04 09:42:52 INFO: Purging /opt/ovis/
-2022-01-04 09:42:52 INFO: == Building/Installing SOS ==
-/mnt/cygnus/data/2022-01-04-094240/sos /mnt/cygnus/data/2022-01-04-094240 /mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
+2022-01-04 09:50:42 INFO: checking out maestro commit id: 78af06a
+/mnt/cygnus/data/2022-01-04-095028/maestro /mnt/cygnus/data/2022-01-04-095028 /mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
+Note: checking out '78af06a'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b new_branch_name
+
+HEAD is now at 78af06a... Merge pull request #3 from nick-enoent/master
+/mnt/cygnus/data/2022-01-04-095028 /mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
+2022-01-04 09:50:42 INFO: Purging /opt/ovis/
+2022-01-04 09:50:42 INFO: == Building/Installing SOS ==
+/mnt/cygnus/data/2022-01-04-095028/sos /mnt/cygnus/data/2022-01-04-095028 /mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
 + autoreconf -v --force --install -I m4
 autoreconf: Entering directory `.'
 autoreconf: configure.ac: not using Gettext
@@ -40,7 +52,7 @@ configure.ac:6: installing 'config/missing'
 ods/src/Makefile.am: installing 'config/depcomp'
 sos/python/Makefile.am:17: installing 'config/py-compile'
 autoreconf: Leaving directory `.'
-/mnt/cygnus/data/2022-01-04-094240/sos/build /mnt/cygnus/data/2022-01-04-094240/sos /mnt/cygnus/data/2022-01-04-094240 /mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
+/mnt/cygnus/data/2022-01-04-095028/sos/build /mnt/cygnus/data/2022-01-04-095028/sos /mnt/cygnus/data/2022-01-04-095028 /mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
 checking for a BSD-compatible install... /bin/install -c
 checking whether build environment is sane... yes
 checking for a thread-safe mkdir -p... /bin/mkdir -p
@@ -154,11 +166,11 @@ config.status: creating config.h
 config.status: executing depfiles commands
 config.status: executing libtool commands
 make  all-recursive
-make[1]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/sos/build'
+make[1]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/sos/build'
 Making all in ods
-make[2]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/ods'
+make[2]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/ods'
 Making all in src
-make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/ods/src'
+make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/ods/src'
 /bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../../ods/src -I../..    -I../../../ods/src/../include/  -Wall -Werror -O0 -ggdb3 -MT ods_idx.lo -MD -MP -MF .deps/ods_idx.Tpo -c -o ods_idx.lo ../../../ods/src/ods_idx.c
 libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../../ods/src -I../.. -I../../../ods/src/../include/ -Wall -Werror -O0 -ggdb3 -MT ods_idx.lo -MD -MP -MF .deps/ods_idx.Tpo -c ../../../ods/src/ods_idx.c  -fPIC -DPIC -o .libs/ods_idx.o
 libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../../ods/src -I../.. -I../../../ods/src/../include/ -Wall -Werror -O0 -ggdb3 -MT ods_idx.lo -MD -MP -MF .deps/ods_idx.Tpo -c ../../../ods/src/ods_idx.c -o ods_idx.o >/dev/null 2>&1
@@ -191,7 +203,7 @@ libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../../ods/src -I../.. -I../../..
 libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../../ods/src -I../.. -I../../../ods/src/../include/ -DHT_THREAD_SAFE -Wall -Werror -O0 -ggdb3 -MT libidx_HTBL_la-ht.lo -MD -MP -MF .deps/libidx_HTBL_la-ht.Tpo -c ../../../ods/src/ht.c -o libidx_HTBL_la-ht.o >/dev/null 2>&1
 mv -f .deps/libidx_HTBL_la-ht.Tpo .deps/libidx_HTBL_la-ht.Plo
 /bin/sh ../../libtool  --tag=CC   --mode=link gcc -I../../../ods/src/../include/  -DHT_THREAD_SAFE -Wall -Werror -O0 -ggdb3   -o libidx_HTBL.la -rpath /opt/ovis/lib libidx_HTBL_la-ht.lo libods.la 
-libtool: link: gcc -shared  -fPIC -DPIC  .libs/libidx_HTBL_la-ht.o   -Wl,-rpath -Wl,/mnt/cygnus/data/2022-01-04-094240/sos/build/ods/src/.libs -Wl,-rpath -Wl,/opt/ovis/lib ./.libs/libods.so -ldl -lpthread  -O0   -Wl,-soname -Wl,libidx_HTBL.so.0 -o .libs/libidx_HTBL.so.0.0.0
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/libidx_HTBL_la-ht.o   -Wl,-rpath -Wl,/mnt/cygnus/data/2022-01-04-095028/sos/build/ods/src/.libs -Wl,-rpath -Wl,/opt/ovis/lib ./.libs/libods.so -ldl -lpthread  -O0   -Wl,-soname -Wl,libidx_HTBL.so.0 -o .libs/libidx_HTBL.so.0.0.0
 libtool: link: (cd ".libs" && rm -f "libidx_HTBL.so.0" && ln -s "libidx_HTBL.so.0.0.0" "libidx_HTBL.so.0")
 libtool: link: (cd ".libs" && rm -f "libidx_HTBL.so" && ln -s "libidx_HTBL.so.0.0.0" "libidx_HTBL.so")
 libtool: link: ar cru .libs/libidx_HTBL.a  libidx_HTBL_la-ht.o
@@ -202,7 +214,7 @@ libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../../ods/src -I../.. -I../../..
 libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../../ods/src -I../.. -I../../../ods/src/../include/ -Wall -Werror -O0 -ggdb3 -MT libidx_BXTREE_la-bxt.lo -MD -MP -MF .deps/libidx_BXTREE_la-bxt.Tpo -c ../../../ods/src/bxt.c -o libidx_BXTREE_la-bxt.o >/dev/null 2>&1
 mv -f .deps/libidx_BXTREE_la-bxt.Tpo .deps/libidx_BXTREE_la-bxt.Plo
 /bin/sh ../../libtool  --tag=CC   --mode=link gcc -I../../../ods/src/../include/  -Wall -Werror -O0 -ggdb3   -o libidx_BXTREE.la -rpath /opt/ovis/lib libidx_BXTREE_la-bxt.lo libods.la 
-libtool: link: gcc -shared  -fPIC -DPIC  .libs/libidx_BXTREE_la-bxt.o   -Wl,-rpath -Wl,/mnt/cygnus/data/2022-01-04-094240/sos/build/ods/src/.libs -Wl,-rpath -Wl,/opt/ovis/lib ./.libs/libods.so -ldl -lpthread  -O0   -Wl,-soname -Wl,libidx_BXTREE.so.0 -o .libs/libidx_BXTREE.so.0.0.0
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/libidx_BXTREE_la-bxt.o   -Wl,-rpath -Wl,/mnt/cygnus/data/2022-01-04-095028/sos/build/ods/src/.libs -Wl,-rpath -Wl,/opt/ovis/lib ./.libs/libods.so -ldl -lpthread  -O0   -Wl,-soname -Wl,libidx_BXTREE.so.0 -o .libs/libidx_BXTREE.so.0.0.0
 libtool: link: (cd ".libs" && rm -f "libidx_BXTREE.so.0" && ln -s "libidx_BXTREE.so.0.0.0" "libidx_BXTREE.so.0")
 libtool: link: (cd ".libs" && rm -f "libidx_BXTREE.so" && ln -s "libidx_BXTREE.so.0.0.0" "libidx_BXTREE.so")
 libtool: link: ar cru .libs/libidx_BXTREE.a  libidx_BXTREE_la-bxt.o
@@ -217,7 +229,7 @@ libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../../ods/src -I../.. -I../../..
 libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../../ods/src -I../.. -I../../../ods/src/../include/ -Wall -Werror -O0 -ggdb3 -MT libidx_H2BXT_la-mq.lo -MD -MP -MF .deps/libidx_H2BXT_la-mq.Tpo -c ../../../ods/src/mq.c -o libidx_H2BXT_la-mq.o >/dev/null 2>&1
 mv -f .deps/libidx_H2BXT_la-mq.Tpo .deps/libidx_H2BXT_la-mq.Plo
 /bin/sh ../../libtool  --tag=CC   --mode=link gcc -I../../../ods/src/../include/  -Wall -Werror -O0 -ggdb3   -o libidx_H2BXT.la -rpath /opt/ovis/lib libidx_H2BXT_la-h2bxt.lo libidx_H2BXT_la-mq.lo libods.la 
-libtool: link: gcc -shared  -fPIC -DPIC  .libs/libidx_H2BXT_la-h2bxt.o .libs/libidx_H2BXT_la-mq.o   -Wl,-rpath -Wl,/mnt/cygnus/data/2022-01-04-094240/sos/build/ods/src/.libs -Wl,-rpath -Wl,/opt/ovis/lib ./.libs/libods.so -ldl -lpthread  -O0   -Wl,-soname -Wl,libidx_H2BXT.so.0 -o .libs/libidx_H2BXT.so.0.0.0
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/libidx_H2BXT_la-h2bxt.o .libs/libidx_H2BXT_la-mq.o   -Wl,-rpath -Wl,/mnt/cygnus/data/2022-01-04-095028/sos/build/ods/src/.libs -Wl,-rpath -Wl,/opt/ovis/lib ./.libs/libods.so -ldl -lpthread  -O0   -Wl,-soname -Wl,libidx_H2BXT.so.0 -o .libs/libidx_H2BXT.so.0.0.0
 libtool: link: (cd ".libs" && rm -f "libidx_H2BXT.so.0" && ln -s "libidx_H2BXT.so.0.0.0" "libidx_H2BXT.so.0")
 libtool: link: (cd ".libs" && rm -f "libidx_H2BXT.so" && ln -s "libidx_H2BXT.so.0.0.0" "libidx_H2BXT.so")
 libtool: link: ar cru .libs/libidx_H2BXT.a  libidx_H2BXT_la-h2bxt.o libidx_H2BXT_la-mq.o
@@ -232,7 +244,7 @@ libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../../ods/src -I../.. -I../../..
 libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../../ods/src -I../.. -I../../../ods/src/../include/ -Wall -Werror -O0 -ggdb3 -MT libidx_H2HTBL_la-mq.lo -MD -MP -MF .deps/libidx_H2HTBL_la-mq.Tpo -c ../../../ods/src/mq.c -o libidx_H2HTBL_la-mq.o >/dev/null 2>&1
 mv -f .deps/libidx_H2HTBL_la-mq.Tpo .deps/libidx_H2HTBL_la-mq.Plo
 /bin/sh ../../libtool  --tag=CC   --mode=link gcc -I../../../ods/src/../include/  -Wall -Werror -O0 -ggdb3   -o libidx_H2HTBL.la -rpath /opt/ovis/lib libidx_H2HTBL_la-h2htbl.lo libidx_H2HTBL_la-mq.lo libods.la 
-libtool: link: gcc -shared  -fPIC -DPIC  .libs/libidx_H2HTBL_la-h2htbl.o .libs/libidx_H2HTBL_la-mq.o   -Wl,-rpath -Wl,/mnt/cygnus/data/2022-01-04-094240/sos/build/ods/src/.libs -Wl,-rpath -Wl,/opt/ovis/lib ./.libs/libods.so -ldl -lpthread  -O0   -Wl,-soname -Wl,libidx_H2HTBL.so.0 -o .libs/libidx_H2HTBL.so.0.0.0
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/libidx_H2HTBL_la-h2htbl.o .libs/libidx_H2HTBL_la-mq.o   -Wl,-rpath -Wl,/mnt/cygnus/data/2022-01-04-095028/sos/build/ods/src/.libs -Wl,-rpath -Wl,/opt/ovis/lib ./.libs/libods.so -ldl -lpthread  -O0   -Wl,-soname -Wl,libidx_H2HTBL.so.0 -o .libs/libidx_H2HTBL.so.0.0.0
 libtool: link: (cd ".libs" && rm -f "libidx_H2HTBL.so.0" && ln -s "libidx_H2HTBL.so.0.0.0" "libidx_H2HTBL.so.0")
 libtool: link: (cd ".libs" && rm -f "libidx_H2HTBL.so" && ln -s "libidx_H2HTBL.so.0.0.0" "libidx_H2HTBL.so")
 libtool: link: ar cru .libs/libidx_H2HTBL.a  libidx_H2HTBL_la-h2htbl.o libidx_H2HTBL_la-mq.o
@@ -517,19 +529,19 @@ gcc -DHAVE_CONFIG_H -I. -I../../../ods/src -I../..    -I../../../ods/src/../incl
 mv -f .deps/ods_dump-ods_dump.Tpo .deps/ods_dump-ods_dump.Po
 /bin/sh ../../libtool  --tag=CC   --mode=link gcc -I../../../ods/src/../include/  -Wall -Werror -O0 -ggdb3   -o ods_dump ods_dump-ods_dump.o libods.la 
 libtool: link: gcc -I../../../ods/src/../include/ -Wall -Werror -O0 -ggdb3 -o .libs/ods_dump ods_dump-ods_dump.o  ./.libs/libods.so -ldl -lpthread -Wl,-rpath -Wl,/opt/ovis/lib
-make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/ods/src'
+make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/ods/src'
 Making all in include
-make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/ods/include'
+make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/ods/include'
 make[3]: Nothing to be done for `all'.
-make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/ods/include'
-make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/ods'
+make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/ods/include'
+make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/ods'
 make[3]: Nothing to be done for `all-am'.
-make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/ods'
-make[2]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/ods'
+make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/ods'
+make[2]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/ods'
 Making all in sos
-make[2]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/sos'
+make[2]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/sos'
 Making all in src
-make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/sos/src'
+make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/sos/src'
 /bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../../sos/src -I../..    -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include  -Wall -Werror -O0 -ggdb3 -MT sos_fn.lo -MD -MP -MF .deps/sos_fn.Tpo -c -o sos_fn.lo ../../../sos/src/sos_fn.c
 libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../../sos/src -I../.. -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include -Wall -Werror -O0 -ggdb3 -MT sos_fn.lo -MD -MP -MF .deps/sos_fn.Tpo -c ../../../sos/src/sos_fn.c  -fPIC -DPIC -o .libs/sos_fn.o
 libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../../sos/src -I../.. -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include -Wall -Werror -O0 -ggdb3 -MT sos_fn.lo -MD -MP -MF .deps/sos_fn.Tpo -c ../../../sos/src/sos_fn.c -o sos_fn.o >/dev/null 2>&1
@@ -571,7 +583,7 @@ libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../../sos/src -I../.. -I../../..
 libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../../sos/src -I../.. -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include -Wall -Werror -O0 -ggdb3 -MT sos_log.lo -MD -MP -MF .deps/sos_log.Tpo -c ../../../sos/src/sos_log.c -o sos_log.o >/dev/null 2>&1
 mv -f .deps/sos_log.Tpo .deps/sos_log.Plo
 /bin/sh ../../libtool  --tag=CC   --mode=link gcc -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include  -Wall -Werror -O0 -ggdb3   -o libsos.la -rpath /opt/ovis/lib sos_fn.lo sos.lo sos_part.lo sos_schema.lo sos_config.lo sos_index.lo sos_key.lo sos_iter.lo sos_value.lo sos_log.lo ../../ods/src/libods.la -ldl -lpthread 
-libtool: link: gcc -shared  -fPIC -DPIC  .libs/sos_fn.o .libs/sos.o .libs/sos_part.o .libs/sos_schema.o .libs/sos_config.o .libs/sos_index.o .libs/sos_key.o .libs/sos_iter.o .libs/sos_value.o .libs/sos_log.o   -Wl,-rpath -Wl,/mnt/cygnus/data/2022-01-04-094240/sos/build/ods/src/.libs -Wl,-rpath -Wl,/opt/ovis/lib ../../ods/src/.libs/libods.so -ldl -lpthread  -O0   -Wl,-soname -Wl,libsos.so.0 -o .libs/libsos.so.0.0.0
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/sos_fn.o .libs/sos.o .libs/sos_part.o .libs/sos_schema.o .libs/sos_config.o .libs/sos_index.o .libs/sos_key.o .libs/sos_iter.o .libs/sos_value.o .libs/sos_log.o   -Wl,-rpath -Wl,/mnt/cygnus/data/2022-01-04-095028/sos/build/ods/src/.libs -Wl,-rpath -Wl,/opt/ovis/lib ../../ods/src/.libs/libods.so -ldl -lpthread  -O0   -Wl,-soname -Wl,libsos.so.0 -o .libs/libsos.so.0.0.0
 libtool: link: (cd ".libs" && rm -f "libsos.so.0" && ln -s "libsos.so.0.0.0" "libsos.so.0")
 libtool: link: (cd ".libs" && rm -f "libsos.so" && ln -s "libsos.so.0.0.0" "libsos.so")
 libtool: link: ar cru .libs/libsos.a  sos_fn.o sos.o sos_part.o sos_schema.o sos_config.o sos_index.o sos_key.o sos_iter.o sos_value.o sos_log.o
@@ -580,92 +592,103 @@ libtool: link: ( cd ".libs" && rm -f "libsos.la" && ln -s "../libsos.la" "libsos
 gcc -DHAVE_CONFIG_H -I. -I../../../sos/src -I../..    -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include  -Wall -Werror -O0 -ggdb3 -MT sos_cmd-sos_cmd.o -MD -MP -MF .deps/sos_cmd-sos_cmd.Tpo -c -o sos_cmd-sos_cmd.o `test -f 'sos_cmd.c' || echo '../../../sos/src/'`sos_cmd.c
 mv -f .deps/sos_cmd-sos_cmd.Tpo .deps/sos_cmd-sos_cmd.Po
 /bin/sh ../../libtool  --tag=CC   --mode=link gcc -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include  -Wall -Werror -O0 -ggdb3   -o sos_cmd sos_cmd-sos_cmd.o libsos.la -lpthread 
-libtool: link: gcc -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include -Wall -Werror -O0 -ggdb3 -o .libs/sos_cmd sos_cmd-sos_cmd.o  ./.libs/libsos.so /mnt/cygnus/data/2022-01-04-094240/sos/build/ods/src/.libs/libods.so -ldl -lpthread -Wl,-rpath -Wl,/opt/ovis/lib
+libtool: link: gcc -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include -Wall -Werror -O0 -ggdb3 -o .libs/sos_cmd sos_cmd-sos_cmd.o  ./.libs/libsos.so /mnt/cygnus/data/2022-01-04-095028/sos/build/ods/src/.libs/libods.so -ldl -lpthread -Wl,-rpath -Wl,/opt/ovis/lib
 gcc -DHAVE_CONFIG_H -I. -I../../../sos/src -I../..    -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include  -Wall -Werror -O0 -ggdb3 -MT sos_part_create.o -MD -MP -MF .deps/sos_part_create.Tpo -c -o sos_part_create.o ../../../sos/src/sos_part_create.c
 mv -f .deps/sos_part_create.Tpo .deps/sos_part_create.Po
 /bin/sh ../../libtool  --tag=CC   --mode=link gcc -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include  -Wall -Werror -O0 -ggdb3   -o sos_part_create sos_part_create.o libsos.la 
-libtool: link: gcc -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include -Wall -Werror -O0 -ggdb3 -o .libs/sos_part_create sos_part_create.o  ./.libs/libsos.so /mnt/cygnus/data/2022-01-04-094240/sos/build/ods/src/.libs/libods.so -ldl -lpthread -Wl,-rpath -Wl,/opt/ovis/lib
+libtool: link: gcc -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include -Wall -Werror -O0 -ggdb3 -o .libs/sos_part_create sos_part_create.o  ./.libs/libsos.so /mnt/cygnus/data/2022-01-04-095028/sos/build/ods/src/.libs/libods.so -ldl -lpthread -Wl,-rpath -Wl,/opt/ovis/lib
 gcc -DHAVE_CONFIG_H -I. -I../../../sos/src -I../..    -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include  -Wall -Werror -O0 -ggdb3 -MT sos_part_query.o -MD -MP -MF .deps/sos_part_query.Tpo -c -o sos_part_query.o ../../../sos/src/sos_part_query.c
 mv -f .deps/sos_part_query.Tpo .deps/sos_part_query.Po
 /bin/sh ../../libtool  --tag=CC   --mode=link gcc -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include  -Wall -Werror -O0 -ggdb3   -o sos_part_query sos_part_query.o libsos.la 
-libtool: link: gcc -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include -Wall -Werror -O0 -ggdb3 -o .libs/sos_part_query sos_part_query.o  ./.libs/libsos.so /mnt/cygnus/data/2022-01-04-094240/sos/build/ods/src/.libs/libods.so -ldl -lpthread -Wl,-rpath -Wl,/opt/ovis/lib
+libtool: link: gcc -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include -Wall -Werror -O0 -ggdb3 -o .libs/sos_part_query sos_part_query.o  ./.libs/libsos.so /mnt/cygnus/data/2022-01-04-095028/sos/build/ods/src/.libs/libods.so -ldl -lpthread -Wl,-rpath -Wl,/opt/ovis/lib
 gcc -DHAVE_CONFIG_H -I. -I../../../sos/src -I../..    -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include  -Wall -Werror -O0 -ggdb3 -MT sos_part_modify.o -MD -MP -MF .deps/sos_part_modify.Tpo -c -o sos_part_modify.o ../../../sos/src/sos_part_modify.c
 mv -f .deps/sos_part_modify.Tpo .deps/sos_part_modify.Po
 /bin/sh ../../libtool  --tag=CC   --mode=link gcc -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include  -Wall -Werror -O0 -ggdb3   -o sos_part_modify sos_part_modify.o libsos.la 
-libtool: link: gcc -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include -Wall -Werror -O0 -ggdb3 -o .libs/sos_part_modify sos_part_modify.o  ./.libs/libsos.so /mnt/cygnus/data/2022-01-04-094240/sos/build/ods/src/.libs/libods.so -ldl -lpthread -Wl,-rpath -Wl,/opt/ovis/lib
+libtool: link: gcc -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include -Wall -Werror -O0 -ggdb3 -o .libs/sos_part_modify sos_part_modify.o  ./.libs/libsos.so /mnt/cygnus/data/2022-01-04-095028/sos/build/ods/src/.libs/libods.so -ldl -lpthread -Wl,-rpath -Wl,/opt/ovis/lib
 gcc -DHAVE_CONFIG_H -I. -I../../../sos/src -I../..    -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include  -Wall -Werror -O0 -ggdb3 -MT sos_part_delete.o -MD -MP -MF .deps/sos_part_delete.Tpo -c -o sos_part_delete.o ../../../sos/src/sos_part_delete.c
 mv -f .deps/sos_part_delete.Tpo .deps/sos_part_delete.Po
 /bin/sh ../../libtool  --tag=CC   --mode=link gcc -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include  -Wall -Werror -O0 -ggdb3   -o sos_part_delete sos_part_delete.o libsos.la 
-libtool: link: gcc -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include -Wall -Werror -O0 -ggdb3 -o .libs/sos_part_delete sos_part_delete.o  ./.libs/libsos.so /mnt/cygnus/data/2022-01-04-094240/sos/build/ods/src/.libs/libods.so -ldl -lpthread -Wl,-rpath -Wl,/opt/ovis/lib
+libtool: link: gcc -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include -Wall -Werror -O0 -ggdb3 -o .libs/sos_part_delete sos_part_delete.o  ./.libs/libsos.so /mnt/cygnus/data/2022-01-04-095028/sos/build/ods/src/.libs/libods.so -ldl -lpthread -Wl,-rpath -Wl,/opt/ovis/lib
 gcc -DHAVE_CONFIG_H -I. -I../../../sos/src -I../..    -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include  -Wall -Werror -O0 -ggdb3 -MT sos_part_move.o -MD -MP -MF .deps/sos_part_move.Tpo -c -o sos_part_move.o ../../../sos/src/sos_part_move.c
 mv -f .deps/sos_part_move.Tpo .deps/sos_part_move.Po
 /bin/sh ../../libtool  --tag=CC   --mode=link gcc -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include  -Wall -Werror -O0 -ggdb3   -o sos_part_move sos_part_move.o libsos.la 
-libtool: link: gcc -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include -Wall -Werror -O0 -ggdb3 -o .libs/sos_part_move sos_part_move.o  ./.libs/libsos.so /mnt/cygnus/data/2022-01-04-094240/sos/build/ods/src/.libs/libods.so -ldl -lpthread -Wl,-rpath -Wl,/opt/ovis/lib
+libtool: link: gcc -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include -Wall -Werror -O0 -ggdb3 -o .libs/sos_part_move sos_part_move.o  ./.libs/libsos.so /mnt/cygnus/data/2022-01-04-095028/sos/build/ods/src/.libs/libods.so -ldl -lpthread -Wl,-rpath -Wl,/opt/ovis/lib
 gcc -DHAVE_CONFIG_H -I. -I../../../sos/src -I../..    -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include  -Wall -Werror -O0 -ggdb3 -MT sos_part_export.o -MD -MP -MF .deps/sos_part_export.Tpo -c -o sos_part_export.o ../../../sos/src/sos_part_export.c
 mv -f .deps/sos_part_export.Tpo .deps/sos_part_export.Po
 /bin/sh ../../libtool  --tag=CC   --mode=link gcc -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include  -Wall -Werror -O0 -ggdb3   -o sos_part_export sos_part_export.o libsos.la 
-libtool: link: gcc -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include -Wall -Werror -O0 -ggdb3 -o .libs/sos_part_export sos_part_export.o  ./.libs/libsos.so /mnt/cygnus/data/2022-01-04-094240/sos/build/ods/src/.libs/libods.so -ldl -lpthread -Wl,-rpath -Wl,/opt/ovis/lib
+libtool: link: gcc -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include -Wall -Werror -O0 -ggdb3 -o .libs/sos_part_export sos_part_export.o  ./.libs/libsos.so /mnt/cygnus/data/2022-01-04-095028/sos/build/ods/src/.libs/libods.so -ldl -lpthread -Wl,-rpath -Wl,/opt/ovis/lib
 gcc -DHAVE_CONFIG_H -I. -I../../../sos/src -I../..    -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include  -Wall -Werror -O0 -ggdb3 -MT sos_part_index.o -MD -MP -MF .deps/sos_part_index.Tpo -c -o sos_part_index.o ../../../sos/src/sos_part_index.c
 mv -f .deps/sos_part_index.Tpo .deps/sos_part_index.Po
 /bin/sh ../../libtool  --tag=CC   --mode=link gcc -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include  -Wall -Werror -O0 -ggdb3   -o sos_part_index sos_part_index.o libsos.la 
-libtool: link: gcc -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include -Wall -Werror -O0 -ggdb3 -o .libs/sos_part_index sos_part_index.o  ./.libs/libsos.so /mnt/cygnus/data/2022-01-04-094240/sos/build/ods/src/.libs/libods.so -ldl -lpthread -Wl,-rpath -Wl,/opt/ovis/lib
-make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/sos/src'
+libtool: link: gcc -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include -Wall -Werror -O0 -ggdb3 -o .libs/sos_part_index sos_part_index.o  ./.libs/libsos.so /mnt/cygnus/data/2022-01-04-095028/sos/build/ods/src/.libs/libods.so -ldl -lpthread -Wl,-rpath -Wl,/opt/ovis/lib
+make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/sos/src'
 Making all in include
-make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/sos/include'
+make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/sos/include'
 make[3]: Nothing to be done for `all'.
-make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/sos/include'
+make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/sos/include'
 Making all in python
-make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/sos/python'
+make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/sos/python'
 echo PYTHON_LDFLAGS are "-L/usr/lib64 -lpython3.6m"
 PYTHON_LDFLAGS are -L/usr/lib64 -lpython3.6m
 cython -3 --directive language_level=3 ../../../sos/python/Sos.pyx -o Sos.c
 /bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../../sos/python -I../..    -g -O0  -I../../../sos/python/../include -I../../../sos/python/../src -I../../../ods/include -I/usr/local/lib64/python3.6/site-packages/numpy/core/include -I/usr/include/python3.6m  -MT Sos_la-Sos.lo -MD -MP -MF .deps/Sos_la-Sos.Tpo -c -o Sos_la-Sos.lo `test -f 'Sos.c' || echo '../../../sos/python/'`Sos.c
 libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../../sos/python -I../.. -g -O0 -I../../../sos/python/../include -I../../../sos/python/../src -I../../../ods/include -I/usr/local/lib64/python3.6/site-packages/numpy/core/include -I/usr/include/python3.6m -MT Sos_la-Sos.lo -MD -MP -MF .deps/Sos_la-Sos.Tpo -c Sos.c  -fPIC -DPIC -o .libs/Sos_la-Sos.o
+In file included from /usr/local/lib64/python3.6/site-packages/numpy/core/include/numpy/ndarraytypes.h:1832:0,
+                 from /usr/local/lib64/python3.6/site-packages/numpy/core/include/numpy/ndarrayobject.h:12,
+                 from /usr/local/lib64/python3.6/site-packages/numpy/core/include/numpy/arrayobject.h:4,
+                 from Sos.c:598:
+/usr/local/lib64/python3.6/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h:17:2: warning: #warning "Using deprecated NumPy API, disable it with " "#define NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [-Wcpp]
+ #warning "Using deprecated NumPy API, disable it with " \
+  ^
 libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../../sos/python -I../.. -g -O0 -I../../../sos/python/../include -I../../../sos/python/../src -I../../../ods/include -I/usr/local/lib64/python3.6/site-packages/numpy/core/include -I/usr/include/python3.6m -MT Sos_la-Sos.lo -MD -MP -MF .deps/Sos_la-Sos.Tpo -c Sos.c -o Sos_la-Sos.o >/dev/null 2>&1
 mv -f .deps/Sos_la-Sos.Tpo .deps/Sos_la-Sos.Plo
 /bin/sh ../../libtool  --tag=CC   --mode=link gcc -g -O0  -I../../../sos/python/../include -I../../../sos/python/../src -I../../../ods/include -I/usr/local/lib64/python3.6/site-packages/numpy/core/include -I/usr/include/python3.6m  -L/usr/lib64 -lpython3.6m -module -shared  -o Sos.la -rpath /opt/ovis/lib/python3.6/site-packages/sosdb  Sos_la-Sos.lo ../../sos/src/libsos.la 
-libtool: link: gcc -shared  -fPIC -DPIC  .libs/Sos_la-Sos.o   -Wl,-rpath -Wl,/mnt/cygnus/data/2022-01-04-094240/sos/build/sos/src/.libs -Wl,-rpath -Wl,/mnt/cygnus/data/2022-01-04-094240/sos/build/ods/src/.libs -Wl,-rpath -Wl,/opt/ovis/lib -L/mnt/cygnus/data/2022-01-04-094240/sos/build/ods/src/.libs -L/usr/lib64 -lpython3.6m ../../sos/src/.libs/libsos.so /mnt/cygnus/data/2022-01-04-094240/sos/build/ods/src/.libs/libods.so -ldl -lpthread  -O0   -Wl,-soname -Wl,Sos.so.0 -o .libs/Sos.so.0.0.0
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/Sos_la-Sos.o   -Wl,-rpath -Wl,/mnt/cygnus/data/2022-01-04-095028/sos/build/sos/src/.libs -Wl,-rpath -Wl,/mnt/cygnus/data/2022-01-04-095028/sos/build/ods/src/.libs -Wl,-rpath -Wl,/opt/ovis/lib -L/mnt/cygnus/data/2022-01-04-095028/sos/build/ods/src/.libs -L/usr/lib64 -lpython3.6m ../../sos/src/.libs/libsos.so /mnt/cygnus/data/2022-01-04-095028/sos/build/ods/src/.libs/libods.so -ldl -lpthread  -O0   -Wl,-soname -Wl,Sos.so.0 -o .libs/Sos.so.0.0.0
 libtool: link: (cd ".libs" && rm -f "Sos.so.0" && ln -s "Sos.so.0.0.0" "Sos.so.0")
 libtool: link: (cd ".libs" && rm -f "Sos.so" && ln -s "Sos.so.0.0.0" "Sos.so")
 libtool: link: ( cd ".libs" && rm -f "Sos.la" && ln -s "../Sos.la" "Sos.la" )
-make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/sos/python'
-make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/sos'
+make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/sos/python'
+make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/sos'
 make[3]: Nothing to be done for `all-am'.
-make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/sos'
-make[2]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/sos'
-make[2]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/sos/build'
-make[2]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/sos/build'
-make[1]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/sos/build'
+make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/sos'
+make[2]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/sos'
+make[2]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/sos/build'
+make[2]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/sos/build'
+make[1]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/sos/build'
 Making install in ods
-make[1]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/ods'
+make[1]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/ods'
 Making install in src
-make[2]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/ods/src'
-make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/ods/src'
+make[2]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/ods/src'
+make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/ods/src'
  /bin/mkdir -p '/opt/ovis/lib'
  /bin/sh ../../libtool   --mode=install /bin/install -c   libods.la libidx_HTBL.la libidx_BXTREE.la libidx_H2BXT.la libidx_H2HTBL.la libkey_TIMESTAMP.la libkey_COMPOUND.la libkey_BLKMAP.la libkey_SHA256.la libkey_STRING.la libkey_MEMCMP.la libkey_UINT192.la libkey_UINT128.la libkey_UINT96.la libkey_UINT64.la libkey_INT64.la libkey_UINT32.la libkey_INT32.la libkey_UINT16.la libkey_INT16.la libkey_FLOAT.la libkey_DOUBLE.la libkey_UINT16_ARRAY.la libkey_INT16_ARRAY.la libkey_UINT32_ARRAY.la libkey_INT32_ARRAY.la libkey_UINT64_ARRAY.la libkey_INT64_ARRAY.la libkey_DOUBLE_ARRAY.la libkey_FLOAT_ARRAY.la '/opt/ovis/lib'
 libtool: install: /bin/install -c .libs/libods.so.0.0.0 /opt/ovis/lib/libods.so.0.0.0
 libtool: install: (cd /opt/ovis/lib && { ln -s -f libods.so.0.0.0 libods.so.0 || { rm -f libods.so.0 && ln -s libods.so.0.0.0 libods.so.0; }; })
 libtool: install: (cd /opt/ovis/lib && { ln -s -f libods.so.0.0.0 libods.so || { rm -f libods.so && ln -s libods.so.0.0.0 libods.so; }; })
 libtool: install: /bin/install -c .libs/libods.lai /opt/ovis/lib/libods.la
-libtool: install: (cd /mnt/cygnus/data/2022-01-04-094240/sos/build/ods/src; /bin/sh /mnt/cygnus/data/2022-01-04-094240/sos/build/libtool  --tag CC --mode=relink gcc -I../../../ods/src/../include/ -DHT_THREAD_SAFE -Wall -Werror -O0 -ggdb3 -o libidx_HTBL.la -rpath /opt/ovis/lib libidx_HTBL_la-ht.lo libods.la )
+libtool: install: warning: relinking `libidx_HTBL.la'
+libtool: install: (cd /mnt/cygnus/data/2022-01-04-095028/sos/build/ods/src; /bin/sh /mnt/cygnus/data/2022-01-04-095028/sos/build/libtool  --tag CC --mode=relink gcc -I../../../ods/src/../include/ -DHT_THREAD_SAFE -Wall -Werror -O0 -ggdb3 -o libidx_HTBL.la -rpath /opt/ovis/lib libidx_HTBL_la-ht.lo libods.la )
 libtool: relink: gcc -shared  -fPIC -DPIC  .libs/libidx_HTBL_la-ht.o   -Wl,-rpath -Wl,/opt/ovis/lib -L/opt/ovis/lib -lods -ldl -lpthread  -O0   -Wl,-soname -Wl,libidx_HTBL.so.0 -o .libs/libidx_HTBL.so.0.0.0
 libtool: install: /bin/install -c .libs/libidx_HTBL.so.0.0.0T /opt/ovis/lib/libidx_HTBL.so.0.0.0
 libtool: install: (cd /opt/ovis/lib && { ln -s -f libidx_HTBL.so.0.0.0 libidx_HTBL.so.0 || { rm -f libidx_HTBL.so.0 && ln -s libidx_HTBL.so.0.0.0 libidx_HTBL.so.0; }; })
 libtool: install: (cd /opt/ovis/lib && { ln -s -f libidx_HTBL.so.0.0.0 libidx_HTBL.so || { rm -f libidx_HTBL.so && ln -s libidx_HTBL.so.0.0.0 libidx_HTBL.so; }; })
 libtool: install: /bin/install -c .libs/libidx_HTBL.lai /opt/ovis/lib/libidx_HTBL.la
-libtool: install: (cd /mnt/cygnus/data/2022-01-04-094240/sos/build/ods/src; /bin/sh /mnt/cygnus/data/2022-01-04-094240/sos/build/libtool  --tag CC --mode=relink gcc -I../../../ods/src/../include/ -Wall -Werror -O0 -ggdb3 -o libidx_BXTREE.la -rpath /opt/ovis/lib libidx_BXTREE_la-bxt.lo libods.la )
+libtool: install: warning: relinking `libidx_BXTREE.la'
+libtool: install: (cd /mnt/cygnus/data/2022-01-04-095028/sos/build/ods/src; /bin/sh /mnt/cygnus/data/2022-01-04-095028/sos/build/libtool  --tag CC --mode=relink gcc -I../../../ods/src/../include/ -Wall -Werror -O0 -ggdb3 -o libidx_BXTREE.la -rpath /opt/ovis/lib libidx_BXTREE_la-bxt.lo libods.la )
 libtool: relink: gcc -shared  -fPIC -DPIC  .libs/libidx_BXTREE_la-bxt.o   -Wl,-rpath -Wl,/opt/ovis/lib -L/opt/ovis/lib -lods -ldl -lpthread  -O0   -Wl,-soname -Wl,libidx_BXTREE.so.0 -o .libs/libidx_BXTREE.so.0.0.0
 libtool: install: /bin/install -c .libs/libidx_BXTREE.so.0.0.0T /opt/ovis/lib/libidx_BXTREE.so.0.0.0
 libtool: install: (cd /opt/ovis/lib && { ln -s -f libidx_BXTREE.so.0.0.0 libidx_BXTREE.so.0 || { rm -f libidx_BXTREE.so.0 && ln -s libidx_BXTREE.so.0.0.0 libidx_BXTREE.so.0; }; })
 libtool: install: (cd /opt/ovis/lib && { ln -s -f libidx_BXTREE.so.0.0.0 libidx_BXTREE.so || { rm -f libidx_BXTREE.so && ln -s libidx_BXTREE.so.0.0.0 libidx_BXTREE.so; }; })
 libtool: install: /bin/install -c .libs/libidx_BXTREE.lai /opt/ovis/lib/libidx_BXTREE.la
-libtool: install: (cd /mnt/cygnus/data/2022-01-04-094240/sos/build/ods/src; /bin/sh /mnt/cygnus/data/2022-01-04-094240/sos/build/libtool  --tag CC --mode=relink gcc -I../../../ods/src/../include/ -Wall -Werror -O0 -ggdb3 -o libidx_H2BXT.la -rpath /opt/ovis/lib libidx_H2BXT_la-h2bxt.lo libidx_H2BXT_la-mq.lo libods.la )
+libtool: install: warning: relinking `libidx_H2BXT.la'
+libtool: install: (cd /mnt/cygnus/data/2022-01-04-095028/sos/build/ods/src; /bin/sh /mnt/cygnus/data/2022-01-04-095028/sos/build/libtool  --tag CC --mode=relink gcc -I../../../ods/src/../include/ -Wall -Werror -O0 -ggdb3 -o libidx_H2BXT.la -rpath /opt/ovis/lib libidx_H2BXT_la-h2bxt.lo libidx_H2BXT_la-mq.lo libods.la )
 libtool: relink: gcc -shared  -fPIC -DPIC  .libs/libidx_H2BXT_la-h2bxt.o .libs/libidx_H2BXT_la-mq.o   -Wl,-rpath -Wl,/opt/ovis/lib -L/opt/ovis/lib -lods -ldl -lpthread  -O0   -Wl,-soname -Wl,libidx_H2BXT.so.0 -o .libs/libidx_H2BXT.so.0.0.0
 libtool: install: /bin/install -c .libs/libidx_H2BXT.so.0.0.0T /opt/ovis/lib/libidx_H2BXT.so.0.0.0
 libtool: install: (cd /opt/ovis/lib && { ln -s -f libidx_H2BXT.so.0.0.0 libidx_H2BXT.so.0 || { rm -f libidx_H2BXT.so.0 && ln -s libidx_H2BXT.so.0.0.0 libidx_H2BXT.so.0; }; })
 libtool: install: (cd /opt/ovis/lib && { ln -s -f libidx_H2BXT.so.0.0.0 libidx_H2BXT.so || { rm -f libidx_H2BXT.so && ln -s libidx_H2BXT.so.0.0.0 libidx_H2BXT.so; }; })
 libtool: install: /bin/install -c .libs/libidx_H2BXT.lai /opt/ovis/lib/libidx_H2BXT.la
-libtool: install: (cd /mnt/cygnus/data/2022-01-04-094240/sos/build/ods/src; /bin/sh /mnt/cygnus/data/2022-01-04-094240/sos/build/libtool  --tag CC --mode=relink gcc -I../../../ods/src/../include/ -Wall -Werror -O0 -ggdb3 -o libidx_H2HTBL.la -rpath /opt/ovis/lib libidx_H2HTBL_la-h2htbl.lo libidx_H2HTBL_la-mq.lo libods.la )
+libtool: install: warning: relinking `libidx_H2HTBL.la'
+libtool: install: (cd /mnt/cygnus/data/2022-01-04-095028/sos/build/ods/src; /bin/sh /mnt/cygnus/data/2022-01-04-095028/sos/build/libtool  --tag CC --mode=relink gcc -I../../../ods/src/../include/ -Wall -Werror -O0 -ggdb3 -o libidx_H2HTBL.la -rpath /opt/ovis/lib libidx_H2HTBL_la-h2htbl.lo libidx_H2HTBL_la-mq.lo libods.la )
 libtool: relink: gcc -shared  -fPIC -DPIC  .libs/libidx_H2HTBL_la-h2htbl.o .libs/libidx_H2HTBL_la-mq.o   -Wl,-rpath -Wl,/opt/ovis/lib -L/opt/ovis/lib -lods -ldl -lpthread  -O0   -Wl,-soname -Wl,libidx_H2HTBL.so.0 -o .libs/libidx_H2HTBL.so.0.0.0
 libtool: install: /bin/install -c .libs/libidx_H2HTBL.so.0.0.0T /opt/ovis/lib/libidx_H2HTBL.so.0.0.0
 libtool: install: (cd /opt/ovis/lib && { ln -s -f libidx_H2HTBL.so.0.0.0 libidx_H2HTBL.so.0 || { rm -f libidx_H2HTBL.so.0 && ln -s libidx_H2HTBL.so.0.0.0 libidx_H2HTBL.so.0; }; })
@@ -884,32 +907,33 @@ more information, such as the ld(1) and ld.so(8) manual pages.
   /bin/sh ../../libtool   --mode=install /bin/install -c ods_dump '/opt/ovis/bin'
 libtool: install: /bin/install -c .libs/ods_dump /opt/ovis/bin/ods_dump
 make[3]: Nothing to be done for `install-data-am'.
-make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/ods/src'
-make[2]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/ods/src'
+make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/ods/src'
+make[2]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/ods/src'
 Making install in include
-make[2]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/ods/include'
-make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/ods/include'
+make[2]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/ods/include'
+make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/ods/include'
 make[3]: Nothing to be done for `install-exec-am'.
  /bin/mkdir -p '/opt/ovis/include'
  /bin/mkdir -p '/opt/ovis/include/ods'
  /bin/install -c -m 644  ../../../ods/include/ods/ods_atomic.h ../../../ods/include/ods/ods.h ../../../ods/include/ods/ods_idx.h ../../../ods/include/ods/oidx.h ../../../ods/include/ods/ods_rbt.h '/opt/ovis/include/ods'
-make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/ods/include'
-make[2]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/ods/include'
-make[2]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/ods'
-make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/ods'
+make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/ods/include'
+make[2]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/ods/include'
+make[2]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/ods'
+make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/ods'
 make[3]: Nothing to be done for `install-exec-am'.
 make[3]: Nothing to be done for `install-data-am'.
-make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/ods'
-make[2]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/ods'
-make[1]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/ods'
+make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/ods'
+make[2]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/ods'
+make[1]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/ods'
 Making install in sos
-make[1]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/sos'
+make[1]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/sos'
 Making install in src
-make[2]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/sos/src'
-make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/sos/src'
+make[2]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/sos/src'
+make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/sos/src'
  /bin/mkdir -p '/opt/ovis/lib'
  /bin/sh ../../libtool   --mode=install /bin/install -c   libsos.la '/opt/ovis/lib'
-libtool: install: (cd /mnt/cygnus/data/2022-01-04-094240/sos/build/sos/src; /bin/sh /mnt/cygnus/data/2022-01-04-094240/sos/build/libtool  --tag CC --mode=relink gcc -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include -Wall -Werror -O0 -ggdb3 -o libsos.la -rpath /opt/ovis/lib sos_fn.lo sos.lo sos_part.lo sos_schema.lo sos_config.lo sos_index.lo sos_key.lo sos_iter.lo sos_value.lo sos_log.lo ../../ods/src/libods.la -ldl -lpthread )
+libtool: install: warning: relinking `libsos.la'
+libtool: install: (cd /mnt/cygnus/data/2022-01-04-095028/sos/build/sos/src; /bin/sh /mnt/cygnus/data/2022-01-04-095028/sos/build/libtool  --tag CC --mode=relink gcc -I../../../sos/src/../include -I../../../ods/include -I../../../sos/include -Wall -Werror -O0 -ggdb3 -o libsos.la -rpath /opt/ovis/lib sos_fn.lo sos.lo sos_part.lo sos_schema.lo sos_config.lo sos_index.lo sos_key.lo sos_iter.lo sos_value.lo sos_log.lo ../../ods/src/libods.la -ldl -lpthread )
 libtool: relink: gcc -shared  -fPIC -DPIC  .libs/sos_fn.o .libs/sos.o .libs/sos_part.o .libs/sos_schema.o .libs/sos_config.o .libs/sos_index.o .libs/sos_key.o .libs/sos_iter.o .libs/sos_value.o .libs/sos_log.o   -Wl,-rpath -Wl,/opt/ovis/lib -L/opt/ovis/lib -lods -ldl -lpthread  -O0   -Wl,-soname -Wl,libsos.so.0 -o .libs/libsos.so.0.0.0
 libtool: install: /bin/install -c .libs/libsos.so.0.0.0T /opt/ovis/lib/libsos.so.0.0.0
 libtool: install: (cd /opt/ovis/lib && { ln -s -f libsos.so.0.0.0 libsos.so.0 || { rm -f libsos.so.0 && ln -s libsos.so.0.0.0 libsos.so.0; }; })
@@ -948,26 +972,27 @@ libtool: install: /bin/install -c .libs/sos_part_move /opt/ovis/bin/sos_part_mov
 libtool: install: /bin/install -c .libs/sos_part_export /opt/ovis/bin/sos_part_export
 libtool: install: /bin/install -c .libs/sos_part_index /opt/ovis/bin/sos_part_index
 make[3]: Nothing to be done for `install-data-am'.
-make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/sos/src'
-make[2]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/sos/src'
+make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/sos/src'
+make[2]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/sos/src'
 Making install in include
-make[2]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/sos/include'
-make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/sos/include'
+make[2]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/sos/include'
+make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/sos/include'
 make[3]: Nothing to be done for `install-exec-am'.
  /bin/mkdir -p '/opt/ovis/include'
  /bin/mkdir -p '/opt/ovis/include/sos'
  /bin/install -c -m 644  ../../../sos/include/sos/sos.h ../../../sos/include/sos/sos_yaml.h '/opt/ovis/include/sos'
-make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/sos/include'
-make[2]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/sos/include'
+make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/sos/include'
+make[2]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/sos/include'
 Making install in python
-make[2]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/sos/python'
-make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/sos/python'
+make[2]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/sos/python'
+make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/sos/python'
  /bin/mkdir -p '/opt/ovis/bin'
  /bin/install -c ../../../sos/python/sos-db ../../../sos/python/sos-part ../../../sos/python/sos-schema ../../../sos/python/sos-import-csv ../../../sos/python/sos-monitor '/opt/ovis/bin'
  /bin/mkdir -p '/opt/ovis/lib/python3.6/site-packages/sosdb'
  /bin/sh ../../libtool   --mode=install /bin/install -c   Sos.la '/opt/ovis/lib/python3.6/site-packages/sosdb'
-libtool: install: (cd /mnt/cygnus/data/2022-01-04-094240/sos/build/sos/python; /bin/sh /mnt/cygnus/data/2022-01-04-094240/sos/build/libtool  --tag CC --mode=relink gcc -g -O0 -I../../../sos/python/../include -I../../../sos/python/../src -I../../../ods/include -I/usr/local/lib64/python3.6/site-packages/numpy/core/include -I/usr/include/python3.6m -L/usr/lib64 -lpython3.6m -module -shared -o Sos.la -rpath /opt/ovis/lib/python3.6/site-packages/sosdb Sos_la-Sos.lo ../../sos/src/libsos.la )
-libtool: relink: gcc -shared  -fPIC -DPIC  .libs/Sos_la-Sos.o   -Wl,-rpath -Wl,/opt/ovis/lib -L/mnt/cygnus/data/2022-01-04-094240/sos/build/ods/src/.libs -L/usr/lib64 -lpython3.6m -L/opt/ovis/lib -lsos -lods -ldl -lpthread  -O0   -Wl,-soname -Wl,Sos.so.0 -o .libs/Sos.so.0.0.0
+libtool: install: warning: relinking `Sos.la'
+libtool: install: (cd /mnt/cygnus/data/2022-01-04-095028/sos/build/sos/python; /bin/sh /mnt/cygnus/data/2022-01-04-095028/sos/build/libtool  --tag CC --mode=relink gcc -g -O0 -I../../../sos/python/../include -I../../../sos/python/../src -I../../../ods/include -I/usr/local/lib64/python3.6/site-packages/numpy/core/include -I/usr/include/python3.6m -L/usr/lib64 -lpython3.6m -module -shared -o Sos.la -rpath /opt/ovis/lib/python3.6/site-packages/sosdb Sos_la-Sos.lo ../../sos/src/libsos.la )
+libtool: relink: gcc -shared  -fPIC -DPIC  .libs/Sos_la-Sos.o   -Wl,-rpath -Wl,/opt/ovis/lib -L/mnt/cygnus/data/2022-01-04-095028/sos/build/ods/src/.libs -L/usr/lib64 -lpython3.6m -L/opt/ovis/lib -lsos -lods -ldl -lpthread  -O0   -Wl,-soname -Wl,Sos.so.0 -o .libs/Sos.so.0.0.0
 libtool: install: /bin/install -c .libs/Sos.so.0.0.0T /opt/ovis/lib/python3.6/site-packages/sosdb/Sos.so.0.0.0
 libtool: install: (cd /opt/ovis/lib/python3.6/site-packages/sosdb && { ln -s -f Sos.so.0.0.0 Sos.so.0 || { rm -f Sos.so.0 && ln -s Sos.so.0.0.0 Sos.so.0; }; })
 libtool: install: (cd /opt/ovis/lib/python3.6/site-packages/sosdb && { ln -s -f Sos.so.0.0.0 Sos.so || { rm -f Sos.so && ln -s Sos.so.0.0.0 Sos.so; }; })
@@ -997,31 +1022,31 @@ Byte-compiling python modules...
 __init__.pyDataSet.py
 Byte-compiling python modules (optimized versions) ...
 __init__.pyDataSet.py
-make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/sos/python'
-make[2]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/sos/python'
-make[2]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/sos'
-make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/sos'
+make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/sos/python'
+make[2]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/sos/python'
+make[2]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/sos'
+make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/sos'
 make[3]: Nothing to be done for `install-exec-am'.
 make  install-data-hook
-make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/sos'
+make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/sos'
 sed -e 's,[@]mandir[@],/opt/ovis/share/man,g' -e 's,[@]localedir[@],/opt/ovis/share/locale,g' -e 's,[@]libdir[@],/opt/ovis/lib,g' -e 's,[@]psdir[@],/opt/ovis/share/doc/sosdb,g' -e 's,[@]pdfdir[@],/opt/ovis/share/doc/sosdb,g' -e 's,[@]dvidir[@],/opt/ovis/share/doc/sosdb,g' -e 's,[@]htmldir[@],/opt/ovis/share/doc/sosdb,g' -e 's,[@]infodir[@],/opt/ovis/share/info,g' -e 's,[@]docdir[@],/opt/ovis/share/doc/sosdb,g' -e 's,[@]includedir[@],/opt/ovis/include,g' -e 's,[@]localstatedir[@],/opt/ovis/var,g' -e 's,[@]sharedstatedir[@],/opt/ovis/com,g' -e 's,[@]sysconfdir[@],/opt/ovis/etc,g' -e 's,[@]datadir[@],/opt/ovis/share,g' -e 's,[@]datarootdir[@],/opt/ovis/share,g' -e 's,[@]libexecdir[@],/opt/ovis/libexec,g' -e 's,[@]sbindir[@],/opt/ovis/sbin,g' -e 's,[@]bindir[@],/opt/ovis/bin,g' -e 's,[@]prefix[@],/opt/ovis,g' -e 's,[@]exec_prefix[@],/opt/ovis,g' -e 's,[@]pkglibdir[@],/opt/ovis/lib/sosdb,g' -e 's,[@]PYTHON[@],/usr/bin/python3,g' -e 's,[@]pythondir[@],/opt/ovis/lib/python3.6/site-packages,g'  < ../../sos/sos-configvars.sh.in > sos-configvars.sh
 chmod 755 sos-configvars.sh
 /bin/mkdir -p /opt/ovis/lib
 /bin/install -c -m 755 sos-configvars.sh /opt/ovis/lib
-make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/sos'
-make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/sos'
-make[2]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/sos'
-make[1]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/sos/build/sos'
-make[1]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/sos/build'
-make[2]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/sos/build'
+make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/sos'
+make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/sos'
+make[2]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/sos'
+make[1]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/sos/build/sos'
+make[1]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/sos/build'
+make[2]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/sos/build'
 make[2]: Nothing to be done for `install-exec-am'.
 make[2]: Nothing to be done for `install-data-am'.
-make[2]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/sos/build'
-make[1]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/sos/build'
-/mnt/cygnus/data/2022-01-04-094240/sos /mnt/cygnus/data/2022-01-04-094240 /mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
-/mnt/cygnus/data/2022-01-04-094240 /mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
-2022-01-04 09:44:25 INFO: == Building/Installing OVIS ==
-/mnt/cygnus/data/2022-01-04-094240/ovis /mnt/cygnus/data/2022-01-04-094240 /mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
+make[2]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/sos/build'
+make[1]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/sos/build'
+/mnt/cygnus/data/2022-01-04-095028/sos /mnt/cygnus/data/2022-01-04-095028 /mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
+/mnt/cygnus/data/2022-01-04-095028 /mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
+2022-01-04 09:52:15 INFO: == Building/Installing OVIS ==
+/mnt/cygnus/data/2022-01-04-095028/ovis /mnt/cygnus/data/2022-01-04-095028 /mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
 autoreconf: Entering directory `.'
 autoreconf: configure.ac: not using Gettext
 autoreconf: running: aclocal -I m4 --force -I m4
@@ -1048,7 +1073,7 @@ ldms/python/Makefile.am: installing 'config/depcomp'
 ldms/python/Makefile.am:9: installing 'config/py-compile'
 parallel-tests: installing 'config/test-driver'
 autoreconf: Leaving directory `.'
-/mnt/cygnus/data/2022-01-04-094240/ovis/build /mnt/cygnus/data/2022-01-04-094240/ovis /mnt/cygnus/data/2022-01-04-094240 /mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
+/mnt/cygnus/data/2022-01-04-095028/ovis/build /mnt/cygnus/data/2022-01-04-095028/ovis /mnt/cygnus/data/2022-01-04-095028 /mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
 checking for gcc... gcc
 checking whether the C compiler works... yes
 checking for C compiler default output file name... a.out
@@ -1498,19 +1523,19 @@ config.status: creating ovis-ldms-config.h
 config.status: executing libtool commands
 echo 4.3.7.187-99b4 > ../.version-t && mv ../.version-t ../.version
 make  all-recursive
-make[1]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build'
+make[1]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build'
 Making all in lib
-make[2]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib'
+make[2]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib'
 Making all in src
-make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src'
+make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src'
 Making all in third
-make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/third'
+make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/third'
   CC       libovis_third_la-city.lo
   CC       libovis_third_la-b62encode.lo
   CCLD     libovis_third.la
-make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/third'
+make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/third'
 Making all in ovis_util
-make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/ovis_util'
+make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/ovis_util'
   CC       util.lo
   CC       dstring.lo
   CC       olog.lo
@@ -1523,9 +1548,9 @@ make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/s
   CCLD     test_olog
   CC       test_util.o
   CCLD     test_util
-make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/ovis_util'
+make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/ovis_util'
 Making all in coll
-make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/coll'
+make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/coll'
   CC       rbt.lo
   CC       htbl.lo
   CC       idx.lo
@@ -1535,60 +1560,60 @@ make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/s
   CC       label-set.lo
   CC       heap.lo
   CCLD     libcoll.la
-make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/coll'
+make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/coll'
 Making all in mmalloc
-make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/mmalloc'
+make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/mmalloc'
   CC       mmalloc.lo
   CCLD     libmmalloc.la
-make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/mmalloc'
+make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/mmalloc'
 Making all in ovis_auth
-make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/ovis_auth'
+make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/ovis_auth'
   CC       auth.lo
   CCLD     libovis_auth.la
-make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/ovis_auth'
+make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/ovis_auth'
 Making all in ovis_event
-make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/ovis_event'
+make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/ovis_event'
   CC       ovis_event.lo
   CCLD     libovis_event.la
-make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/ovis_event'
+make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/ovis_event'
 Making all in ovis_ev
-make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/ovis_ev'
-make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/ovis_ev'
+make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/ovis_ev'
+make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/ovis_ev'
   CC       libovis_ev_la-ev.lo
   CC       libovis_ev_la-evw.lo
   CCLD     libovis_ev.la
-make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/ovis_ev'
-make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/ovis_ev'
+make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/ovis_ev'
+make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/ovis_ev'
 Making all in ovis_ref
-make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/ovis_ref'
-make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/ovis_ref'
+make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/ovis_ref'
+make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/ovis_ref'
 make[5]: Nothing to be done for `all-am'.
-make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/ovis_ref'
-make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/ovis_ref'
+make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/ovis_ref'
+make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/ovis_ref'
 Making all in zap
-make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/zap'
+make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/zap'
 Making all in .
-make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/zap'
+make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/zap'
   CC       zap.lo
   CCLD     libzap.la
-make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/zap'
+make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/zap'
 Making all in rdma
-make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/zap/rdma'
+make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/zap/rdma'
   CC       libzap_rdma_la-zap_rdma.lo
   CCLD     libzap_rdma.la
-make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/zap/rdma'
+make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/zap/rdma'
 Making all in fabric
-make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/zap/fabric'
+make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/zap/fabric'
   CC       libzap_fabric_la-zap_fabric.lo
   CCLD     libzap_fabric.la
-make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/zap/fabric'
+make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/zap/fabric'
 Making all in sock
-make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/zap/sock'
+make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/zap/sock'
   CC       libzap_sock_la-zap_sock.lo
   CCLD     libzap_sock.la
-make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/zap/sock'
+make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/zap/sock'
 Making all in test
-make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/zap/test'
+make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/zap/test'
   CC       zap_test.o
   CCLD     zap_test
   CC       zap_test_big.o
@@ -1603,19 +1628,19 @@ make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/s
   CCLD     zap_test_shared_map
   CC       zap_test_many_read.o
   CCLD     zap_test_many_read
-make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/zap/test'
-make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/zap'
+make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/zap/test'
+make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/zap'
 Making all in ovis_ctrl
-make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/ovis_ctrl'
+make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/ovis_ctrl'
   CC       ctrl.lo
   CCLD     libovis_ctrl.la
-make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/ovis_ctrl'
+make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/ovis_ctrl'
 Making all in ovis_json
-make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/ovis_json'
+make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/ovis_json'
 bison -y --defines=ovis_json_parser.h -o ovis_json_parser.c ../../../../lib/src/ovis_json/ovis_json_parser.y
 make  all-recursive
-make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/ovis_json'
-make[6]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/ovis_json'
+make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/ovis_json'
+make[6]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/ovis_json'
   CC       ovis_json.lo
 flex -o ovis_json_lexer.c ../../../../lib/src/ovis_json/ovis_json_lexer.l
   CC       ovis_json_lexer.lo
@@ -1623,42 +1648,42 @@ flex -o ovis_json_lexer.c ../../../../lib/src/ovis_json/ovis_json_lexer.l
   CCLD     libovis_json.la
   CC       ovis_json_test-ovis_json_test.o
   CCLD     ovis_json_test
-make[6]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/ovis_json'
-make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/ovis_json'
-make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src/ovis_json'
-make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src'
+make[6]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/ovis_json'
+make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/ovis_json'
+make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src/ovis_json'
+make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src'
 sed -e 's,[@]VERSION[@],4.3.7.187-99b4,g' -e 's,[@]mandir[@],/opt/ovis/share/man,g' -e 's,[@]localedir[@],/opt/ovis/share/locale,g' -e 's,[@]libdir[@],/opt/ovis/lib,g' -e 's,[@]psdir[@],/opt/ovis/share/doc/ovis-ldms,g' -e 's,[@]pdfdir[@],/opt/ovis/share/doc/ovis-ldms,g' -e 's,[@]dvidir[@],/opt/ovis/share/doc/ovis-ldms,g' -e 's,[@]htmldir[@],/opt/ovis/share/doc/ovis-ldms,g' -e 's,[@]infodir[@],/opt/ovis/share/info,g' -e 's,[@]docdir[@],/opt/ovis/share/doc/ovis-ldms,g' -e 's,[@]includedir[@],/opt/ovis/include,g' -e 's,[@]localstatedir[@],/opt/ovis/var,g' -e 's,[@]sharedstatedir[@],/opt/ovis/var/lib,g' -e 's,[@]sysconfdir[@],/opt/ovis/etc,g' -e 's,[@]datadir[@],/opt/ovis/share,g' -e 's,[@]datarootdir[@],/opt/ovis/share,g' -e 's,[@]libexecdir[@],/opt/ovis/libexec,g' -e 's,[@]sbindir[@],/opt/ovis/sbin,g' -e 's,[@]bindir[@],/opt/ovis/bin,g' -e 's,[@]prefix[@],/opt/ovis,g' -e 's,[@]exec_prefix[@],/opt/ovis,g' -e 's,[@]LDMSD_PLUGIN_LIBPATH[@],/opt/ovis/lib/ovis-ldms,g' -e 's,[@]ZAP_LIBPATH[@],/opt/ovis/lib/ovis-lib:/opt/ovis/lib/ovis-ldms,g' -e 's,[@]pkglibdir[@],/opt/ovis/lib/ovis-ldms,g' -e 's,[@]plugins_rpath[@],:/opt/ovis/lib,g' -e 's,[@]pythondir[@],/opt/ovis/lib/python3.6/site-packages,g' -e 's,[@]SOS_LIB64DIR[@],,g' -e 's,[@]SOS_LIBDIR[@],/opt/ovis/lib,g'  < ../../../lib/src/ovis-lib-configvars.sh.in > ovis-lib-configvars.sh
 chmod 755 ovis-lib-configvars.sh
-make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src'
-make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/src'
+make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src'
+make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/src'
 Making all in etc
-make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/etc'
+make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/etc'
 Making all in ovis
-make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/etc/ovis'
+make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/etc/ovis'
 sed -e 's,[@]VERSION[@],4.3.7.187-99b4,g' -e 's,[@]mandir[@],/opt/ovis/share/man,g' -e 's,[@]localedir[@],/opt/ovis/share/locale,g' -e 's,[@]libdir[@],/opt/ovis/lib,g' -e 's,[@]psdir[@],/opt/ovis/share/doc/ovis-ldms,g' -e 's,[@]pdfdir[@],/opt/ovis/share/doc/ovis-ldms,g' -e 's,[@]dvidir[@],/opt/ovis/share/doc/ovis-ldms,g' -e 's,[@]htmldir[@],/opt/ovis/share/doc/ovis-ldms,g' -e 's,[@]infodir[@],/opt/ovis/share/info,g' -e 's,[@]docdir[@],/opt/ovis/share/doc/ovis-ldms,g' -e 's,[@]includedir[@],/opt/ovis/include,g' -e 's,[@]localstatedir[@],/opt/ovis/var,g' -e 's,[@]sharedstatedir[@],/opt/ovis/var/lib,g' -e 's,[@]sysconfdir[@],/opt/ovis/etc,g' -e 's,[@]datadir[@],/opt/ovis/share,g' -e 's,[@]datarootdir[@],/opt/ovis/share,g' -e 's,[@]libexecdir[@],/opt/ovis/libexec,g' -e 's,[@]sbindir[@],/opt/ovis/sbin,g' -e 's,[@]bindir[@],/opt/ovis/bin,g' -e 's,[@]prefix[@],/opt/ovis,g' -e 's,[@]exec_prefix[@],/opt/ovis,g' -e 's,[@]LDMSD_PLUGIN_LIBPATH[@],/opt/ovis/lib/ovis-ldms,g' -e 's,[@]ZAP_LIBPATH[@],/opt/ovis/lib/ovis-lib:/opt/ovis/lib/ovis-ldms,g' -e 's,[@]pkglibdir[@],/opt/ovis/lib/ovis-ldms,g' -e 's,[@]plugins_rpath[@],:/opt/ovis/lib,g' -e 's,[@]pythondir[@],/opt/ovis/lib/python3.6/site-packages,g' -e 's,[@]SOS_LIB64DIR[@],,g' -e 's,[@]SOS_LIBDIR[@],/opt/ovis/lib,g'  < ../../../../lib/etc/ovis/set-ovis-variables.sh.in > set-ovis-variables.sh
-make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/etc/ovis'
+make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/etc/ovis'
 Making all in ld.so.conf.d
-make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/etc/ld.so.conf.d'
+make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/etc/ld.so.conf.d'
 sed -e 's,[@]VERSION[@],4.3.7.187-99b4,g' -e 's,[@]mandir[@],/opt/ovis/share/man,g' -e 's,[@]localedir[@],/opt/ovis/share/locale,g' -e 's,[@]libdir[@],/opt/ovis/lib,g' -e 's,[@]psdir[@],/opt/ovis/share/doc/ovis-ldms,g' -e 's,[@]pdfdir[@],/opt/ovis/share/doc/ovis-ldms,g' -e 's,[@]dvidir[@],/opt/ovis/share/doc/ovis-ldms,g' -e 's,[@]htmldir[@],/opt/ovis/share/doc/ovis-ldms,g' -e 's,[@]infodir[@],/opt/ovis/share/info,g' -e 's,[@]docdir[@],/opt/ovis/share/doc/ovis-ldms,g' -e 's,[@]includedir[@],/opt/ovis/include,g' -e 's,[@]localstatedir[@],/opt/ovis/var,g' -e 's,[@]sharedstatedir[@],/opt/ovis/var/lib,g' -e 's,[@]sysconfdir[@],/opt/ovis/etc,g' -e 's,[@]datadir[@],/opt/ovis/share,g' -e 's,[@]datarootdir[@],/opt/ovis/share,g' -e 's,[@]libexecdir[@],/opt/ovis/libexec,g' -e 's,[@]sbindir[@],/opt/ovis/sbin,g' -e 's,[@]bindir[@],/opt/ovis/bin,g' -e 's,[@]prefix[@],/opt/ovis,g' -e 's,[@]exec_prefix[@],/opt/ovis,g' -e 's,[@]LDMSD_PLUGIN_LIBPATH[@],/opt/ovis/lib/ovis-ldms,g' -e 's,[@]ZAP_LIBPATH[@],/opt/ovis/lib/ovis-lib:/opt/ovis/lib/ovis-ldms,g' -e 's,[@]pkglibdir[@],/opt/ovis/lib/ovis-ldms,g' -e 's,[@]plugins_rpath[@],:/opt/ovis/lib,g' -e 's,[@]pythondir[@],/opt/ovis/lib/python3.6/site-packages,g' -e 's,[@]SOS_LIB64DIR[@],,g' -e 's,[@]SOS_LIBDIR[@],/opt/ovis/lib,g'  < ../../../../lib/etc/ld.so.conf.d/ovis-ld-so.conf.in > ovis-ld-so.conf
-make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/etc/ld.so.conf.d'
-make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/etc'
+make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/etc/ld.so.conf.d'
+make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/etc'
 make[4]: Nothing to be done for `all-am'.
-make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/etc'
-make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib/etc'
-make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib'
+make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/etc'
+make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib/etc'
+make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib'
 make[3]: Nothing to be done for `all-am'.
-make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib'
-make[2]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/lib'
+make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib'
+make[2]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/lib'
 Making all in ldms
-make[2]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms'
+make[2]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms'
 Making all in src
-make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src'
+make[3]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src'
 Making all in third-plugins
-make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src/third-plugins'
+make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src/third-plugins'
 make[4]: Nothing to be done for `all'.
-make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src/third-plugins'
+make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src/third-plugins'
 Making all in core
-make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src/core'
+make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src/core'
   CC       ldms.lo
   CC       ldms_xprt.lo
   CC       ldms_auth.lo
@@ -1666,11 +1691,11 @@ make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/
   CC       rrbt.lo
   CC       ldms_heap.lo
   CCLD     libldms.la
-make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src/core'
+make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src/core'
 Making all in ldmsd
-make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src/ldmsd'
+make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src/ldmsd'
 Making all in .
-make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src/ldmsd'
+make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src/ldmsd'
   CC       ldmsd_stream.lo
   CC       ldmsd_request_util.lo
   CCLD     libldmsd_stream.la
@@ -1695,17 +1720,17 @@ make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/
   CCLD     ldmsctl
   CC       ldmsd_sos_init-ldmsd_sos_init.o
   CCLD     ldmsd_sos_init
-make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src/ldmsd'
+make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src/ldmsd'
 Making all in test
-make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src/ldmsd/test'
+make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src/ldmsd/test'
   CC       ldmsd_stream_publish.o
   CCLD     ldmsd_stream_publish
   CC       ldmsd_stream_subscribe.o
   CCLD     ldmsd_stream_subscribe
-make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src/ldmsd/test'
-make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src/ldmsd'
+make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src/ldmsd/test'
+make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src/ldmsd'
 Making all in auth
-make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src/auth'
+make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src/auth'
   CC       ldms_auth_none.lo
   CCLD     libldms_auth_none.la
   CC       ldms_auth_naive.lo
@@ -1714,46 +1739,60 @@ make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/
   CCLD     libldms_auth_ovis.la
   CC       libldms_auth_munge_la-ldms_auth_munge.lo
   CCLD     libldms_auth_munge.la
-make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src/auth'
+make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src/auth'
 Making all in store
-make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src/store'
+make[4]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src/store'
 Making all in slurm
-make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src/store/slurm'
+make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src/store/slurm'
   CC       libstore_slurm_la-store_slurm.lo
   CCLD     libstore_slurm.la
-make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src/store/slurm'
+make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src/store/slurm'
 Making all in papi
-make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src/store/papi'
+make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src/store/papi'
   CC       libstore_papi_la-store_papi.lo
   CCLD     libstore_papi.la
-make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src/store/papi'
+make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src/store/papi'
 Making all in store_flatfile
-make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src/store/store_flatfile'
-make[6]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src/store/store_flatfile'
+make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src/store/store_flatfile'
+make[6]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src/store/store_flatfile'
   CC       store_flatfile.lo
   CCLD     libstore_flatfile.la
-make[6]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src/store/store_flatfile'
-make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src/store/store_flatfile'
+make[6]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src/store/store_flatfile'
+make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src/store/store_flatfile'
 Making all in store_app
-make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src/store/store_app'
+make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src/store/store_app'
   CC       libstore_app_la-store_app.lo
   CCLD     libstore_app.la
-make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src/store/store_app'
+make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src/store/store_app'
 Making all in stream
-make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src/store/stream'
-make[6]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src/store/stream'
+make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src/store/stream'
+make[6]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src/store/stream'
   CC       stream_csv_store.lo
   CCLD     libstream_csv_store.la
-make[6]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src/store/stream'
-make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src/store/stream'
-make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src/store'
+make[6]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src/store/stream'
+make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src/store/stream'
+make[5]: Entering directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src/store'
   CC       store_csv_common.lo
   CCLD     libldms_store_csv_common.la
   CC       store_none.lo
   CCLD     libstore_none.la
   CC       libstore_sos_la-store_sos.lo
-make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src/store'
-make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src/store'
-make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms/src'
-make[2]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build/ldms'
-make[1]: Leaving directory `/mnt/cygnus/data/2022-01-04-094240/ovis/build'
+../../../../ldms/src/store/store_sos.c: In function ‘store’:
+../../../../ldms/src/store/store_sos.c:672:2: error: implicit declaration of function ‘sos_begin_x’ [-Werror=implicit-function-declaration]
+  sos_begin_x(si->sos_handle->sos);
+  ^
+../../../../ldms/src/store/store_sos.c:757:2: error: implicit declaration of function ‘sos_end_x’ [-Werror=implicit-function-declaration]
+  sos_end_x(si->sos_handle->sos);
+  ^
+cc1: all warnings being treated as errors
+make[5]: *** [libstore_sos_la-store_sos.lo] Error 1
+make[5]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src/store'
+make[4]: *** [all-recursive] Error 1
+make[4]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src/store'
+make[3]: *** [all-recursive] Error 1
+make[3]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms/src'
+make[2]: *** [all-recursive] Error 1
+make[2]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build/ldms'
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory `/mnt/cygnus/data/2022-01-04-095028/ovis/build'
+make: *** [all] Error 2
