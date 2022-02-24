@@ -4933,3 +4933,118 @@ make[1]: Leaving directory `/mnt/cygnus/data/2022-02-24-123439/ovis/build'
 /mnt/cygnus/narate/ldms-test /mnt/cygnus/data/2022-02-24-123439
 /mnt/cygnus/narate/ldms-test/weekly-report /mnt/cygnus/narate/ldms-test /mnt/cygnus/data/2022-02-24-123439
 HEAD is now at 3282df0 2022-02-23-230001
+[master 50613a7] 2022-02-24-123439
+ 2 files changed, 3262 insertions(+), 279 deletions(-)
+To git@github.com:ldms-test/weekly-report
+   3282df0..50613a7  master -> master
+/mnt/cygnus/narate/ldms-test /mnt/cygnus/data/2022-02-24-123439
+2022-02-24 12:43:17 INFO: ==== OVIS+SOS Installation Completed ====
+2022-02-24 12:43:17 INFO: ==== Start batch testing ====
+/mnt/cygnus/narate/ldms-test /mnt/cygnus/data/2022-02-24-123439 /mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
+2022-02-24 12:43:17 INFO: ======== direct_ldms_ls_conn_test ========
+2022-02-24 12:43:17 INFO: CMD: python3 direct_ldms_ls_conn_test --prefix /opt/ovis --src /mnt/cygnus/data/2022-02-24-123439 --data_root /mnt/cygnus/data/2022-02-24-123439/data/direct_ldms_ls_conn_test
+2022-02-24 12:43:17,583 TADA INFO starting test `direct_ldms_ls_conn_test`
+2022-02-24 12:43:17,583 TADA INFO   test-id: 3d6bbc57931a674c013e7e20756281e61c9ef41cafa16398fcb6f1accf7934d4
+2022-02-24 12:43:17,583 TADA INFO   test-suite: LDMSD
+2022-02-24 12:43:17,583 TADA INFO   test-name: direct_ldms_ls_conn_test
+2022-02-24 12:43:17,583 TADA INFO   test-user: narate
+2022-02-24 12:43:17,583 TADA INFO   commit-id: 56c1c8650b142c00d11a02af3088bbbc071dbac6
+2022-02-24 12:43:18,008 __main__ INFO starting munged on cygnus-01-iw
+2022-02-24 12:43:18,495 __main__ INFO starting munged on localhost
+2022-02-24 12:43:18,814 __main__ INFO starting ldmsd on cygnus-01-iw
+2022-02-24 12:43:19,767 TADA INFO assertion 0, Start ldmsd sampler and munged: Failed to start some daemon(s):
+  samp pid: None  samp munged pid: 32161  local munged pid: 24643, failed
+Traceback (most recent call last):
+  File "direct_ldms_ls_conn_test", line 257, in <module>
+    start_all()
+  File "direct_ldms_ls_conn_test", line 173, in start_all
+    n.ldmsd.start()
+  File "/mnt/cygnus/narate/ldms-test/LDMS_Test.py", line 2349, in start
+    return self._remote_start()
+  File "/mnt/cygnus/narate/ldms-test/LDMS_Test.py", line 2344, in _remote_start
+    raise RuntimeError("remote start error {}, msg: {}".format(rc, out))
+RuntimeError: remote start error 127, msg: -bash: line 29: ldmsd: command not found
+
+2022-02-24 12:43:19,783 TADA INFO assertion 1, ldms_ls to the sampler: skipped
+2022-02-24 12:43:19,784 TADA INFO assertion 2, Kill the sampler: skipped
+2022-02-24 12:43:19,784 TADA INFO assertion 3, ldms_ls to the dead sampler: skipped
+2022-02-24 12:43:19,785 TADA INFO assertion 4, ldms_ls to a dead host: skipped
+2022-02-24 12:43:19,785 TADA INFO test direct_ldms_ls_conn_test ended
+2022-02-24 12:43:20,065 __main__ INFO stopping munged on cygnus-01-iw
+2022-02-24 12:43:20,628 __main__ INFO stopping munged on localhost
+2022-02-24 12:43:20 INFO: ----------------------------------------------
+2022-02-24 12:43:20 INFO: ======== direct_prdcr_subscribe_test ========
+2022-02-24 12:43:20 INFO: CMD: python3 direct_prdcr_subscribe_test --prefix /opt/ovis --src /mnt/cygnus/data/2022-02-24-123439 --data_root /mnt/cygnus/data/2022-02-24-123439/data/direct_prdcr_subscribe_test
+2022-02-24 12:43:20,967 TADA INFO starting test `direct_prdcr_subscribe_test`
+2022-02-24 12:43:20,967 TADA INFO   test-id: 01db83becdba2fd9db539dfe1743421d2d6a70396093e786dbd85c6192ea6581
+2022-02-24 12:43:20,968 TADA INFO   test-suite: LDMSD
+2022-02-24 12:43:20,968 TADA INFO   test-name: direct_prdcr_subscribe_test
+2022-02-24 12:43:20,968 TADA INFO   test-user: narate
+2022-02-24 12:43:20,968 TADA INFO   commit-id: 56c1c8650b142c00d11a02af3088bbbc071dbac6
+2022-02-24 12:43:23,269 __main__ INFO starting munged on cygnus-01-iw
+2022-02-24 12:43:24,470 __main__ INFO starting munged on cygnus-02-iw
+2022-02-24 12:43:25,618 __main__ INFO starting munged on cygnus-03-iw
+2022-02-24 12:43:26,787 __main__ INFO starting munged on cygnus-04-iw
+2022-02-24 12:43:27,229 __main__ INFO starting munged on localhost
+2022-02-24 12:43:27,545 __main__ INFO starting ldmsd on cygnus-01-iw
+Traceback (most recent call last):
+  File "direct_prdcr_subscribe_test", line 482, in <module>
+    start_all()
+  File "direct_prdcr_subscribe_test", line 480, in start_all
+    n.ldmsd.start()
+  File "/mnt/cygnus/narate/ldms-test/LDMS_Test.py", line 2349, in start
+    return self._remote_start()
+  File "/mnt/cygnus/narate/ldms-test/LDMS_Test.py", line 2344, in _remote_start
+    raise RuntimeError("remote start error {}, msg: {}".format(rc, out))
+RuntimeError: remote start error 127, msg: -bash: line 27: ldmsd: command not found
+
+2022-02-24 12:43:27,912 TADA INFO assertion 0, ldmsd_stream_publish of JSON data to stream-sampler-1 succeeds: skipped
+2022-02-24 12:43:27,913 TADA INFO assertion 1, ldmsd_stream_publish of STRING data to stream-sampler-1 succeeds: skipped
+2022-02-24 12:43:27,913 TADA INFO assertion 2, ldmsd_stream_publish to JSON data to stream-sampler-2 succeeds: skipped
+2022-02-24 12:43:27,914 TADA INFO assertion 3, ldmsd_stream_publish of STRING data to stream-sampler-2 succeeds: skipped
+2022-02-24 12:43:27,914 TADA INFO assertion 4, ldmsd_stream data check on agg-2: skipped
+2022-02-24 12:43:27,915 TADA INFO assertion 5, Stopping the producers succeeds: skipped
+2022-02-24 12:43:27,915 TADA INFO assertion 6, Restarting the producers succeeds: skipped
+2022-02-24 12:43:27,915 TADA INFO assertion 7, JSON stream data resumes after producer restart on stream-sampler-1: skipped
+2022-02-24 12:43:27,916 TADA INFO assertion 8, STRING stream data resumes after producer rerestart on stream-sampler-1: skipped
+2022-02-24 12:43:27,916 TADA INFO assertion 9, JSON stream data resumes after producer restart on stream-sampler-2: skipped
+2022-02-24 12:43:27,917 TADA INFO assertion 10, STRING stream data resumes after producer rerestart on stream-sampler-2: skipped
+2022-02-24 12:43:27,917 TADA INFO assertion 11, ldmsd_stream data resume check on agg-2: skipped
+2022-02-24 12:43:27,918 TADA INFO assertion 12, stream-sampler-1 is not running: skipped
+2022-02-24 12:43:27,918 TADA INFO assertion 13, stream-sampler-1 has restarted: skipped
+2022-02-24 12:43:27,919 TADA INFO assertion 14, JSON stream data resumes after stream-sampler-1 restart: skipped
+2022-02-24 12:43:27,919 TADA INFO assertion 15, STRING stream data resumes after stream-sampler-1 restart: skipped
+2022-02-24 12:43:27,920 TADA INFO assertion 16, ldmsd_stream data check on agg-2 after stream-sampler-1 restart: skipped
+2022-02-24 12:43:27,920 TADA INFO assertion 17, agg-1 unsubscribes stream-sampler-1: skipped
+2022-02-24 12:43:27,921 TADA INFO assertion 18, agg-1 receives data only from stream-sampler-2: skipped
+2022-02-24 12:43:27,921 TADA INFO assertion 19, stream-sampler-2 removes agg-1 stream client after disconnected: skipped
+2022-02-24 12:43:27,922 TADA INFO test direct_prdcr_subscribe_test ended
+2022-02-24 12:43:28,195 __main__ INFO stopping munged on cygnus-01-iw
+2022-02-24 12:43:28,997 __main__ INFO stopping munged on cygnus-02-iw
+2022-02-24 12:43:29,769 __main__ INFO stopping munged on cygnus-03-iw
+2022-02-24 12:43:30,485 __main__ INFO stopping munged on cygnus-04-iw
+2022-02-24 12:43:30,960 __main__ INFO stopping munged on localhost
+2022-02-24 12:43:31 INFO: ----------------------------------------------
+2022-02-24 12:43:31 INFO: ======== agg_slurm_test ========
+2022-02-24 12:43:31 INFO: CMD: python3 agg_slurm_test --prefix /opt/ovis --src /mnt/cygnus/data/2022-02-24-123439 --data_root /mnt/cygnus/data/2022-02-24-123439/data/agg_slurm_test
+2022-02-24 12:43:31,400 TADA INFO starting test `agg_slurm_test`
+2022-02-24 12:43:31,400 TADA INFO   test-id: fec82ee20b46162126c2168472e6d1dbaa49046210cc73e93132620645d1dd12
+2022-02-24 12:43:31,400 TADA INFO   test-suite: LDMSD
+2022-02-24 12:43:31,400 TADA INFO   test-name: agg_slurm_test
+2022-02-24 12:43:31,400 TADA INFO   test-user: narate
+2022-02-24 12:43:31,400 TADA INFO   commit-id: 56c1c8650b142c00d11a02af3088bbbc071dbac6
+2022-02-24 12:43:31,401 __main__ INFO -- Get or create the cluster --
+2022-02-24 12:43:43,916 __main__ INFO -- Preparing syspapi JSON file --
+2022-02-24 12:43:43,921 __main__ INFO -- Preparing jobpapi JSON file --
+2022-02-24 12:43:43,926 __main__ INFO -- Preparing job script & programs --
+2022-02-24 12:43:46,059 __main__ INFO -- Start daemons --
+2022-02-24 12:43:48,749 __main__ INFO ... wait a bit to make sure ldmsd's are up
+2022-02-24 12:43:53,755 __main__ INFO -- ldms_ls to agg-2 --
+2022-02-24 12:43:53,836 TADA INFO assertion 1, ldms_ls agg-2: dir result verified, passed
+2022-02-24 12:43:53,862 __main__ INFO -- Give syspapi some time to work before submitting job --
+2022-02-24 12:43:58,867 __main__ INFO -- Submitting jobs --
+2022-02-24 12:43:58,936 __main__ INFO job_one: 2
+2022-02-24 12:43:58,963 __main__ INFO job_two: 3
+2022-02-24 12:44:08,974 __main__ INFO -- Cancelling jobs --
+2022-02-24 12:44:08,974 __main__ INFO job_one: 2
+2022-02-24 12:44:09,000 __main__ INFO job_two: 3
