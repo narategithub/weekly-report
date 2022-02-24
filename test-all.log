@@ -1,10 +1,11 @@
-2022-02-24 12:46:22 INFO: WORK_DIR: /mnt/cygnus/data/2022-02-24-124621
-2022-02-24 12:46:22 INFO: LOG: /mnt/cygnus/data/2022-02-24-124621/cygnus-weekly.log
+2022-02-24 12:53:20 INFO: WORK_DIR: /mnt/cygnus/data/2022-02-24-125319
+2022-02-24 12:53:20 INFO: LOG: /mnt/cygnus/data/2022-02-24-125319/cygnus-weekly.log
 /mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
-/mnt/cygnus/data/2022-02-24-124621 /mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
-2022-02-24 12:46:22 INFO: skip building because GIT SHA has not changed: 56c1c8650b142c00d11a02af3088bbbc071dbac6
-2022-02-24 12:46:22 INFO: -- Installation process succeeded --
-2022-02-24 12:46:22 INFO: ---------------------------------------------------------------
-/mnt/cygnus/narate/ldms-test /mnt/cygnus/data/2022-02-24-124621
-/mnt/cygnus/narate/ldms-test/weekly-report /mnt/cygnus/narate/ldms-test /mnt/cygnus/data/2022-02-24-124621
-HEAD is now at 1c2eadc 2022-02-24-123439
+Removing narate-agg_slurm_test-56c1c86 ... done
+/mnt/cygnus/data/2022-02-24-125319 /mnt/cygnus/narate/ldms-test /mnt/cygnus/narate/ldms-test
+2022-02-24 12:53:26 INFO: skip building because GIT SHA has not changed: 56c1c8650b142c00d11a02af3088bbbc071dbac6
+2022-02-24 12:53:26 INFO: -- Installation process succeeded --
+2022-02-24 12:53:26 INFO: ---------------------------------------------------------------
+/mnt/cygnus/narate/ldms-test /mnt/cygnus/data/2022-02-24-125319
+/mnt/cygnus/narate/ldms-test/weekly-report /mnt/cygnus/narate/ldms-test /mnt/cygnus/data/2022-02-24-125319
+HEAD is now at 762f1c0 2022-02-24-124621
