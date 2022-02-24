@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "label": "weekly test on 6585474",
-  "message": "24/25 tests pased",
+  "label": "weekly test on dc3603b",
+  "message": "build/install failed",
   "color": "red"
 }
