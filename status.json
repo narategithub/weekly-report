@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
   "label": "weekly test on 6ba20dd",
-  "message": "in progress",
-  "color": "blue"
+  "message": "22/25 tests pased",
+  "color": "red"
 }
