@@ -4941,3 +4941,1262 @@ make[1]: Leaving directory `/mnt/cygnus/data/2022-03-24-230001/ovis/build'
 /mnt/cygnus/narate/ldms-test /mnt/cygnus/data/2022-03-24-230001
 /mnt/cygnus/narate/ldms-test/weekly-report /mnt/cygnus/narate/ldms-test /mnt/cygnus/data/2022-03-24-230001
 HEAD is now at 5406b5e 2022-03-10-230001
+[master 9fbfed6] 2022-03-24-230001
+ 2 files changed, 876 insertions(+), 2151 deletions(-)
+To git@github.com:ldms-test/weekly-report
+   5406b5e..9fbfed6  master -> master
+/mnt/cygnus/narate/ldms-test /mnt/cygnus/data/2022-03-24-230001
+2022-03-24 23:08:36 INFO: ==== OVIS+SOS Installation Completed ====
+2022-03-24 23:08:36 INFO: ==== Start batch testing ====
+/mnt/cygnus/narate/ldms-test /mnt/cygnus/data/2022-03-24-230001 /mnt/cygnus/narate/ldms-test ~
+2022-03-24 23:08:36 INFO: ======== direct_ldms_ls_conn_test ========
+2022-03-24 23:08:36 INFO: CMD: python3 direct_ldms_ls_conn_test --prefix /opt/ovis --src /mnt/cygnus/data/2022-03-24-230001 --data_root /mnt/cygnus/data/2022-03-24-230001/data/direct_ldms_ls_conn_test
+2022-03-24 23:08:36,440 TADA INFO starting test `direct_ldms_ls_conn_test`
+2022-03-24 23:08:36,441 TADA INFO   test-id: 404d9ad2f9e1c521cecfb55ec188d8d56ad6f8017d999f1504d1150aa5c3a012
+2022-03-24 23:08:36,441 TADA INFO   test-suite: LDMSD
+2022-03-24 23:08:36,441 TADA INFO   test-name: direct_ldms_ls_conn_test
+2022-03-24 23:08:36,441 TADA INFO   test-user: narate
+2022-03-24 23:08:36,441 TADA INFO   commit-id: 0b2be93cb87c38b2901fa2e6f0e7ac9ed63a2e08
+2022-03-24 23:08:37,275 __main__ INFO starting munged on cygnus-01-iw
+2022-03-24 23:08:37,776 __main__ INFO starting munged on localhost
+2022-03-24 23:08:38,088 __main__ INFO starting ldmsd on cygnus-01-iw
+2022-03-24 23:08:39,045 TADA INFO assertion 0, Start ldmsd sampler and munged: Failed to start some daemon(s):
+  samp pid: None  samp munged pid: 5679  local munged pid: 17163, failed
+Traceback (most recent call last):
+  File "direct_ldms_ls_conn_test", line 257, in <module>
+    start_all()
+  File "direct_ldms_ls_conn_test", line 173, in start_all
+    n.ldmsd.start()
+  File "/mnt/cygnus/narate/ldms-test/LDMS_Test.py", line 2349, in start
+    return self._remote_start()
+  File "/mnt/cygnus/narate/ldms-test/LDMS_Test.py", line 2344, in _remote_start
+    raise RuntimeError("remote start error {}, msg: {}".format(rc, out))
+RuntimeError: remote start error 127, msg: -bash: line 29: ldmsd: command not found
+
+2022-03-24 23:08:39,060 TADA INFO assertion 1, ldms_ls to the sampler: skipped
+2022-03-24 23:08:39,060 TADA INFO assertion 2, Kill the sampler: skipped
+2022-03-24 23:08:39,061 TADA INFO assertion 3, ldms_ls to the dead sampler: skipped
+2022-03-24 23:08:39,061 TADA INFO assertion 4, ldms_ls to a dead host: skipped
+2022-03-24 23:08:39,062 TADA INFO test direct_ldms_ls_conn_test ended
+2022-03-24 23:08:39,347 __main__ INFO stopping munged on cygnus-01-iw
+2022-03-24 23:08:39,904 __main__ INFO stopping munged on localhost
+2022-03-24 23:08:39 INFO: ----------------------------------------------
+2022-03-24 23:08:39 INFO: ======== direct_prdcr_subscribe_test ========
+2022-03-24 23:08:39 INFO: CMD: python3 direct_prdcr_subscribe_test --prefix /opt/ovis --src /mnt/cygnus/data/2022-03-24-230001 --data_root /mnt/cygnus/data/2022-03-24-230001/data/direct_prdcr_subscribe_test
+2022-03-24 23:08:40,240 TADA INFO starting test `direct_prdcr_subscribe_test`
+2022-03-24 23:08:40,240 TADA INFO   test-id: 47d9b3cd7993f21dcc4bd2b6d29274190d376dacc6926af340c0b58219c928e9
+2022-03-24 23:08:40,240 TADA INFO   test-suite: LDMSD
+2022-03-24 23:08:40,240 TADA INFO   test-name: direct_prdcr_subscribe_test
+2022-03-24 23:08:40,241 TADA INFO   test-user: narate
+2022-03-24 23:08:40,241 TADA INFO   commit-id: 0b2be93cb87c38b2901fa2e6f0e7ac9ed63a2e08
+2022-03-24 23:08:42,337 __main__ INFO starting munged on cygnus-01-iw
+2022-03-24 23:08:45,456 __main__ INFO starting munged on cygnus-02-iw
+2022-03-24 23:08:46,637 __main__ INFO starting munged on cygnus-03-iw
+2022-03-24 23:08:47,643 __main__ INFO starting munged on cygnus-04-iw
+2022-03-24 23:08:48,311 __main__ INFO starting munged on localhost
+2022-03-24 23:08:48,622 __main__ INFO starting ldmsd on cygnus-01-iw
+Traceback (most recent call last):
+  File "direct_prdcr_subscribe_test", line 482, in <module>
+    start_all()
+  File "direct_prdcr_subscribe_test", line 480, in start_all
+    n.ldmsd.start()
+  File "/mnt/cygnus/narate/ldms-test/LDMS_Test.py", line 2349, in start
+    return self._remote_start()
+  File "/mnt/cygnus/narate/ldms-test/LDMS_Test.py", line 2344, in _remote_start
+    raise RuntimeError("remote start error {}, msg: {}".format(rc, out))
+RuntimeError: remote start error 127, msg: -bash: line 27: ldmsd: command not found
+
+2022-03-24 23:08:48,994 TADA INFO assertion 0, ldmsd_stream_publish of JSON data to stream-sampler-1 succeeds: skipped
+2022-03-24 23:08:48,995 TADA INFO assertion 1, ldmsd_stream_publish of STRING data to stream-sampler-1 succeeds: skipped
+2022-03-24 23:08:48,995 TADA INFO assertion 2, ldmsd_stream_publish to JSON data to stream-sampler-2 succeeds: skipped
+2022-03-24 23:08:48,996 TADA INFO assertion 3, ldmsd_stream_publish of STRING data to stream-sampler-2 succeeds: skipped
+2022-03-24 23:08:48,996 TADA INFO assertion 4, ldmsd_stream data check on agg-2: skipped
+2022-03-24 23:08:48,997 TADA INFO assertion 5, Stopping the producers succeeds: skipped
+2022-03-24 23:08:48,997 TADA INFO assertion 6, Restarting the producers succeeds: skipped
+2022-03-24 23:08:48,998 TADA INFO assertion 7, JSON stream data resumes after producer restart on stream-sampler-1: skipped
+2022-03-24 23:08:48,998 TADA INFO assertion 8, STRING stream data resumes after producer rerestart on stream-sampler-1: skipped
+2022-03-24 23:08:48,999 TADA INFO assertion 9, JSON stream data resumes after producer restart on stream-sampler-2: skipped
+2022-03-24 23:08:48,999 TADA INFO assertion 10, STRING stream data resumes after producer rerestart on stream-sampler-2: skipped
+2022-03-24 23:08:49,000 TADA INFO assertion 11, ldmsd_stream data resume check on agg-2: skipped
+2022-03-24 23:08:49,000 TADA INFO assertion 12, stream-sampler-1 is not running: skipped
+2022-03-24 23:08:49,001 TADA INFO assertion 13, stream-sampler-1 has restarted: skipped
+2022-03-24 23:08:49,002 TADA INFO assertion 14, JSON stream data resumes after stream-sampler-1 restart: skipped
+2022-03-24 23:08:49,002 TADA INFO assertion 15, STRING stream data resumes after stream-sampler-1 restart: skipped
+2022-03-24 23:08:49,003 TADA INFO assertion 16, ldmsd_stream data check on agg-2 after stream-sampler-1 restart: skipped
+2022-03-24 23:08:49,003 TADA INFO assertion 17, agg-1 unsubscribes stream-sampler-1: skipped
+2022-03-24 23:08:49,004 TADA INFO assertion 18, agg-1 receives data only from stream-sampler-2: skipped
+2022-03-24 23:08:49,004 TADA INFO assertion 19, stream-sampler-2 removes agg-1 stream client after disconnected: skipped
+2022-03-24 23:08:49,005 TADA INFO test direct_prdcr_subscribe_test ended
+2022-03-24 23:08:49,290 __main__ INFO stopping munged on cygnus-01-iw
+2022-03-24 23:08:50,121 __main__ INFO stopping munged on cygnus-02-iw
+2022-03-24 23:08:50,893 __main__ INFO stopping munged on cygnus-03-iw
+2022-03-24 23:08:51,593 __main__ INFO stopping munged on cygnus-04-iw
+2022-03-24 23:08:52,069 __main__ INFO stopping munged on localhost
+2022-03-24 23:08:52 INFO: ----------------------------------------------
+2022-03-24 23:08:52 INFO: ======== agg_slurm_test ========
+2022-03-24 23:08:52 INFO: CMD: python3 agg_slurm_test --prefix /opt/ovis --src /mnt/cygnus/data/2022-03-24-230001 --data_root /mnt/cygnus/data/2022-03-24-230001/data/agg_slurm_test
+2022-03-24 23:08:52,450 TADA INFO starting test `agg_slurm_test`
+2022-03-24 23:08:52,450 TADA INFO   test-id: 5f278c04c1554f774008231f782f40107e7dc3a0345d5ec1a25a32937a21e031
+2022-03-24 23:08:52,450 TADA INFO   test-suite: LDMSD
+2022-03-24 23:08:52,450 TADA INFO   test-name: agg_slurm_test
+2022-03-24 23:08:52,450 TADA INFO   test-user: narate
+2022-03-24 23:08:52,451 TADA INFO   commit-id: 0b2be93cb87c38b2901fa2e6f0e7ac9ed63a2e08
+2022-03-24 23:08:52,451 __main__ INFO -- Get or create the cluster --
+2022-03-24 23:09:04,251 __main__ INFO -- Preparing syspapi JSON file --
+2022-03-24 23:09:04,258 __main__ INFO -- Preparing jobpapi JSON file --
+2022-03-24 23:09:04,264 __main__ INFO -- Preparing job script & programs --
+2022-03-24 23:09:06,059 __main__ INFO -- Start daemons --
+2022-03-24 23:09:08,734 __main__ INFO ... wait a bit to make sure ldmsd's are up
+2022-03-24 23:09:13,735 __main__ INFO -- ldms_ls to agg-2 --
+2022-03-24 23:09:13,812 TADA INFO assertion 1, ldms_ls agg-2: dir result verified, passed
+2022-03-24 23:09:13,837 __main__ INFO -- Give syspapi some time to work before submitting job --
+2022-03-24 23:09:18,843 __main__ INFO -- Submitting jobs --
+2022-03-24 23:09:18,896 __main__ INFO job_one: 2
+2022-03-24 23:09:18,920 __main__ INFO job_two: 3
+2022-03-24 23:09:28,930 __main__ INFO -- Cancelling jobs --
+2022-03-24 23:09:28,930 __main__ INFO job_one: 2
+2022-03-24 23:09:28,966 __main__ INFO job_two: 3
+2022-03-24 23:10:34,195 TADA INFO assertion 2, slurm data verification: get expected data from store, passed
+2022-03-24 23:10:34,196 TADA INFO assertion 3, meminfo data verification: No data missing, passed
+2022-03-24 23:10:34,197 TADA INFO assertion 4, (SYS/JOB) PAPI data verification: No data missing, passed
+2022-03-24 23:10:34,197 TADA INFO test agg_slurm_test ended
+2022-03-24 23:10:45 INFO: ----------------------------------------------
+2022-03-24 23:10:45 INFO: ======== papi_sampler_test ========
+2022-03-24 23:10:45 INFO: CMD: python3 papi_sampler_test --prefix /opt/ovis --src /mnt/cygnus/data/2022-03-24-230001 --data_root /mnt/cygnus/data/2022-03-24-230001/data/papi_sampler_test
+2022-03-24 23:10:45,960 TADA INFO starting test `papi_sampler_test`
+2022-03-24 23:10:45,960 TADA INFO   test-id: f3f5582e6a85946eba86566043300934c62ca4cbef285ba0c6b0edd83c34fd4b
+2022-03-24 23:10:45,960 TADA INFO   test-suite: LDMSD
+2022-03-24 23:10:45,960 TADA INFO   test-name: papi_sampler_test
+2022-03-24 23:10:45,960 TADA INFO   test-user: narate
+2022-03-24 23:10:45,960 TADA INFO   commit-id: 0b2be93cb87c38b2901fa2e6f0e7ac9ed63a2e08
+2022-03-24 23:10:45,961 __main__ INFO -- Get or create the cluster --
+2022-03-24 23:10:48,423 __main__ INFO -- Start daemons --
+2022-03-24 23:10:53,867 TADA INFO assertion 0, ldmsd has started: verified, passed
+2022-03-24 23:10:53,897 TADA INFO assertion 1.1, Non-papi job is submitted: jobid(2) > 0, passed
+2022-03-24 23:10:58,916 TADA INFO assertion 1.2, Non-papi job is running before ldms_ls: STATE = RUNNING, passed
+2022-03-24 23:10:59,076 TADA INFO assertion 1.3, Non-papi job is running after ldms_ls: STATE = RUNNING, passed
+2022-03-24 23:10:59,076 TADA INFO assertion 1, Non-papi job does not create set: verified, passed
+2022-03-24 23:11:12,618 TADA INFO assertion 2, papi job creates set: PAPI set created, passed
+2022-03-24 23:11:12,619 TADA INFO assertion 2.2, Schema name is set accordingly: schema name == papi0, passed
+2022-03-24 23:11:12,619 TADA INFO assertion 2.1, Events in papi job set created according to config file: {'PAPI_TOT_INS'} == {'PAPI_TOT_INS'}, passed
+2022-03-24 23:11:12,619 TADA INFO assertion 2.3, PAPI set has correct job_id: 3 == 3, passed
+2022-03-24 23:11:12,624 TADA INFO assertion 2.4, PAPI set has correct task_pids: jobid/ranks/pids verified, passed
+2022-03-24 23:11:18,336 TADA INFO assertion 3, papi job creates set: PAPI set created, passed
+2022-03-24 23:11:18,336 TADA INFO assertion 3.2, Schema name is set accordingly: schema name == papi1, passed
+2022-03-24 23:11:18,336 TADA INFO assertion 3.1, Events in papi job set created according to config file: {'PAPI_TOT_INS', 'PAPI_BR_MSP'} == {'PAPI_TOT_INS', 'PAPI_BR_MSP'}, passed
+2022-03-24 23:11:18,337 TADA INFO assertion 3.3, PAPI set has correct job_id: 4 == 4, passed
+2022-03-24 23:11:18,341 TADA INFO assertion 3.4, PAPI set has correct task_pids: jobid/ranks/pids verified, passed
+2022-03-24 23:11:18,342 TADA INFO assertion 4, Multiple, concurrent jobs results in concurrent, multiple sets: LDMS sets ({'node-1/papi1/4.0', 'node-1/meminfo', 'node-1/papi0/3.0'}), passed
+2022-03-24 23:11:30,393 TADA INFO assertion 6, PAPI set persists within `job_expiry` after job exited: verified, passed
+2022-03-24 23:12:10,669 TADA INFO assertion 7, PAPI set is deleted after `2.2 x job_expiry` since job exited: node-1/meminfo deleted, passed
+2022-03-24 23:12:12,706 TADA INFO assertion 8, Missing config file attribute is logged: : papi_sampler[519]: papi_config object must contain either the 'file' or 'config' attribute., passed
+2022-03-24 23:12:17,756 TADA INFO assertion 9, Bad config file is logged: : papi_sampler: configuration file syntax error., passed
+2022-03-24 23:12:22,805 TADA INFO assertion 10, Unsupported events are logged: : papi_sampler: PAPI error 'Event does not exist' translating event code 'FOO', passed
+2022-03-24 23:12:22,805 __main__ INFO -- Finishing Test --
+2022-03-24 23:12:22,806 TADA INFO test papi_sampler_test ended
+2022-03-24 23:12:22,806 __main__ INFO -- Cleaning up files --
+2022-03-24 23:12:22,807 __main__ INFO -- Removing the virtual cluster --
+2022-03-24 23:12:33 INFO: ----------------------------------------------
+2022-03-24 23:12:33 INFO: ======== papi_store_test ========
+2022-03-24 23:12:33 INFO: CMD: python3 papi_store_test --prefix /opt/ovis --src /mnt/cygnus/data/2022-03-24-230001 --data_root /mnt/cygnus/data/2022-03-24-230001/data/papi_store_test
+2022-03-24 23:12:34,100 TADA INFO starting test `papi_store_test`
+2022-03-24 23:12:34,101 TADA INFO   test-id: 56481e20eaac14649644921826c8ef4e150cb06cfd423c9beacbe368629f49e1
+2022-03-24 23:12:34,101 TADA INFO   test-suite: LDMSD
+2022-03-24 23:12:34,101 TADA INFO   test-name: papi_store_test
+2022-03-24 23:12:34,101 TADA INFO   test-user: narate
+2022-03-24 23:12:34,101 TADA INFO   commit-id: 0b2be93cb87c38b2901fa2e6f0e7ac9ed63a2e08
+2022-03-24 23:12:34,102 __main__ INFO -- Get or create the cluster --
+2022-03-24 23:12:37,426 __main__ INFO -- Start daemons --
+2022-03-24 23:12:59,848 TADA INFO assertion 1, Every job in the input data is represented in the output: {2, 3, 4, 5} = {2, 3, 4, 5}, passed
+2022-03-24 23:12:59,849 TADA INFO assertion 2, Every event in every job results in a separate row in the output: verified, passed
+2022-03-24 23:12:59,849 TADA INFO assertion 3, The schema name in the output matches the event name: verified, passed
+2022-03-24 23:12:59,849 TADA INFO assertion 4, Each rank in the job results in a row per event in the output: verified, passed
+2022-03-24 23:12:59,850 TADA INFO test papi_store_test ended
+2022-03-24 23:13:10 INFO: ----------------------------------------------
+2022-03-24 23:13:10 INFO: ======== store_app_test ========
+2022-03-24 23:13:10 INFO: CMD: python3 store_app_test --prefix /opt/ovis --src /mnt/cygnus/data/2022-03-24-230001 --data_root /mnt/cygnus/data/2022-03-24-230001/data/store_app_test
+2022-03-24 23:13:11,238 TADA INFO starting test `store_app_test`
+2022-03-24 23:13:11,238 TADA INFO   test-id: e8e2883b7c38a68d7490792e40df3c15844d07868e209498a279b04b6890bd27
+2022-03-24 23:13:11,238 TADA INFO   test-suite: LDMSD
+2022-03-24 23:13:11,239 TADA INFO   test-name: store_app_test
+2022-03-24 23:13:11,239 TADA INFO   test-user: narate
+2022-03-24 23:13:11,239 TADA INFO   commit-id: 0b2be93cb87c38b2901fa2e6f0e7ac9ed63a2e08
+2022-03-24 23:13:11,239 __main__ INFO -- Get or create the cluster --
+2022-03-24 23:13:17,444 __main__ INFO -- Preparing job script & programs --
+2022-03-24 23:13:17,533 __main__ INFO -- Start daemons --
+2022-03-24 23:13:19,302 __main__ INFO ... wait a bit to make sure ldmsd's are up
+2022-03-24 23:13:24,309 __main__ INFO -- Submitting jobs --
+2022-03-24 23:13:24,336 __main__ INFO job_one: 2
+2022-03-24 23:13:29,384 __main__ INFO job_two: 3
+2022-03-24 23:13:37,491 __main__ INFO Verifying data ...
+2022-03-24 23:16:07,403 TADA INFO assertion 1, Verify data: sos data is not empty and sos data < ldms_ls data, passed
+2022-03-24 23:16:07,404 TADA INFO test store_app_test ended
+2022-03-24 23:16:18 INFO: ----------------------------------------------
+2022-03-24 23:16:18 INFO: ======== syspapi_test ========
+2022-03-24 23:16:18 INFO: CMD: python3 syspapi_test --prefix /opt/ovis --src /mnt/cygnus/data/2022-03-24-230001 --data_root /mnt/cygnus/data/2022-03-24-230001/data/syspapi_test
+2022-03-24 23:16:19,176 TADA INFO starting test `syspapi_test`
+2022-03-24 23:16:19,177 TADA INFO   test-id: 07dda96dac7a0440575ac6a434f236f2362f5adf2d5d86ff9e8fa2fb29c1ca75
+2022-03-24 23:16:19,177 TADA INFO   test-suite: LDMSD
+2022-03-24 23:16:19,177 TADA INFO   test-name: syspapi_test
+2022-03-24 23:16:19,177 TADA INFO   test-user: narate
+2022-03-24 23:16:19,177 TADA INFO   commit-id: 0b2be93cb87c38b2901fa2e6f0e7ac9ed63a2e08
+2022-03-24 23:16:19,178 __main__ INFO -- Get or create the cluster --
+2022-03-24 23:16:24,361 __main__ INFO -- Write syspapi JSON config files --
+2022-03-24 23:16:24,361 __main__ INFO    - db/syspapi-1.json
+2022-03-24 23:16:24,361 __main__ INFO    - db/syspapi-bad.json
+2022-03-24 23:16:24,362 __main__ INFO -- Start daemons --
+2022-03-24 23:16:24,590 __main__ INFO ... wait a bit to make sure ldmsd's are up
+2022-03-24 23:16:29,596 __main__ INFO -- Verifying --
+2022-03-24 23:16:29,732 TADA INFO assertion 1, verify set creation by cfg_file: set existed (with correct instance name), passed
+2022-03-24 23:16:29,732 TADA INFO assertion 2, verify schema name by cfg_file: verify schema name, passed
+2022-03-24 23:16:29,736 TADA INFO assertion 3, verify metrics (events) by cfg_file: verify events (metrics), passed
+2022-03-24 23:16:31,872 TADA INFO assertion 4, verify increment counters: verify increment of supported counters, passed
+2022-03-24 23:16:31,876 TADA INFO assertion 5, verify cfg_file syntax error report: verify JSON parse error, passed
+2022-03-24 23:16:31,879 TADA INFO assertion 6, verify cfg_file unsupported events report: verify unsupported event report, passed
+2022-03-24 23:16:32,766 TADA INFO assertion 7, verify cfg_file for many events: each event has either 'sucees' or 'failed' report, passed
+2022-03-24 23:16:32,766 __main__ INFO  events succeeded: 0
+2022-03-24 23:16:32,766 __main__ INFO  events failed: 191
+2022-03-24 23:16:32,766 TADA INFO test syspapi_test ended
+2022-03-24 23:16:43 INFO: ----------------------------------------------
+2022-03-24 23:16:44 INFO: ======== agg_test ========
+2022-03-24 23:16:44 INFO: CMD: python3 agg_test --prefix /opt/ovis --src /mnt/cygnus/data/2022-03-24-230001 --data_root /mnt/cygnus/data/2022-03-24-230001/data/agg_test
+2022-03-24 23:16:44,370 TADA INFO starting test `agg_test`
+2022-03-24 23:16:44,370 TADA INFO   test-id: c869958a9b357e99c63f943a443dae97f333a3b284a50a312603bbbed17a4c87
+2022-03-24 23:16:44,370 TADA INFO   test-suite: LDMSD
+2022-03-24 23:16:44,370 TADA INFO   test-name: agg_test
+2022-03-24 23:16:44,370 TADA INFO   test-user: narate
+2022-03-24 23:16:44,370 TADA INFO   commit-id: 0b2be93cb87c38b2901fa2e6f0e7ac9ed63a2e08
+2022-03-24 23:16:44,371 __main__ INFO -- Get or create the cluster --
+2022-03-24 23:16:53,025 __main__ INFO -- Start daemons --
+2022-03-24 23:16:55,214 __main__ INFO ... wait a bit to make sure ldmsd's are up
+2022-03-24 23:17:00,220 __main__ INFO -- ldms_ls to agg-2 --
+2022-03-24 23:17:00,276 TADA INFO assertion 1, ldms_ls agg-2: dir result verified, passed
+2022-03-24 23:17:00,454 TADA INFO assertion 2, meminfo data verification: data verified, passed
+2022-03-24 23:17:00,454 __main__ INFO -- Terminating ldmsd on node-1 --
+2022-03-24 23:17:02,525 TADA INFO assertion 3, node-1 ldmsd terminated, sets removed from agg-11: list({'node-3/meminfo'}) == expect({'node-3/meminfo'}), passed
+2022-03-24 23:17:02,587 TADA INFO assertion 4, node-1 ldmsd terminated, sets removed from agg-2: list({'node-3/meminfo', 'node-2/meminfo', 'node-4/meminfo'}) == expect({'node-3/meminfo', 'node-2/meminfo', 'node-4/meminfo'}), passed
+2022-03-24 23:17:02,587 __main__ INFO -- Resurrecting ldmsd on node-1 --
+2022-03-24 23:17:07,737 TADA INFO assertion 5, node-1 ldmsd revived, sets added to agg-11: list({'node-3/meminfo', 'node-1/meminfo'}) == expect({'node-3/meminfo', 'node-1/meminfo'}), passed
+2022-03-24 23:17:07,793 TADA INFO assertion 6, node-1 ldmsd revived, sets added to agg-2: list({'node-3/meminfo', 'node-2/meminfo', 'node-1/meminfo', 'node-4/meminfo'}) == expect({'node-3/meminfo', 'node-2/meminfo', 'node-1/meminfo', 'node-4/meminfo'}), passed
+2022-03-24 23:17:07,793 __main__ INFO -- Terminating ldmsd on agg-11 --
+2022-03-24 23:17:09,865 TADA INFO assertion 7, agg-11 ldmsd terminated, sets removed from agg-2: list({'node-2/meminfo', 'node-4/meminfo'}) == expect({'node-2/meminfo', 'node-4/meminfo'}), passed
+2022-03-24 23:17:09,921 TADA INFO assertion 8, agg-11 ldmsd terminated, node-1 ldmsd is still running: list({'node-1/meminfo'}) == expect({'node-1/meminfo'}), passed
+2022-03-24 23:17:09,976 TADA INFO assertion 9, agg-11 ldmsd terminated, node-3 ldmsd is still running: list({'node-3/meminfo'}) == expect({'node-3/meminfo'}), passed
+2022-03-24 23:17:09,977 __main__ INFO -- Resurrecting ldmsd on agg-11 --
+2022-03-24 23:17:15,078 TADA INFO assertion 10, agg-11 ldmsd revived, sets added to agg-2: list({'node-3/meminfo', 'node-2/meminfo', 'node-1/meminfo', 'node-4/meminfo'}) == expect({'node-3/meminfo', 'node-2/meminfo', 'node-1/meminfo', 'node-4/meminfo'}), passed
+2022-03-24 23:17:15,079 TADA INFO test agg_test ended
+2022-03-24 23:17:26 INFO: ----------------------------------------------
+2022-03-24 23:17:27 INFO: ======== failover_test ========
+2022-03-24 23:17:27 INFO: CMD: python3 failover_test --prefix /opt/ovis --src /mnt/cygnus/data/2022-03-24-230001 --data_root /mnt/cygnus/data/2022-03-24-230001/data/failover_test
+2022-03-24 23:17:27,561 TADA INFO starting test `failover_test`
+2022-03-24 23:17:27,561 TADA INFO   test-id: a03c31e275e91c67aca9dd320195690a1c94fb795caf91911140d6b4b7df5022
+2022-03-24 23:17:27,561 TADA INFO   test-suite: LDMSD
+2022-03-24 23:17:27,561 TADA INFO   test-name: failover_test
+2022-03-24 23:17:27,561 TADA INFO   test-user: narate
+2022-03-24 23:17:27,561 TADA INFO   commit-id: 0b2be93cb87c38b2901fa2e6f0e7ac9ed63a2e08
+2022-03-24 23:17:27,562 __main__ INFO -- Get or create the cluster --
+2022-03-24 23:17:36,115 __main__ INFO -- Start daemons --
+2022-03-24 23:17:38,165 __main__ INFO ... wait a bit to make sure ldmsd's are up
+2022-03-24 23:17:46,173 __main__ INFO -- ldms_ls to agg-2 --
+2022-03-24 23:17:46,230 TADA INFO assertion 1, 
+ldms_ls agg-2: dir result verified, passed
+2022-03-24 23:17:46,414 TADA INFO assertion 2, 
+meminfo data verification: data verified, passed
+2022-03-24 23:17:46,414 __main__ INFO -- Terminating ldmsd on agg-11 --
+2022-03-24 23:17:51,488 TADA INFO assertion 3, 
+agg-11 ldmsd terminated, sets added to agg-12: list({'node-1/meminfo', 'node-3/meminfo', 'node-2/meminfo', 'node-4/meminfo'}) == expect({'node-3/meminfo', 'node-4/meminfo', 'node-2/meminfo', 'node-1/meminfo'}), passed
+2022-03-24 23:17:51,545 TADA INFO assertion 4, 
+agg-11 ldmsd terminated, all sets running on agg-2: list({'node-1/meminfo', 'node-3/meminfo', 'node-2/meminfo', 'node-4/meminfo'}) == expect({'node-3/meminfo', 'node-4/meminfo', 'node-2/meminfo', 'node-1/meminfo'}), passed
+2022-03-24 23:17:51,600 TADA INFO assertion 5, 
+agg-11 ldmsd terminated, node-1 ldmsd is still running: list({'node-1/meminfo'}) == expect({'node-1/meminfo'}), passed
+2022-03-24 23:17:51,655 TADA INFO assertion 6, 
+agg-11 ldmsd terminated, node-3 ldmsd is still running: list({'node-3/meminfo'}) == expect({'node-3/meminfo'}), passed
+2022-03-24 23:17:51,656 __main__ INFO -- Resurrecting ldmsd on agg-11 --
+2022-03-24 23:18:11,772 TADA INFO assertion 7, 
+agg-11 ldmsd revived, sets removed from agg-12: list({'node-2/meminfo', 'node-4/meminfo'}) == expect({'node-2/meminfo', 'node-4/meminfo'}), passed
+2022-03-24 23:18:11,828 TADA INFO assertion 8, 
+agg-11 ldmsd revived, all sets running on agg-2: list({'node-1/meminfo', 'node-3/meminfo', 'node-2/meminfo', 'node-4/meminfo'}) == expect({'node-3/meminfo', 'node-4/meminfo', 'node-2/meminfo', 'node-1/meminfo'}), passed
+2022-03-24 23:18:11,828 __main__ INFO -- Terminating ldmsd on agg-12 --
+2022-03-24 23:18:16,903 TADA INFO assertion 9, 
+agg-12 ldmsd terminated, sets added to agg-11: list({'node-1/meminfo', 'node-3/meminfo', 'node-2/meminfo', 'node-4/meminfo'}) == expect({'node-3/meminfo', 'node-4/meminfo', 'node-2/meminfo', 'node-1/meminfo'}), passed
+2022-03-24 23:18:16,959 TADA INFO assertion 10, 
+agg-12 ldmsd terminated, all sets running on agg-2: list({'node-1/meminfo', 'node-3/meminfo', 'node-2/meminfo', 'node-4/meminfo'}) == expect({'node-3/meminfo', 'node-4/meminfo', 'node-2/meminfo', 'node-1/meminfo'}), passed
+2022-03-24 23:18:17,015 TADA INFO assertion 11, 
+agg-12 ldmsd terminated, node-2 ldmsd is still running: list({'node-2/meminfo'}) == expect({'node-2/meminfo'}), passed
+2022-03-24 23:18:17,069 TADA INFO assertion 12, 
+agg-12 ldmsd terminated, node-4 ldmsd is still running: list({'node-4/meminfo'}) == expect({'node-4/meminfo'}), passed
+2022-03-24 23:18:17,070 __main__ INFO -- Resurrecting ldmsd on agg-12 --
+2022-03-24 23:18:37,187 TADA INFO assertion 13, 
+agg-12 ldmsd revived, sets removed from agg-11: list({'node-3/meminfo', 'node-1/meminfo'}) == expect({'node-3/meminfo', 'node-1/meminfo'}), passed
+2022-03-24 23:18:37,243 TADA INFO assertion 14, 
+agg-12 ldmsd revived, all sets running on agg-2: list({'node-1/meminfo', 'node-3/meminfo', 'node-2/meminfo', 'node-4/meminfo'}) == expect({'node-3/meminfo', 'node-4/meminfo', 'node-2/meminfo', 'node-1/meminfo'}), passed
+2022-03-24 23:18:37,244 TADA INFO test failover_test ended
+2022-03-24 23:18:48 INFO: ----------------------------------------------
+2022-03-24 23:18:49 INFO: ======== ldmsd_auth_ovis_test ========
+2022-03-24 23:18:49 INFO: CMD: python3 ldmsd_auth_ovis_test --prefix /opt/ovis --src /mnt/cygnus/data/2022-03-24-230001 --data_root /mnt/cygnus/data/2022-03-24-230001/data/ldmsd_auth_ovis_test
+2022-03-24 23:18:49,348 TADA INFO starting test `ldmsd_auth_ovis_test`
+2022-03-24 23:18:49,348 TADA INFO   test-id: 7d3a852026d1c7752dcfc6023192c3921a784f5f3fb2aa7b6af1255addcd8c0c
+2022-03-24 23:18:49,348 TADA INFO   test-suite: LDMSD
+2022-03-24 23:18:49,348 TADA INFO   test-name: ldmsd_auth_ovis_test
+2022-03-24 23:18:49,348 TADA INFO   test-user: narate
+2022-03-24 23:18:49,348 TADA INFO   commit-id: 0b2be93cb87c38b2901fa2e6f0e7ac9ed63a2e08
+2022-03-24 23:18:49,349 __main__ INFO -- Get or create the cluster --
+2022-03-24 23:18:51,628 __main__ INFO -- Start daemons --
+2022-03-24 23:18:52,123 __main__ INFO ... wait a bit to make sure ldmsd's are up
+2022-03-24 23:18:57,331 TADA INFO assertion 1, ldms_ls with auth none: verified, passed
+2022-03-24 23:18:57,359 TADA INFO assertion 2, ldms_ls with wrong secret: verified, passed
+2022-03-24 23:18:57,428 TADA INFO assertion 3, ldms_ls 'dir' with right secret: verified, passed
+2022-03-24 23:18:57,564 TADA INFO assertion 4, ldms_ls 'read' with right secret: verified, passed
+2022-03-24 23:18:57,565 TADA INFO test ldmsd_auth_ovis_test ended
+2022-03-24 23:19:07 INFO: ----------------------------------------------
+2022-03-24 23:19:08 INFO: ======== ldmsd_auth_test ========
+2022-03-24 23:19:08 INFO: CMD: python3 ldmsd_auth_test --prefix /opt/ovis --src /mnt/cygnus/data/2022-03-24-230001 --data_root /mnt/cygnus/data/2022-03-24-230001/data/ldmsd_auth_test
+2022-03-24 23:19:08,695 TADA INFO starting test `ldmsd_auth_test`
+2022-03-24 23:19:08,696 TADA INFO   test-id: 59cb56d5660ef2bdff59d8978bd3d8fb496d2124e4cb12d1c222fa1c605d90c2
+2022-03-24 23:19:08,696 TADA INFO   test-suite: LDMSD
+2022-03-24 23:19:08,696 TADA INFO   test-name: ldmsd_auth_test
+2022-03-24 23:19:08,696 TADA INFO   test-user: narate
+2022-03-24 23:19:08,696 TADA INFO   commit-id: 0b2be93cb87c38b2901fa2e6f0e7ac9ed63a2e08
+2022-03-24 23:19:08,697 __main__ INFO -- Get or create the cluster --
+2022-03-24 23:19:17,445 __main__ INFO -- Start daemons --
+2022-03-24 23:19:19,701 __main__ INFO ... wait a bit to make sure ldmsd's are up
+2022-03-24 23:19:24,776 TADA INFO assertion 1, root@agg-2(dom3) ldms_ls to agg-2:10000: see all sets, passed
+2022-03-24 23:19:24,845 TADA INFO assertion 2, user@agg-2(dom3) ldms_ls to agg-2:10000: see only meminfo, passed
+2022-03-24 23:19:24,915 TADA INFO assertion 3, root@headnode(dom4) ldms_ls to agg-2:10001: see all sets, passed
+2022-03-24 23:19:24,983 TADA INFO assertion 4, user@headnode(dom4) ldms_ls to agg-2:10001: see only meminfo, passed
+2022-03-24 23:19:25,012 TADA INFO assertion 5, root@headnode(dom4) ldms_ls to agg-11:10000: connection rejected, passed
+2022-03-24 23:19:25,013 TADA INFO test ldmsd_auth_test ended
+2022-03-24 23:19:36 INFO: ----------------------------------------------
+2022-03-24 23:19:36 INFO: ======== ldmsd_ctrl_test ========
+2022-03-24 23:19:36 INFO: CMD: python3 ldmsd_ctrl_test --prefix /opt/ovis --src /mnt/cygnus/data/2022-03-24-230001 --data_root /mnt/cygnus/data/2022-03-24-230001/data/ldmsd_ctrl_test
+2022-03-24 23:19:37,074 TADA INFO starting test `ldmsd_ctrl_test`
+2022-03-24 23:19:37,074 TADA INFO   test-id: 3bf87ec7b0e153fa3d342d73f6dba0f65af44ebe4c1a8da347c583992174ce7e
+2022-03-24 23:19:37,075 TADA INFO   test-suite: LDMSD
+2022-03-24 23:19:37,075 TADA INFO   test-name: ldmsd_ctrl_test
+2022-03-24 23:19:37,075 TADA INFO   test-user: narate
+2022-03-24 23:19:37,075 TADA INFO   commit-id: 0b2be93cb87c38b2901fa2e6f0e7ac9ed63a2e08
+2022-03-24 23:19:37,075 __main__ INFO -- Get or create the cluster --
+2022-03-24 23:19:41,367 __main__ INFO -- Start daemons --
+2022-03-24 23:19:42,352 __main__ INFO ... wait a bit to make sure ldmsd's are up
+2022-03-24 23:19:48,463 TADA INFO assertion 1, ldmsd_controller interactive session: connected, passed
+2022-03-24 23:19:49,569 TADA INFO assertion 2, ldmsctl interactive session: connected, passed
+2022-03-24 23:19:50,171 TADA INFO assertion 3, ldmsd_controller start bogus producer: expected output verified, passed
+2022-03-24 23:19:50,772 TADA INFO assertion 4, ldmsctl start bogus producer: expected output verified, passed
+2022-03-24 23:19:51,374 TADA INFO assertion 5, ldmsd_controller bogus command: expected output verified, passed
+2022-03-24 23:19:51,976 TADA INFO assertion 6, ldmsctl bogus command: expected output verified, passed
+2022-03-24 23:19:52,577 TADA INFO assertion 7, ldmsd_controller load bogus plugin: expected output verified, passed
+2022-03-24 23:19:53,179 TADA INFO assertion 8, ldmsctl load bogus plugin: expected output verified, passed
+2022-03-24 23:20:04,290 TADA INFO assertion 9, ldmsd_controller prdcr/updtr: verified, passed
+2022-03-24 23:20:15,399 TADA INFO assertion 10, ldmsctl prdcr/updtr: verified, passed
+2022-03-24 23:20:15,400 TADA INFO test ldmsd_ctrl_test ended
+2022-03-24 23:20:26 INFO: ----------------------------------------------
+2022-03-24 23:20:26 INFO: ======== ldmsd_stream_test ========
+2022-03-24 23:20:26 INFO: CMD: python3 ldmsd_stream_test --prefix /opt/ovis --src /mnt/cygnus/data/2022-03-24-230001 --data_root /mnt/cygnus/data/2022-03-24-230001/data/ldmsd_stream_test
+2022-03-24 23:20:26,857 TADA INFO starting test `ldmsd_stream_test`
+2022-03-24 23:20:26,858 TADA INFO   test-id: dda6846b5234b8e9a32fcd64151318737b16f6fa67a9e58cab2a3ec2c8c96851
+2022-03-24 23:20:26,858 TADA INFO   test-suite: LDMSD
+2022-03-24 23:20:26,858 TADA INFO   test-name: ldmsd_stream_test
+2022-03-24 23:20:26,858 TADA INFO   test-user: narate
+2022-03-24 23:20:26,858 TADA INFO   commit-id: 0b2be93cb87c38b2901fa2e6f0e7ac9ed63a2e08
+2022-03-24 23:20:34,198 __main__ INFO waiting for libraries to be available across all containers...
+2022-03-24 23:20:34,202 __main__ INFO _lib_avail: True
+2022-03-24 23:21:39,618 __main__ INFO test ldmsd_stream_subscribe with large json streams
+2022-03-24 23:21:45,634 __main__ INFO --- Sending stream to ldmsd_stream_subscriber
+2022-03-24 23:21:54,949 __main__ INFO --- Verifying the received streams
+2022-03-24 23:21:56,953 TADA INFO assertion 1, ldmsd_stream_subscribe receives large json streams: Verify all streams were received correctly, passed
+2022-03-24 23:21:56,958 __main__ INFO test LDMSD with large json streams
+2022-03-24 23:22:02,780 __main__ INFO --- Sending stream to samplerd
+2022-03-24 23:22:21,776 __main__ INFO --- Verifying the streams received by samplerd
+2022-03-24 23:22:24,183 TADA INFO assertion 2, samplerd receives large json streams: Verify all streams were received correctly, passed
+2022-03-24 23:22:24,183 __main__ INFO --- Verifying the streams received by samplerd
+2022-03-24 23:22:26,517 TADA INFO assertion 3, agg receives large json streams: Verify all streams were received correctly, passed
+2022-03-24 23:22:26,519 __main__ INFO test ldmsd_stream_subscribe with small json streams
+2022-03-24 23:22:32,531 __main__ INFO --- Sending stream to ldmsd_stream_subscriber
+2022-03-24 23:22:46,348 __main__ INFO --- Verifying the received streams
+2022-03-24 23:22:48,248 TADA INFO assertion 4, ldmsd_stream_subscribe receives small json streams: Verify all streams were received correctly, passed
+2022-03-24 23:22:48,252 __main__ INFO test LDMSD with small json streams
+2022-03-24 23:22:53,991 __main__ INFO --- Sending stream to samplerd
+2022-03-24 23:23:16,234 __main__ INFO --- Verifying the streams received by samplerd
+2022-03-24 23:23:19,026 TADA INFO assertion 5, samplerd receives small json streams: Verify all streams were received correctly, passed
+2022-03-24 23:23:19,026 __main__ INFO --- Verifying the streams received by samplerd
+2022-03-24 23:23:21,712 TADA INFO assertion 6, agg receives small json streams: Verify all streams were received correctly, passed
+2022-03-24 23:23:24,566 __main__ INFO test ldmsd_stream_subscribe with large string streams
+2022-03-24 23:23:30,582 __main__ INFO --- Sending stream to ldmsd_stream_subscriber
+2022-03-24 23:23:33,940 __main__ INFO --- Verifying the received streams
+2022-03-24 23:23:35,477 TADA INFO assertion 7, ldmsd_stream_subscribe receives large string streams: Verify all streams were received correctly, passed
+2022-03-24 23:23:35,481 __main__ INFO test LDMSD with large string streams
+2022-03-24 23:23:41,273 __main__ INFO --- Sending stream to samplerd
+2022-03-24 23:23:50,403 __main__ INFO --- Verifying the streams received by samplerd
+2022-03-24 23:23:51,544 TADA INFO assertion 8, samplerd receives large string streams: Verify all streams were received correctly, passed
+2022-03-24 23:23:51,544 __main__ INFO --- Verifying the streams received by samplerd
+2022-03-24 23:23:52,690 TADA INFO assertion 9, agg receives large string streams: Verify all streams were received correctly, passed
+2022-03-24 23:23:52,692 __main__ INFO test ldmsd_stream_subscribe with small string streams
+2022-03-24 23:23:58,705 __main__ INFO --- Sending stream to ldmsd_stream_subscriber
+2022-03-24 23:24:11,879 __main__ INFO --- Verifying the received streams
+2022-03-24 23:24:13,776 TADA INFO assertion 10, ldmsd_stream_subscribe receives small string streams: Verify all streams were received correctly, passed
+2022-03-24 23:24:13,781 __main__ INFO test LDMSD with small string streams
+2022-03-24 23:24:19,589 __main__ INFO --- Sending stream to samplerd
+2022-03-24 23:24:41,572 __main__ INFO --- Verifying the streams received by samplerd
+2022-03-24 23:24:42,833 TADA INFO assertion 11, samplerd receives small string streams: Verify all streams were received correctly, passed
+2022-03-24 23:24:42,833 __main__ INFO --- Verifying the streams received by samplerd
+2022-03-24 23:24:44,105 TADA INFO assertion 12, agg receives small string streams: Verify all streams were received correctly, passed
+2022-03-24 23:24:44,105 TADA INFO test ldmsd_stream_test ended
+2022-03-24 23:24:59 INFO: ----------------------------------------------
+2022-03-24 23:25:00 INFO: ======== maestro_cfg_test ========
+2022-03-24 23:25:00 INFO: CMD: python3 maestro_cfg_test --prefix /opt/ovis --src /mnt/cygnus/data/2022-03-24-230001 --data_root /mnt/cygnus/data/2022-03-24-230001/data/maestro_cfg_test
+2022-03-24 23:25:00,653 TADA INFO starting test `maestro_cfg_test`
+2022-03-24 23:25:00,653 TADA INFO   test-id: fec2c8944a56731b0afb019873e05322d0751bf1e74198ef3835736052551682
+2022-03-24 23:25:00,653 TADA INFO   test-suite: LDMSD
+2022-03-24 23:25:00,653 TADA INFO   test-name: maestro_cfg_test
+2022-03-24 23:25:00,654 TADA INFO   test-user: narate
+2022-03-24 23:25:00,654 TADA INFO   commit-id: 0b2be93cb87c38b2901fa2e6f0e7ac9ed63a2e08
+2022-03-24 23:25:10,664 __main__ INFO -- Get or create cluster --
+2022-03-24 23:25:22,521 __main__ INFO -- Start daemons --
+2022-03-24 23:25:41,209 __main__ INFO ... make sure ldmsd's are up
+2022-03-24 23:25:48,631 TADA INFO assertion 1, load maestro etcd cluster: etcd cluster loaded successfully, passed
+2022-03-24 23:26:28,663 TADA INFO assertion 2, config ldmsd cluster with maestro: Maestro ldmsd configuration successful, passed
+---Wait for config to write to file---
+2022-03-24 23:26:28,664 TADA INFO test maestro_cfg_test ended
+2022-03-24 23:26:40 INFO: ----------------------------------------------
+2022-03-24 23:26:41 INFO: ======== mt-slurm-test ========
+2022-03-24 23:26:41 INFO: CMD: python3 mt-slurm-test --prefix /opt/ovis --src /mnt/cygnus/data/2022-03-24-230001 --data_root /mnt/cygnus/data/2022-03-24-230001/data/mt-slurm-test
+-- Get or create the cluster --
+-- Start daemons --
+... wait a bit to make sure ldmsd's are up
+Every job in input data represented in output: : Passed
+['# task_rank,timestamp', '0,1648182425.968512', '1,1648182425.968512', '2,1648182425.968512', '3,1648182425.968512', '4,1648182425.968512', '5,1648182425.968512', '6,1648182425.968512', '7,1648182425.968512', '8,1648182425.968512', '9,1648182427.148479', '10,1648182427.148479', '11,1648182427.148479', '12,1648182427.148479', '13,1648182427.148479', '14,1648182427.148479', '15,1648182427.148479', '16,1648182427.148479', '17,1648182427.148479', '18,1648182427.962511', '19,1648182427.962511', '20,1648182427.962511', '21,1648182427.962511', '22,1648182427.962511', '23,1648182427.962511', '24,1648182427.962511', '25,1648182427.962511', '26,1648182427.962511', '# Records 27/27.', '']
+Job 10000 has 27 rank: : Passed
+Job 10100 has 64 rank: : Passed
+For Job 10000 job_size in metric set matches database: job_size input match 27: Passed
+27
+27
+For Job 10000 job_id in metric set matches database: job_id match: Passed
+For Job 10000 task_rank in metric set matches database: task_rank match: Passed
+For Job 10000 job_pid in metric set matches database: task_pid match: Passed
+For Job 10000 job_id in metric set matches database: job_id match: Passed
+For Job 10000 task_rank in metric set matches database: task_rank match: Passed
+For Job 10000 job_pid in metric set matches database: task_pid match: Passed
+For Job 10000 job_id in metric set matches database: job_id match: Passed
+For Job 10000 task_rank in metric set matches database: task_rank match: Passed
+For Job 10000 job_pid in metric set matches database: task_pid match: Passed
+For Job 10000 job_id in metric set matches database: job_id match: Passed
+For Job 10000 task_rank in metric set matches database: task_rank match: Passed
+For Job 10000 job_pid in metric set matches database: task_pid match: Passed
+For Job 10000 job_id in metric set matches database: job_id match: Passed
+For Job 10000 task_rank in metric set matches database: task_rank match: Passed
+For Job 10000 job_pid in metric set matches database: task_pid match: Passed
+For Job 10000 job_id in metric set matches database: job_id match: Passed
+For Job 10000 task_rank in metric set matches database: task_rank match: Passed
+For Job 10000 job_pid in metric set matches database: task_pid match: Passed
+For Job 10000 job_id in metric set matches database: job_id match: Passed
+For Job 10000 task_rank in metric set matches database: task_rank match: Passed
+For Job 10000 job_pid in metric set matches database: task_pid match: Passed
+For Job 10000 job_id in metric set matches database: job_id match: Passed
+For Job 10000 task_rank in metric set matches database: task_rank match: Passed
+For Job 10000 job_pid in metric set matches database: task_pid match: Passed
+For Job 10000 job_id in metric set matches database: job_id match: Passed
+For Job 10000 task_rank in metric set matches database: task_rank match: Passed
+For Job 10000 job_pid in metric set matches database: task_pid match: Passed
+For Job 10000 job_size in metric set matches database: job_size input match 27: Passed
+27
+27
+For Job 10000 job_id in metric set matches database: job_id match: Passed
+For Job 10000 task_rank in metric set matches database: task_rank match: Passed
+For Job 10000 job_pid in metric set matches database: task_pid match: Passed
+For Job 10000 job_id in metric set matches database: job_id match: Passed
+For Job 10000 task_rank in metric set matches database: task_rank match: Passed
+For Job 10000 job_pid in metric set matches database: task_pid match: Passed
+For Job 10000 job_id in metric set matches database: job_id match: Passed
+For Job 10000 task_rank in metric set matches database: task_rank match: Passed
+For Job 10000 job_pid in metric set matches database: task_pid match: Passed
+For Job 10000 job_id in metric set matches database: job_id match: Passed
+For Job 10000 task_rank in metric set matches database: task_rank match: Passed
+For Job 10000 job_pid in metric set matches database: task_pid match: Passed
+For Job 10000 job_id in metric set matches database: job_id match: Passed
+For Job 10000 task_rank in metric set matches database: task_rank match: Passed
+For Job 10000 job_pid in metric set matches database: task_pid match: Passed
+For Job 10000 job_id in metric set matches database: job_id match: Passed
+For Job 10000 task_rank in metric set matches database: task_rank match: Passed
+For Job 10000 job_pid in metric set matches database: task_pid match: Passed
+For Job 10000 job_id in metric set matches database: job_id match: Passed
+For Job 10000 task_rank in metric set matches database: task_rank match: Passed
+For Job 10000 job_pid in metric set matches database: task_pid match: Passed
+For Job 10000 job_id in metric set matches database: job_id match: Passed
+For Job 10000 task_rank in metric set matches database: task_rank match: Passed
+For Job 10000 job_pid in metric set matches database: task_pid match: Passed
+For Job 10000 job_id in metric set matches database: job_id match: Passed
+For Job 10000 task_rank in metric set matches database: task_rank match: Passed
+For Job 10000 job_pid in metric set matches database: task_pid match: Passed
+For Job 10000 job_size in metric set matches database: job_size input match 27: Passed
+27
+27
+For Job 10000 job_id in metric set matches database: job_id match: Passed
+For Job 10000 task_rank in metric set matches database: task_rank match: Passed
+For Job 10000 job_pid in metric set matches database: task_pid match: Passed
+For Job 10000 job_id in metric set matches database: job_id match: Passed
+For Job 10000 task_rank in metric set matches database: task_rank match: Passed
+For Job 10000 job_pid in metric set matches database: task_pid match: Passed
+For Job 10000 job_id in metric set matches database: job_id match: Passed
+For Job 10000 task_rank in metric set matches database: task_rank match: Passed
+For Job 10000 job_pid in metric set matches database: task_pid match: Passed
+For Job 10000 job_id in metric set matches database: job_id match: Passed
+For Job 10000 task_rank in metric set matches database: task_rank match: Passed
+For Job 10000 job_pid in metric set matches database: task_pid match: Passed
+For Job 10000 job_id in metric set matches database: job_id match: Passed
+For Job 10000 task_rank in metric set matches database: task_rank match: Passed
+For Job 10000 job_pid in metric set matches database: task_pid match: Passed
+For Job 10000 job_id in metric set matches database: job_id match: Passed
+For Job 10000 task_rank in metric set matches database: task_rank match: Passed
+For Job 10000 job_pid in metric set matches database: task_pid match: Passed
+For Job 10000 job_id in metric set matches database: job_id match: Passed
+For Job 10000 task_rank in metric set matches database: task_rank match: Passed
+For Job 10000 job_pid in metric set matches database: task_pid match: Passed
+For Job 10000 job_id in metric set matches database: job_id match: Passed
+For Job 10000 task_rank in metric set matches database: task_rank match: Passed
+For Job 10000 job_pid in metric set matches database: task_pid match: Passed
+For Job 10000 job_id in metric set matches database: job_id match: Passed
+For Job 10000 task_rank in metric set matches database: task_rank match: Passed
+For Job 10000 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_size in metric set matches database: job_size input match 64: Passed
+64
+64
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_size in metric set matches database: job_size input match 64: Passed
+64
+64
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_size in metric set matches database: job_size input match 64: Passed
+64
+64
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_size in metric set matches database: job_size input match 64: Passed
+64
+64
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+For Job 10100 job_id in metric set matches database: job_id match: Passed
+For Job 10100 task_rank in metric set matches database: task_rank match: Passed
+For Job 10100 job_pid in metric set matches database: task_pid match: Passed
+Job 10000 has 3 nodes: node count 3 correct: Passed
+Job 10100 has 4 nodes: node count 4 correct: Passed
+2022-03-24 23:27:29 INFO: ----------------------------------------------
+2022-03-24 23:27:29 INFO: ======== ovis_ev_test ========
+2022-03-24 23:27:29 INFO: CMD: python3 ovis_ev_test --prefix /opt/ovis --src /mnt/cygnus/data/2022-03-24-230001 --data_root /mnt/cygnus/data/2022-03-24-230001/data/ovis_ev_test
+2022-03-24 23:27:29,911 __main__ INFO -- Create the cluster -- 
+2022-03-24 23:27:37,051 TADA INFO starting test `ovis_ev_test`
+2022-03-24 23:27:37,051 TADA INFO   test-id: b7284c7b5240df7aebd0ec6cc30b5a40ffc5c3fdf3b747f9d1aba22152533feb
+2022-03-24 23:27:37,051 TADA INFO   test-suite: test_ovis_ev
+2022-03-24 23:27:37,051 TADA INFO   test-name: ovis_ev_test
+2022-03-24 23:27:37,051 TADA INFO   test-user: narate
+2022-03-24 23:27:37,051 TADA INFO   commit-id: 0b2be93cb87c38b2901fa2e6f0e7ac9ed63a2e08
+2022-03-24 23:27:37,052 TADA INFO assertion 1, Test posting an event without timeout: ovis_ev delivered the expected event., passed
+2022-03-24 23:27:37,053 TADA INFO assertion 2, Test posting an event with a current timeout: ovis_ev delivered the expected event., passed
+2022-03-24 23:27:37,053 TADA INFO assertion 3, Test posting an event with a future timeout: ovis_ev delivered the expected event., passed
+2022-03-24 23:27:37,053 TADA INFO assertion 4, Test reposting a posted event: ev_post returned EBUSY when posted an already posted event, passed
+2022-03-24 23:27:37,053 TADA INFO assertion 5, Test canceling a posted event: ovis_ev delivered the expected event., passed
+2022-03-24 23:27:37,054 TADA INFO assertion 6, Test rescheduling a posted event: ovis_ev delivered the expected event., passed
+2022-03-24 23:27:37,054 TADA INFO assertion 7, Test event deliver order: The event delivery order was correct., passed
+2022-03-24 23:27:37,054 TADA INFO assertion 8, Test flushing events: Expected status (1) == delivered status (1), passed
+2022-03-24 23:27:37,055 TADA INFO assertion 9, Test posting event on a flushed worker: Expected status (0) == delivered status (0), passed
+2022-03-24 23:27:37,055 TADA INFO assertion 10, Test the case that multiple threads post the same event: ev_post returned the expected return code., passed
+2022-03-24 23:27:37,055 TADA INFO test ovis_ev_test ended
+2022-03-24 23:27:47 INFO: ----------------------------------------------
+2022-03-24 23:27:47 INFO: ======== prdcr_subscribe_test ========
+2022-03-24 23:27:47 INFO: CMD: python3 prdcr_subscribe_test --prefix /opt/ovis --src /mnt/cygnus/data/2022-03-24-230001 --data_root /mnt/cygnus/data/2022-03-24-230001/data/prdcr_subscribe_test
+2022-03-24 23:27:48,081 TADA INFO starting test `prdcr_subscribe_test`
+2022-03-24 23:27:48,082 TADA INFO   test-id: 5ec556da13c5572214896460b654f730e1c46691b6693be0a20060d65ccfad77
+2022-03-24 23:27:48,082 TADA INFO   test-suite: LDMSD
+2022-03-24 23:27:48,082 TADA INFO   test-name: prdcr_subscribe_test
+2022-03-24 23:27:48,082 TADA INFO   test-user: narate
+2022-03-24 23:27:48,082 TADA INFO   commit-id: 0b2be93cb87c38b2901fa2e6f0e7ac9ed63a2e08
+2022-03-24 23:28:12,150 TADA INFO assertion 0, ldmsd_stream_publish of JSON data to stream-sampler-1 succeeds: verify JSON data, passed
+2022-03-24 23:28:12,151 TADA INFO assertion 1, ldmsd_stream_publish of STRING data to stream-sampler-1 succeeds: verify STRING data, passed
+2022-03-24 23:28:12,152 TADA INFO assertion 2, ldmsd_stream_publish to JSON data to stream-sampler-2 succeeds: verify JSON data, passed
+2022-03-24 23:28:12,153 TADA INFO assertion 3, ldmsd_stream_publish of STRING data to stream-sampler-2 succeeds: verify STRING data, passed
+2022-03-24 23:28:12,154 TADA INFO assertion 4, ldmsd_stream data check on agg-2: agg2 stream data verification, passed
+2022-03-24 23:28:12,449 TADA INFO assertion 5, Stopping the producers succeeds: , passed
+2022-03-24 23:28:12,745 TADA INFO assertion 6, Restarting the producers succeeds: , passed
+2022-03-24 23:28:19,981 TADA INFO assertion 7, JSON stream data resumes after producer restart on stream-sampler-1: verify JSON data, passed
+2022-03-24 23:28:19,981 TADA INFO assertion 8, STRING stream data resumes after producer rerestart on stream-sampler-1: verify STRING data, passed
+2022-03-24 23:28:19,982 TADA INFO assertion 9, JSON stream data resumes after producer restart on stream-sampler-2: verify JSON data, passed
+2022-03-24 23:28:19,983 TADA INFO assertion 10, STRING stream data resumes after producer rerestart on stream-sampler-2: verify STRING data, passed
+2022-03-24 23:28:19,984 TADA INFO assertion 11, ldmsd_stream data resume check on agg-2: agg2 stream data verification, passed
+2022-03-24 23:28:21,000 TADA INFO assertion 12, stream-sampler-1 is not running: (running == False), passed
+2022-03-24 23:28:22,042 TADA INFO assertion 13, stream-sampler-1 has restarted: (running == True), passed
+2022-03-24 23:28:29,166 TADA INFO assertion 14, JSON stream data resumes after stream-sampler-1 restart: verify JSON data, passed
+2022-03-24 23:28:29,166 TADA INFO assertion 15, STRING stream data resumes after stream-sampler-1 restart: verify STRING data, passed
+2022-03-24 23:28:29,167 TADA INFO assertion 16, ldmsd_stream data check on agg-2 after stream-sampler-1 restart: agg2 stream data verification, passed
+2022-03-24 23:28:29,456 TADA INFO assertion 17, agg-1 unsubscribes stream-sampler-1: , passed
+2022-03-24 23:28:31,680 TADA INFO assertion 18, agg-1 receives data only from stream-sampler-2: data verified, passed
+2022-03-24 23:28:37,298 TADA INFO assertion 19, stream-sampler-2 removes agg-1 stream client after disconnected: verified, passed
+2022-03-24 23:28:37,299 TADA INFO test prdcr_subscribe_test ended
+2022-03-24 23:28:47 INFO: ----------------------------------------------
+2022-03-24 23:28:48 INFO: ======== set_array_test ========
+2022-03-24 23:28:48 INFO: CMD: python3 set_array_test --prefix /opt/ovis --src /mnt/cygnus/data/2022-03-24-230001 --data_root /mnt/cygnus/data/2022-03-24-230001/data/set_array_test
+2022-03-24 23:28:48,867 TADA INFO starting test `set_array_test`
+2022-03-24 23:28:48,868 TADA INFO   test-id: c1764dfcf4e6331023f297d9d2d3a503f5936088e3d85848365a408c6a595a2d
+2022-03-24 23:28:48,868 TADA INFO   test-suite: LDMSD
+2022-03-24 23:28:48,868 TADA INFO   test-name: set_array_test
+2022-03-24 23:28:48,868 TADA INFO   test-user: narate
+2022-03-24 23:28:48,868 TADA INFO   commit-id: 0b2be93cb87c38b2901fa2e6f0e7ac9ed63a2e08
+2022-03-24 23:28:48,869 __main__ INFO -- Get or create the cluster --
+2022-03-24 23:28:51,019 __main__ INFO -- Start daemons --
+2022-03-24 23:28:51,560 __main__ INFO ... wait a bit to make sure ldmsd's are up
+2022-03-24 23:29:20,528 TADA INFO assertion 1, 1st update got some callbacks: verified hunk of 9 snapshots, passed
+2022-03-24 23:29:20,528 TADA INFO assertion 2, 2nd update got N callbacks: verified hunk of 5 snapshots, passed
+2022-03-24 23:29:20,529 TADA INFO assertion 3, 3nd update got N callbacks: verified hunk of 5 snapshots, passed
+2022-03-24 23:29:20,529 TADA INFO test set_array_test ended
+2022-03-24 23:29:30 INFO: ----------------------------------------------
+2022-03-24 23:29:31 INFO: ======== setgroup_test ========
+2022-03-24 23:29:31 INFO: CMD: python3 setgroup_test --prefix /opt/ovis --src /mnt/cygnus/data/2022-03-24-230001 --data_root /mnt/cygnus/data/2022-03-24-230001/data/setgroup_test
+2022-03-24 23:29:31,816 TADA INFO starting test `setgroup_test`
+2022-03-24 23:29:31,816 TADA INFO   test-id: 2cbbee0f175bc6e3a0d6dc852e5aa60686ba95eb1fe026adf5593fcc8d2a6ee6
+2022-03-24 23:29:31,816 TADA INFO   test-suite: LDMSD
+2022-03-24 23:29:31,816 TADA INFO   test-name: setgroup_test
+2022-03-24 23:29:31,816 TADA INFO   test-user: narate
+2022-03-24 23:29:31,816 TADA INFO   commit-id: 0b2be93cb87c38b2901fa2e6f0e7ac9ed63a2e08
+2022-03-24 23:29:31,817 __main__ INFO -- Get or create the cluster --
+2022-03-24 23:29:35,961 __main__ INFO -- Start daemons --
+2022-03-24 23:29:37,061 __main__ INFO ... wait a bit to make sure ldmsd's are up
+2022-03-24 23:29:42,066 __main__ INFO -- ldms_ls to agg-2 --
+2022-03-24 23:29:42,123 TADA INFO assertion 1, ldms_ls grp on agg-2: dir result verified, passed
+2022-03-24 23:29:44,722 TADA INFO assertion 2, members on agg-2 are being updated: data verified, passed
+2022-03-24 23:29:44,722 __main__ INFO -- Removing test_2 from grp --
+2022-03-24 23:29:45,226 TADA INFO assertion 3, test_2 is removed fom grp on sampler: expect {'node-1/test_1', 'node-1/grp'}, got {'node-1/test_1', 'node-1/grp'}, passed
+2022-03-24 23:29:49,446 TADA INFO assertion 4, test_2 is removed from grp on agg-1: expect {'node-1/test_1', 'node-1/grp'}, got {'node-1/test_1', 'node-1/grp'}, passed
+2022-03-24 23:29:53,668 TADA INFO assertion 5, test_2 is removed from grp on agg-2: expect {'node-1/test_1', 'node-1/grp'}, got {'node-1/test_1', 'node-1/grp'}, passed
+2022-03-24 23:29:57,673 __main__ INFO -- Adding test_2 back into grp --
+2022-03-24 23:29:58,257 TADA INFO assertion 6, test_2 is added back to grp on sampler: expect {'node-1/test_2', 'node-1/test_1', 'node-1/grp'}, got {'node-1/test_1', 'node-1/test_2', 'node-1/grp'}, passed
+2022-03-24 23:30:02,561 TADA INFO assertion 7, test_2 is added back to grp on agg-1: expect {'node-1/test_2', 'node-1/test_1', 'node-1/grp'}, got {'node-1/test_1', 'node-1/test_2', 'node-1/grp'}, passed
+2022-03-24 23:30:04,863 TADA INFO assertion 8, test_2 is added back to grp on agg-2: expect {'node-1/test_2', 'node-1/test_1', 'node-1/grp'}, got {'node-1/test_1', 'node-1/test_2', 'node-1/grp'}, passed
+2022-03-24 23:30:06,866 TADA INFO test setgroup_test ended
+2022-03-24 23:30:17 INFO: ----------------------------------------------
+2022-03-24 23:30:18 INFO: ======== slurm_stream_test ========
+2022-03-24 23:30:18 INFO: CMD: python3 slurm_stream_test --prefix /opt/ovis --src /mnt/cygnus/data/2022-03-24-230001 --data_root /mnt/cygnus/data/2022-03-24-230001/data/slurm_stream_test
+2022-03-24 23:30:18,392 TADA INFO starting test `slurm_stream_test`
+2022-03-24 23:30:18,392 TADA INFO   test-id: ec1b96191726f844e3659dee265d54acb60c12978f127d83d8bbe262627e2fc7
+2022-03-24 23:30:18,392 TADA INFO   test-suite: LDMSD
+2022-03-24 23:30:18,392 TADA INFO   test-name: slurm_stream_test
+2022-03-24 23:30:18,393 TADA INFO   test-user: narate
+2022-03-24 23:30:18,393 TADA INFO   commit-id: 0b2be93cb87c38b2901fa2e6f0e7ac9ed63a2e08
+2022-03-24 23:30:18,393 __main__ INFO -- Get or create the cluster --
+2022-03-24 23:30:22,328 __main__ INFO -- Start daemons --
+2022-03-24 23:30:22,452 __main__ INFO ... wait a bit to make sure ldmsd's are up
+2022-03-24 23:30:39,035 TADA INFO assertion 1, Job properly assigned to correct slot: correct job_id fills next slot, passed
+2022-03-24 23:30:39,036 __main__ INFO 12345
+2022-03-24 23:30:39,036 __main__ INFO 12345
+2022-03-24 23:30:39,036 TADA INFO assertion 2, job_start correctly represented in metric set: with mult jobs running for Job 12345, passed
+2022-03-24 23:30:39,036 TADA INFO assertion 3, job_end correctly represented in metric set: with mutl jobs running, for Job 12345, passed
+2022-03-24 23:30:39,037 TADA INFO assertion 4, task_pid correctly represented: with mult jobs running for Job 12345, passed
+2022-03-24 23:30:39,037 TADA INFO assertion 5, task_pid correctly represented: with mult jobs running for Job 12345, passed
+2022-03-24 23:30:39,037 TADA INFO assertion 6, task_pid correctly represented: with mult jobs running for Job 12345, passed
+2022-03-24 23:30:39,037 TADA INFO assertion 7, task_pid correctly represented: with mult jobs running for Job 12345, passed
+2022-03-24 23:30:39,169 TADA INFO assertion 8, Job properly assigned to correct slot: correct job_id fills next slot, passed
+2022-03-24 23:30:39,169 __main__ INFO 12345
+2022-03-24 23:30:39,169 __main__ INFO 12345
+2022-03-24 23:30:39,170 TADA INFO assertion 9, job_start correctly represented in metric set: with mult jobs running for Job 12345, passed
+2022-03-24 23:30:39,170 TADA INFO assertion 10, job_end correctly represented in metric set: with mutl jobs running, for Job 12345, passed
+2022-03-24 23:30:39,170 TADA INFO assertion 11, task_pid correctly represented: with mult jobs running for Job 12345, passed
+2022-03-24 23:30:39,171 TADA INFO assertion 12, task_pid correctly represented: with mult jobs running for Job 12345, passed
+2022-03-24 23:30:39,171 TADA INFO assertion 13, task_pid correctly represented: with mult jobs running for Job 12345, passed
+2022-03-24 23:30:39,171 TADA INFO assertion 14, task_pid correctly represented: with mult jobs running for Job 12345, passed
+2022-03-24 23:30:39,305 TADA INFO assertion 15, Job properly assigned to correct slot: correct job_id fills next slot, passed
+2022-03-24 23:30:39,305 __main__ INFO 12346
+2022-03-24 23:30:39,305 __main__ INFO 12346
+2022-03-24 23:30:39,305 TADA INFO assertion 16, job_start correctly represented in metric set: with mult jobs running for Job 12346, passed
+2022-03-24 23:30:39,306 TADA INFO assertion 17, job_end correctly represented in metric set: with mutl jobs running, for Job 12346, passed
+2022-03-24 23:30:39,306 TADA INFO assertion 18, task_pid correctly represented: with mult jobs running for Job 12346, passed
+2022-03-24 23:30:39,306 TADA INFO assertion 19, task_pid correctly represented: with mult jobs running for Job 12346, passed
+2022-03-24 23:30:39,306 TADA INFO assertion 20, task_pid correctly represented: with mult jobs running for Job 12346, passed
+2022-03-24 23:30:39,307 TADA INFO assertion 21, task_pid correctly represented: with mult jobs running for Job 12346, passed
+2022-03-24 23:30:39,438 TADA INFO assertion 22, Job properly assigned to correct slot: correct job_id fills next slot, passed
+2022-03-24 23:30:39,438 __main__ INFO 12346
+2022-03-24 23:30:39,438 __main__ INFO 12346
+2022-03-24 23:30:39,439 TADA INFO assertion 23, job_start correctly represented in metric set: with mult jobs running for Job 12346, passed
+2022-03-24 23:30:39,439 TADA INFO assertion 24, job_end correctly represented in metric set: with mutl jobs running, for Job 12346, passed
+2022-03-24 23:30:39,439 TADA INFO assertion 25, task_pid correctly represented: with mult jobs running for Job 12346, passed
+2022-03-24 23:30:39,440 TADA INFO assertion 26, task_pid correctly represented: with mult jobs running for Job 12346, passed
+2022-03-24 23:30:39,440 TADA INFO assertion 27, task_pid correctly represented: with mult jobs running for Job 12346, passed
+2022-03-24 23:30:39,440 TADA INFO assertion 28, task_pid correctly represented: with mult jobs running for Job 12346, passed
+2022-03-24 23:30:39,573 TADA INFO assertion 29, Job properly assigned to correct slot: correct job_id fills next slot, passed
+2022-03-24 23:30:39,573 __main__ INFO 12347
+2022-03-24 23:30:39,573 __main__ INFO 12347
+2022-03-24 23:30:39,573 TADA INFO assertion 30, job_start correctly represented in metric set: with mult jobs running for Job 12347, passed
+2022-03-24 23:30:39,574 TADA INFO assertion 31, job_end correctly represented in metric set: with mutl jobs running, for Job 12347, passed
+2022-03-24 23:30:39,574 TADA INFO assertion 32, task_pid correctly represented: with mult jobs running for Job 12347, passed
+2022-03-24 23:30:39,574 TADA INFO assertion 33, task_pid correctly represented: with mult jobs running for Job 12347, passed
+2022-03-24 23:30:39,575 TADA INFO assertion 34, task_pid correctly represented: with mult jobs running for Job 12347, passed
+2022-03-24 23:30:39,575 TADA INFO assertion 35, task_pid correctly represented: with mult jobs running for Job 12347, passed
+2022-03-24 23:30:39,706 TADA INFO assertion 36, Job properly assigned to correct slot: correct job_id fills next slot, passed
+2022-03-24 23:30:39,707 __main__ INFO 12347
+2022-03-24 23:30:39,707 __main__ INFO 12347
+2022-03-24 23:30:39,707 TADA INFO assertion 37, job_start correctly represented in metric set: with mult jobs running for Job 12347, passed
+2022-03-24 23:30:39,707 TADA INFO assertion 38, job_end correctly represented in metric set: with mutl jobs running, for Job 12347, passed
+2022-03-24 23:30:39,707 TADA INFO assertion 39, task_pid correctly represented: with mult jobs running for Job 12347, passed
+2022-03-24 23:30:39,708 TADA INFO assertion 40, task_pid correctly represented: with mult jobs running for Job 12347, passed
+2022-03-24 23:30:39,708 TADA INFO assertion 41, task_pid correctly represented: with mult jobs running for Job 12347, passed
+2022-03-24 23:30:39,708 TADA INFO assertion 42, task_pid correctly represented: with mult jobs running for Job 12347, passed
+2022-03-24 23:30:39,840 TADA INFO assertion 43, Job properly assigned to correct slot: correct job_id fills next slot, passed
+2022-03-24 23:30:39,840 __main__ INFO 12348
+2022-03-24 23:30:39,840 __main__ INFO 12348
+2022-03-24 23:30:39,841 TADA INFO assertion 44, job_start correctly represented in metric set: with mult jobs running for Job 12348, passed
+2022-03-24 23:30:39,841 TADA INFO assertion 45, job_end correctly represented in metric set: with mutl jobs running, for Job 12348, passed
+2022-03-24 23:30:39,841 TADA INFO assertion 46, task_pid correctly represented: with mult jobs running for Job 12348, passed
+2022-03-24 23:30:39,842 TADA INFO assertion 47, task_pid correctly represented: with mult jobs running for Job 12348, passed
+2022-03-24 23:30:39,842 TADA INFO assertion 48, task_pid correctly represented: with mult jobs running for Job 12348, passed
+2022-03-24 23:30:39,842 TADA INFO assertion 49, task_pid correctly represented: with mult jobs running for Job 12348, passed
+2022-03-24 23:30:39,974 TADA INFO assertion 50, Job properly assigned to correct slot: correct job_id fills next slot, passed
+2022-03-24 23:30:39,974 __main__ INFO 12348
+2022-03-24 23:30:39,974 __main__ INFO 12348
+2022-03-24 23:30:39,975 TADA INFO assertion 51, job_start correctly represented in metric set: with mult jobs running for Job 12348, passed
+2022-03-24 23:30:39,975 TADA INFO assertion 52, job_end correctly represented in metric set: with mutl jobs running, for Job 12348, passed
+2022-03-24 23:30:39,975 TADA INFO assertion 53, task_pid correctly represented: with mult jobs running for Job 12348, passed
+2022-03-24 23:30:39,976 TADA INFO assertion 54, task_pid correctly represented: with mult jobs running for Job 12348, passed
+2022-03-24 23:30:39,976 TADA INFO assertion 55, task_pid correctly represented: with mult jobs running for Job 12348, passed
+2022-03-24 23:30:39,976 TADA INFO assertion 56, task_pid correctly represented: with mult jobs running for Job 12348, passed
+2022-03-24 23:30:40,108 TADA INFO assertion 57, Job properly assigned to correct slot: correct job_id fills next slot, passed
+2022-03-24 23:30:40,108 __main__ INFO 12355
+2022-03-24 23:30:40,109 __main__ INFO 12355
+2022-03-24 23:30:40,109 TADA INFO assertion 58, job_start correctly represented in metric set: with mult jobs running for Job 12355, passed
+2022-03-24 23:30:40,109 TADA INFO assertion 59, job_end correctly represented in metric set: with mutl jobs running, for Job 12355, passed
+2022-03-24 23:30:40,109 TADA INFO assertion 60, task_pid correctly represented: with mult jobs running for Job 12355, passed
+2022-03-24 23:30:40,110 TADA INFO assertion 61, task_pid correctly represented: with mult jobs running for Job 12355, passed
+2022-03-24 23:30:40,110 TADA INFO assertion 62, task_pid correctly represented: with mult jobs running for Job 12355, passed
+2022-03-24 23:30:40,110 TADA INFO assertion 63, task_pid correctly represented: with mult jobs running for Job 12355, passed
+2022-03-24 23:30:40,111 TADA INFO assertion 64, task_pid correctly represented: with mult jobs running for Job 12355, passed
+2022-03-24 23:30:40,111 TADA INFO assertion 65, task_pid correctly represented: with mult jobs running for Job 12355, passed
+2022-03-24 23:30:40,111 TADA INFO assertion 66, task_pid correctly represented: with mult jobs running for Job 12355, passed
+2022-03-24 23:30:40,112 TADA INFO assertion 67, task_pid correctly represented: with mult jobs running for Job 12355, passed
+2022-03-24 23:30:40,243 TADA INFO assertion 68, Job properly assigned to correct slot: correct job_id fills next slot, passed
+2022-03-24 23:30:40,243 __main__ INFO 12355
+2022-03-24 23:30:40,244 __main__ INFO 12355
+2022-03-24 23:30:40,244 TADA INFO assertion 69, job_start correctly represented in metric set: with mult jobs running for Job 12355, passed
+2022-03-24 23:30:40,244 TADA INFO assertion 70, job_end correctly represented in metric set: with mutl jobs running, for Job 12355, passed
+2022-03-24 23:30:40,244 TADA INFO assertion 71, task_pid correctly represented: with mult jobs running for Job 12355, passed
+2022-03-24 23:30:40,245 TADA INFO assertion 72, task_pid correctly represented: with mult jobs running for Job 12355, passed
+2022-03-24 23:30:40,245 TADA INFO assertion 73, task_pid correctly represented: with mult jobs running for Job 12355, passed
+2022-03-24 23:30:40,245 TADA INFO assertion 74, task_pid correctly represented: with mult jobs running for Job 12355, passed
+2022-03-24 23:30:40,246 TADA INFO assertion 75, task_pid correctly represented: with mult jobs running for Job 12355, passed
+2022-03-24 23:30:40,246 TADA INFO assertion 76, task_pid correctly represented: with mult jobs running for Job 12355, passed
+2022-03-24 23:30:40,246 TADA INFO assertion 77, task_pid correctly represented: with mult jobs running for Job 12355, passed
+2022-03-24 23:30:40,247 TADA INFO assertion 78, task_pid correctly represented: with mult jobs running for Job 12355, passed
+2022-03-24 23:30:40,378 TADA INFO assertion 79, Job properly assigned to correct slot: correct job_id fills next slot, passed
+2022-03-24 23:30:40,378 __main__ INFO 12356
+2022-03-24 23:30:40,378 __main__ INFO 12356
+2022-03-24 23:30:40,379 TADA INFO assertion 80, job_start correctly represented in metric set: with mult jobs running for Job 12356, passed
+2022-03-24 23:30:40,379 TADA INFO assertion 81, job_end correctly represented in metric set: with mutl jobs running, for Job 12356, passed
+2022-03-24 23:30:40,379 TADA INFO assertion 82, task_pid correctly represented: with mult jobs running for Job 12356, passed
+2022-03-24 23:30:40,380 TADA INFO assertion 83, task_pid correctly represented: with mult jobs running for Job 12356, passed
+2022-03-24 23:30:40,380 TADA INFO assertion 84, task_pid correctly represented: with mult jobs running for Job 12356, passed
+2022-03-24 23:30:40,380 TADA INFO assertion 85, task_pid correctly represented: with mult jobs running for Job 12356, passed
+2022-03-24 23:30:40,381 TADA INFO assertion 86, task_pid correctly represented: with mult jobs running for Job 12356, passed
+2022-03-24 23:30:40,381 TADA INFO assertion 87, task_pid correctly represented: with mult jobs running for Job 12356, passed
+2022-03-24 23:30:40,381 TADA INFO assertion 88, task_pid correctly represented: with mult jobs running for Job 12356, passed
+2022-03-24 23:30:40,382 TADA INFO assertion 89, task_pid correctly represented: with mult jobs running for Job 12356, passed
+2022-03-24 23:30:40,513 TADA INFO assertion 90, Job properly assigned to correct slot: correct job_id fills next slot, passed
+2022-03-24 23:30:40,514 __main__ INFO 12356
+2022-03-24 23:30:40,514 __main__ INFO 12356
+2022-03-24 23:30:40,514 TADA INFO assertion 91, job_start correctly represented in metric set: with mult jobs running for Job 12356, passed
+2022-03-24 23:30:40,514 TADA INFO assertion 92, job_end correctly represented in metric set: with mutl jobs running, for Job 12356, passed
+2022-03-24 23:30:40,514 TADA INFO assertion 93, task_pid correctly represented: with mult jobs running for Job 12356, passed
+2022-03-24 23:30:40,515 TADA INFO assertion 94, task_pid correctly represented: with mult jobs running for Job 12356, passed
+2022-03-24 23:30:40,515 TADA INFO assertion 95, task_pid correctly represented: with mult jobs running for Job 12356, passed
+2022-03-24 23:30:40,515 TADA INFO assertion 96, task_pid correctly represented: with mult jobs running for Job 12356, passed
+2022-03-24 23:30:40,516 TADA INFO assertion 97, task_pid correctly represented: with mult jobs running for Job 12356, passed
+2022-03-24 23:30:40,516 TADA INFO assertion 98, task_pid correctly represented: with mult jobs running for Job 12356, passed
+2022-03-24 23:30:40,516 TADA INFO assertion 99, task_pid correctly represented: with mult jobs running for Job 12356, passed
+2022-03-24 23:30:40,517 TADA INFO assertion 100, task_pid correctly represented: with mult jobs running for Job 12356, passed
+2022-03-24 23:30:40,648 TADA INFO assertion 101, Job properly assigned to correct slot: correct job_id fills next slot, passed
+2022-03-24 23:30:40,648 __main__ INFO 12357
+2022-03-24 23:30:40,649 __main__ INFO 12357
+2022-03-24 23:30:40,649 TADA INFO assertion 102, job_start correctly represented in metric set: with mult jobs running for Job 12357, passed
+2022-03-24 23:30:40,649 TADA INFO assertion 103, job_end correctly represented in metric set: with mutl jobs running, for Job 12357, passed
+2022-03-24 23:30:40,649 TADA INFO assertion 104, task_pid correctly represented: with mult jobs running for Job 12357, passed
+2022-03-24 23:30:40,650 TADA INFO assertion 105, task_pid correctly represented: with mult jobs running for Job 12357, passed
+2022-03-24 23:30:40,650 TADA INFO assertion 106, task_pid correctly represented: with mult jobs running for Job 12357, passed
+2022-03-24 23:30:40,650 TADA INFO assertion 107, task_pid correctly represented: with mult jobs running for Job 12357, passed
+2022-03-24 23:30:40,651 TADA INFO assertion 108, task_pid correctly represented: with mult jobs running for Job 12357, passed
+2022-03-24 23:30:40,651 TADA INFO assertion 109, task_pid correctly represented: with mult jobs running for Job 12357, passed
+2022-03-24 23:30:40,651 TADA INFO assertion 110, task_pid correctly represented: with mult jobs running for Job 12357, passed
+2022-03-24 23:30:40,652 TADA INFO assertion 111, task_pid correctly represented: with mult jobs running for Job 12357, passed
+2022-03-24 23:30:40,783 TADA INFO assertion 112, Job properly assigned to correct slot: correct job_id fills next slot, passed
+2022-03-24 23:30:40,783 __main__ INFO 12357
+2022-03-24 23:30:40,784 __main__ INFO 12357
+2022-03-24 23:30:40,784 TADA INFO assertion 113, job_start correctly represented in metric set: with mult jobs running for Job 12357, passed
+2022-03-24 23:30:40,784 TADA INFO assertion 114, job_end correctly represented in metric set: with mutl jobs running, for Job 12357, passed
+2022-03-24 23:30:40,784 TADA INFO assertion 115, task_pid correctly represented: with mult jobs running for Job 12357, passed
+2022-03-24 23:30:40,785 TADA INFO assertion 116, task_pid correctly represented: with mult jobs running for Job 12357, passed
+2022-03-24 23:30:40,785 TADA INFO assertion 117, task_pid correctly represented: with mult jobs running for Job 12357, passed
+2022-03-24 23:30:40,785 TADA INFO assertion 118, task_pid correctly represented: with mult jobs running for Job 12357, passed
+2022-03-24 23:30:40,786 TADA INFO assertion 119, task_pid correctly represented: with mult jobs running for Job 12357, passed
+2022-03-24 23:30:40,786 TADA INFO assertion 120, task_pid correctly represented: with mult jobs running for Job 12357, passed
+2022-03-24 23:30:40,786 TADA INFO assertion 121, task_pid correctly represented: with mult jobs running for Job 12357, passed
+2022-03-24 23:30:40,787 TADA INFO assertion 122, task_pid correctly represented: with mult jobs running for Job 12357, passed
+2022-03-24 23:30:40,918 TADA INFO assertion 123, Job properly assigned to correct slot: correct job_id fills next slot, passed
+2022-03-24 23:30:40,918 __main__ INFO 12358
+2022-03-24 23:30:40,918 __main__ INFO 12358
+2022-03-24 23:30:40,919 TADA INFO assertion 124, job_start correctly represented in metric set: with mult jobs running for Job 12358, passed
+2022-03-24 23:30:40,919 TADA INFO assertion 125, job_end correctly represented in metric set: with mutl jobs running, for Job 12358, passed
+2022-03-24 23:30:40,919 TADA INFO assertion 126, task_pid correctly represented: with mult jobs running for Job 12358, passed
+2022-03-24 23:30:40,920 TADA INFO assertion 127, task_pid correctly represented: with mult jobs running for Job 12358, passed
+2022-03-24 23:30:40,920 TADA INFO assertion 128, task_pid correctly represented: with mult jobs running for Job 12358, passed
+2022-03-24 23:30:40,920 TADA INFO assertion 129, task_pid correctly represented: with mult jobs running for Job 12358, passed
+2022-03-24 23:30:40,921 TADA INFO assertion 130, task_pid correctly represented: with mult jobs running for Job 12358, passed
+2022-03-24 23:30:40,921 TADA INFO assertion 131, task_pid correctly represented: with mult jobs running for Job 12358, passed
+2022-03-24 23:30:40,921 TADA INFO assertion 132, task_pid correctly represented: with mult jobs running for Job 12358, passed
+2022-03-24 23:30:40,922 TADA INFO assertion 133, task_pid correctly represented: with mult jobs running for Job 12358, passed
+2022-03-24 23:30:41,053 TADA INFO assertion 134, Job properly assigned to correct slot: correct job_id fills next slot, passed
+2022-03-24 23:30:41,053 __main__ INFO 12358
+2022-03-24 23:30:41,053 __main__ INFO 12358
+2022-03-24 23:30:41,054 TADA INFO assertion 135, job_start correctly represented in metric set: with mult jobs running for Job 12358, passed
+2022-03-24 23:30:41,054 TADA INFO assertion 136, job_end correctly represented in metric set: with mutl jobs running, for Job 12358, passed
+2022-03-24 23:30:41,054 TADA INFO assertion 137, task_pid correctly represented: with mult jobs running for Job 12358, passed
+2022-03-24 23:30:41,055 TADA INFO assertion 138, task_pid correctly represented: with mult jobs running for Job 12358, passed
+2022-03-24 23:30:41,055 TADA INFO assertion 139, task_pid correctly represented: with mult jobs running for Job 12358, passed
+2022-03-24 23:30:41,055 TADA INFO assertion 140, task_pid correctly represented: with mult jobs running for Job 12358, passed
+2022-03-24 23:30:41,056 TADA INFO assertion 141, task_pid correctly represented: with mult jobs running for Job 12358, passed
+2022-03-24 23:30:41,056 TADA INFO assertion 142, task_pid correctly represented: with mult jobs running for Job 12358, passed
+2022-03-24 23:30:41,056 TADA INFO assertion 143, task_pid correctly represented: with mult jobs running for Job 12358, passed
+2022-03-24 23:30:41,057 TADA INFO assertion 144, task_pid correctly represented: with mult jobs running for Job 12358, passed
+2022-03-24 23:30:42,107 TADA INFO assertion 145, new job correctly replaces oldest slot: correct job_id fills next slot, passed
+2022-03-24 23:30:42,107 __main__ INFO 12353
+2022-03-24 23:30:42,108 __main__ INFO 12353
+2022-03-24 23:30:42,108 TADA INFO assertion 146, new job_start correctly represented in metric set: with mult jobs running for Job 12353, passed
+2022-03-24 23:30:42,108 TADA INFO assertion 147, new job_end correctly represented in metric set: with mutl jobs running, for Job 12353, passed
+2022-03-24 23:30:42,108 TADA INFO assertion 148, new job's task replaces oldest slot: with mult jobs running for Job 12353, passed
+2022-03-24 23:30:42,109 TADA INFO assertion 149, new job's task replaces oldest slot: with mult jobs running for Job 12353, passed
+2022-03-24 23:30:42,109 TADA INFO assertion 150, new job's task replaces oldest slot: with mult jobs running for Job 12353, passed
+2022-03-24 23:30:42,109 TADA INFO assertion 151, new job's task replaces oldest slot: with mult jobs running for Job 12353, passed
+2022-03-24 23:30:42,110 TADA INFO assertion 152, new job's task replaces oldest slot: with mult jobs running for Job 12353, passed
+2022-03-24 23:30:42,110 TADA INFO assertion 153, new job's task replaces oldest slot: with mult jobs running for Job 12353, passed
+2022-03-24 23:30:42,110 TADA INFO assertion 154, new job's task replaces oldest slot: with mult jobs running for Job 12353, passed
+2022-03-24 23:30:42,111 TADA INFO assertion 155, new job's task replaces oldest slot: with mult jobs running for Job 12353, passed
+2022-03-24 23:30:42,111 __main__ INFO -- Test Finished --
+Delivering events...
+Delivering events...
+Delivering events...
+Delivering events...
+Delivering events...
+Delivering events...
+Delivering events...
+Delivering events...
+Delivering events...
+2022-03-24 23:30:42,111 TADA INFO test slurm_stream_test ended
+2022-03-24 23:30:52 INFO: ----------------------------------------------
+2022-03-24 23:30:53 INFO: ======== spank_notifier_test ========
+2022-03-24 23:30:53 INFO: CMD: python3 spank_notifier_test --prefix /opt/ovis --src /mnt/cygnus/data/2022-03-24-230001 --data_root /mnt/cygnus/data/2022-03-24-230001/data/spank_notifier_test
+2022-03-24 23:30:53,325 TADA INFO starting test `spank_notifier_test`
+2022-03-24 23:30:53,325 TADA INFO   test-id: d6db4b401c068591527bfdf28fcc46181cf6e3a76e2219ae59a8e82b437b07ff
+2022-03-24 23:30:53,326 TADA INFO   test-suite: Slurm_Plugins
+2022-03-24 23:30:53,326 TADA INFO   test-name: spank_notifier_test
+2022-03-24 23:30:53,326 TADA INFO   test-user: narate
+2022-03-24 23:30:53,326 TADA INFO   commit-id: 0b2be93cb87c38b2901fa2e6f0e7ac9ed63a2e08
+2022-03-24 23:30:53,326 __main__ INFO -- Create the cluster --
+2022-03-24 23:31:05,253 __main__ INFO -- Cleanup output --
+2022-03-24 23:31:05,265 __main__ INFO -- Test bad plugstack config --
+2022-03-24 23:31:05,265 __main__ INFO Starting slurm ...
+2022-03-24 23:31:06,012 __main__ INFO Starting slurm ... OK
+2022-03-24 23:31:26,104 __main__ INFO -- Submitting job with num_tasks 4 --
+2022-03-24 23:31:26,129 __main__ INFO   jobid = 2
+2022-03-24 23:31:26,146 __main__ INFO -- Submitting job with num_tasks 4 --
+2022-03-24 23:31:26,170 __main__ INFO   jobid = 3
+2022-03-24 23:31:26,184 __main__ INFO -- Submitting job with num_tasks 4 --
+2022-03-24 23:31:26,207 __main__ INFO   jobid = 4
+2022-03-24 23:31:26,224 __main__ INFO -- Submitting job with num_tasks 4 --
+2022-03-24 23:31:26,245 __main__ INFO   jobid = 5
+2022-03-24 23:31:32,325 TADA INFO assertion 60, Bad config does not affect jobs: jobs verified, passed
+2022-03-24 23:31:32,325 __main__ INFO Killin slurm ...
+2022-03-24 23:31:32,583 __main__ INFO Killin slurm ... OK
+2022-03-24 23:31:52,589 __main__ INFO -- Start daemons --
+2022-03-24 23:31:53,327 __main__ INFO Starting slurm ... OK
+2022-03-24 23:32:13,367 __main__ INFO -- Submitting job with no stream listener --
+2022-03-24 23:32:13,383 __main__ INFO -- Submitting job with num_tasks 8 --
+2022-03-24 23:32:13,408 __main__ INFO   jobid = 6
+2022-03-24 23:32:28,444 TADA INFO assertion 0, Missing stream listener on node-1 does not affect job execution: job output file created, passed
+2022-03-24 23:32:28,444 TADA INFO assertion 1, Missing stream listener on node-2 does not affect job execution: job output file created, passed
+2022-03-24 23:32:33,527 __main__ INFO -- Submitting job with listener --
+2022-03-24 23:32:33,545 __main__ INFO -- Submitting job with num_tasks 1 --
+2022-03-24 23:32:33,568 __main__ INFO   jobid = 7
+2022-03-24 23:32:33,584 __main__ INFO -- Submitting job with num_tasks 2 --
+2022-03-24 23:32:33,604 __main__ INFO   jobid = 8
+2022-03-24 23:32:33,619 __main__ INFO -- Submitting job with num_tasks 4 --
+2022-03-24 23:32:33,642 __main__ INFO   jobid = 9
+2022-03-24 23:32:33,657 __main__ INFO -- Submitting job with num_tasks 8 --
+2022-03-24 23:32:33,680 __main__ INFO   jobid = 10
+2022-03-24 23:32:33,696 __main__ INFO -- Submitting job with num_tasks 27 --
+2022-03-24 23:32:33,719 __main__ INFO   jobid = 11
+2022-03-24 23:32:54,090 __main__ INFO -- Verifying Events --
+2022-03-24 23:32:54,091 TADA INFO assertion 2, 1-task job: first event is 'init': `init` verified, passed
+2022-03-24 23:32:54,091 TADA INFO assertion 3, 1-task job: 'step_init' event contains subscriber data: `init` subscriber_data verified, passed
+2022-03-24 23:32:54,091 TADA INFO assertion 4, 1-task job: second event is 'task_init_priv': `task_init_priv` verified, passed
+2022-03-24 23:32:54,092 TADA INFO assertion 5, 1-task job: third event is 'task_exit': `task_exit` verified, passed
+2022-03-24 23:32:54,092 TADA INFO assertion 6, 1-task job: fourth event is 'exit': `exit` verified, passed
+2022-03-24 23:32:54,092 TADA INFO assertion 7, 2-task job: first event is 'init': `init` verified, passed
+2022-03-24 23:32:54,093 TADA INFO assertion 8, 2-task job: 'step_init' event contains subscriber data: `init` subscriber_data verified, passed
+2022-03-24 23:32:54,093 TADA INFO assertion 9, 2-task job: second event is 'task_init_priv': `task_init_priv` verified, passed
+2022-03-24 23:32:54,093 TADA INFO assertion 10, 2-task job: third event is 'task_exit': `task_exit` verified, passed
+2022-03-24 23:32:54,094 TADA INFO assertion 11, 2-task job: fourth event is 'exit': `exit` verified, passed
+2022-03-24 23:32:54,094 TADA INFO assertion 12, 4-task job: first event is 'init': `init` verified, passed
+2022-03-24 23:32:54,094 TADA INFO assertion 13, 4-task job: 'step_init' event contains subscriber data: `init` subscriber_data verified, passed
+2022-03-24 23:32:54,095 TADA INFO assertion 14, 4-task job: second event is 'task_init_priv': `task_init_priv` verified, passed
+2022-03-24 23:32:54,095 TADA INFO assertion 15, 4-task job: third event is 'task_exit': `task_exit` verified, passed
+2022-03-24 23:32:54,095 TADA INFO assertion 16, 4-task job: fourth event is 'exit': `exit` verified, passed
+2022-03-24 23:32:54,096 TADA INFO assertion 17, 8-task job: first event is 'init': `init` verified, passed
+2022-03-24 23:32:54,096 TADA INFO assertion 18, 8-task job: 'step_init' event contains subscriber data: `init` subscriber_data verified, passed
+2022-03-24 23:32:54,097 TADA INFO assertion 19, 8-task job: second event is 'task_init_priv': `task_init_priv` verified, passed
+2022-03-24 23:32:54,097 TADA INFO assertion 20, 8-task job: third event is 'task_exit': `task_exit` verified, passed
+2022-03-24 23:32:54,097 TADA INFO assertion 21, 8-task job: fourth event is 'exit': `exit` verified, passed
+2022-03-24 23:32:54,098 TADA INFO assertion 22, 27-task job: first event is 'init': `init` verified, passed
+2022-03-24 23:32:54,098 TADA INFO assertion 23, 27-task job: 'step_init' event contains subscriber data: `init` subscriber_data verified, passed
+2022-03-24 23:32:54,098 TADA INFO assertion 24, 27-task job: second event is 'task_init_priv': `task_init_priv` verified, passed
+2022-03-24 23:32:54,099 TADA INFO assertion 25, 27-task job: third event is 'task_exit': `task_exit` verified, passed
+2022-03-24 23:32:54,099 TADA INFO assertion 26, 27-task job: fourth event is 'exit': `exit` verified, passed
+2022-03-24 23:32:54,099 __main__ INFO job 8 multi-tenant with dict_keys([7])
+2022-03-24 23:32:54,099 __main__ INFO job 11 multi-tenant with dict_keys([7, 8])
+2022-03-24 23:32:54,099 __main__ INFO job 11 multi-tenant with dict_keys([9])
+2022-03-24 23:32:54,100 __main__ INFO job 11 multi-tenant with dict_keys([10])
+2022-03-24 23:32:54,100 __main__ INFO job 11 multi-tenant with dict_keys([10])
+2022-03-24 23:32:54,100 TADA INFO assertion 50, Multi-tenant verification: Multi-tenant jobs found, passed
+2022-03-24 23:32:54,116 __main__ INFO -- Submitting job that crashes listener --
+2022-03-24 23:32:54,140 __main__ INFO   jobid = 12
+2022-03-24 23:33:04,158 TADA INFO assertion 51, Killing stream listener does not affect job execution on node-1: job output file created, passed
+2022-03-24 23:33:04,161 TADA INFO assertion 52, Killing stream listener does not affect job execution on node-2: job output file created, passed
+2022-03-24 23:33:04,162 TADA INFO test spank_notifier_test ended
+2022-03-24 23:33:15 INFO: ----------------------------------------------
+2022-03-24 23:33:16 INFO: ======== ldms_list_test ========
+2022-03-24 23:33:16 INFO: CMD: python3 ldms_list_test --prefix /opt/ovis --src /mnt/cygnus/data/2022-03-24-230001 --data_root /mnt/cygnus/data/2022-03-24-230001/data/ldms_list_test
+2022-03-24 23:33:16,600 TADA INFO starting test `ldms_list_test`
+2022-03-24 23:33:16,600 TADA INFO   test-id: 0626fce63b6d9367d0af5f0a8722fc9485c2d88717d49238578bd12189c5b3fd
+2022-03-24 23:33:16,600 TADA INFO   test-suite: LDMSD
+2022-03-24 23:33:16,600 TADA INFO   test-name: ldms_list_test
+2022-03-24 23:33:16,600 TADA INFO   test-user: narate
+2022-03-24 23:33:16,600 TADA INFO   commit-id: 0b2be93cb87c38b2901fa2e6f0e7ac9ed63a2e08
+2022-03-24 23:33:16,601 __main__ INFO -- Get or create the cluster --
+2022-03-24 23:33:18,040 __main__ INFO -- Start daemons --
+2022-03-24 23:33:23,453 __main__ INFO ... wait a bit to make sure ldmsd's are up
+2022-03-24 23:33:25,456 __main__ INFO start list_samp.py and list_agg.py interactive sessions
+2022-03-24 23:33:29,668 TADA INFO assertion 1, check list_sampler on list_agg.py: OK, passed
+2022-03-24 23:33:29,669 TADA INFO assertion 2, (1st update) check set1 on list_samp.py: OK, passed
+2022-03-24 23:33:29,670 TADA INFO assertion 3, (1st update) check set3_p on list_samp.py: OK, passed
+2022-03-24 23:33:29,670 TADA INFO assertion 4, (1st update)check set3_c on list_samp.py: OK, passed
+2022-03-24 23:33:29,671 TADA INFO assertion 5, (1st update)check set1 on list_agg.py: OK, passed
+2022-03-24 23:33:29,672 TADA INFO assertion 6, (1st update)check set3_p on list_agg.py: OK, passed
+2022-03-24 23:33:29,672 TADA INFO assertion 7, (1st update)check set3_c on list_agg.py: OK, passed
+2022-03-24 23:33:29,672 __main__ INFO 2nd sampling on the sampler...
+2022-03-24 23:33:31,476 TADA INFO assertion 8, (2nd update) check set1 on list_samp.py: OK, passed
+2022-03-24 23:33:31,477 TADA INFO assertion 9, (2nd update) check set3_p on list_samp.py: OK, passed
+2022-03-24 23:33:31,477 TADA INFO assertion 10, (2nd update) check set3_c on list_samp.py: OK, passed
+2022-03-24 23:33:31,478 __main__ INFO 2nd update on the aggregator...
+2022-03-24 23:33:33,281 TADA INFO assertion 11, (2nd update) check set1 on list_agg.py: OK, passed
+2022-03-24 23:33:33,282 TADA INFO assertion 12, (2nd update) check set3_p on list_agg.py: OK, passed
+2022-03-24 23:33:33,282 TADA INFO assertion 13, (2nd update) check set3_c on list_agg.py: OK, passed
+2022-03-24 23:33:33,283 __main__ INFO 3rd sampling on the sampler...
+2022-03-24 23:33:35,086 TADA INFO assertion 14, (3rd update) check set1 on list_samp.py: OK, passed
+2022-03-24 23:33:35,087 TADA INFO assertion 15, (3rd update) check set3_p on list_samp.py: OK, passed
+2022-03-24 23:33:35,088 TADA INFO assertion 16, (3rd update) check set3_c on list_samp.py: OK, passed
+2022-03-24 23:33:35,088 __main__ INFO 3rd update on the aggregator...
+2022-03-24 23:33:36,891 TADA INFO assertion 17, (3rd update) check set1 on list_agg.py: OK, passed
+2022-03-24 23:33:36,892 TADA INFO assertion 18, (3rd update) check set3_p on list_agg.py: OK, passed
+2022-03-24 23:33:36,893 TADA INFO assertion 19, (3rd update) check set3_c on list_agg.py: OK, passed
+2022-03-24 23:33:36,893 __main__ INFO 4th sampling on the sampler...
+2022-03-24 23:33:38,697 TADA INFO assertion 20, (4th update; list uncahnged) check set1 on list_samp.py: OK, passed
+2022-03-24 23:33:38,697 TADA INFO assertion 21, (4th update; list uncahnged) check set3_p on list_samp.py: OK, passed
+2022-03-24 23:33:38,698 TADA INFO assertion 22, (4th update; list uncahnged) check set3_c on list_samp.py: OK, passed
+2022-03-24 23:33:38,698 __main__ INFO 4th update on the aggregator...
+2022-03-24 23:33:40,502 TADA INFO assertion 23, (4th update; list uncahnged) check set1 on list_agg.py: OK, passed
+2022-03-24 23:33:40,502 TADA INFO assertion 24, (4th update; list uncahnged) check set3_p on list_agg.py: OK, passed
+2022-03-24 23:33:40,503 TADA INFO assertion 25, (4th update; list uncahnged) check set3_c on list_agg.py: OK, passed
+2022-03-24 23:33:40,503 __main__ INFO 5th sampling on the sampler...
+2022-03-24 23:33:42,707 TADA INFO assertion 26, (5th update; list del) check set1 on list_samp.py: OK, passed
+2022-03-24 23:33:42,708 TADA INFO assertion 27, (5th update; list del) check set3_p on list_samp.py: OK, passed
+2022-03-24 23:33:42,709 TADA INFO assertion 28, (5th update; list del) check set3_c on list_samp.py: OK, passed
+2022-03-24 23:33:42,709 __main__ INFO 5th update on the aggregator...
+2022-03-24 23:33:44,713 TADA INFO assertion 29, (5th update; list del) check set1 on list_agg.py: OK, passed
+2022-03-24 23:33:44,714 TADA INFO assertion 30, (5th update; list del) check set3_p on list_agg.py: OK, passed
+2022-03-24 23:33:44,714 TADA INFO assertion 31, (5th update; list del) check set3_c on list_agg.py: OK, passed
+2022-03-24 23:33:44,714 __main__ INFO 6th sampling on the sampler...
+2022-03-24 23:33:46,718 TADA INFO assertion 32, (6th update; list unchanged) check set1 on list_samp.py: OK, passed
+2022-03-24 23:33:46,719 TADA INFO assertion 33, (6th update; list unchanged) check set3_p on list_samp.py: OK, passed
+2022-03-24 23:33:46,720 TADA INFO assertion 34, (6th update; list unchanged) check set3_c on list_samp.py: OK, passed
+2022-03-24 23:33:46,720 __main__ INFO 6th update on the updator...
+2022-03-24 23:33:48,824 TADA INFO assertion 35, (6th update; list unchanged) check set1 on list_agg.py: OK, passed
+2022-03-24 23:33:48,825 TADA INFO assertion 36, (6th update; list unchanged) check set3_p on list_agg.py: OK, passed
+2022-03-24 23:33:48,825 TADA INFO assertion 37, (6th update; list unchanged) check set3_c on list_agg.py: OK, passed
+2022-03-24 23:33:48,826 TADA INFO test ldms_list_test ended
+2022-03-24 23:33:59 INFO: ----------------------------------------------
+2022-03-24 23:33:59 INFO: ======== quick_set_add_rm_test ========
+2022-03-24 23:33:59 INFO: CMD: python3 quick_set_add_rm_test --prefix /opt/ovis --src /mnt/cygnus/data/2022-03-24-230001 --data_root /mnt/cygnus/data/2022-03-24-230001/data/quick_set_add_rm_test
+2022-03-24 23:33:59,857 TADA INFO starting test `quick_set_add_rm_test`
+2022-03-24 23:33:59,857 TADA INFO   test-id: f0c4c79dd74d824f7d8cef2a788bc342662489b8c5b0780de8b140c1f85087e7
+2022-03-24 23:33:59,857 TADA INFO   test-suite: LDMSD
+2022-03-24 23:33:59,857 TADA INFO   test-name: quick_set_add_rm_test
+2022-03-24 23:33:59,857 TADA INFO   test-user: narate
+2022-03-24 23:33:59,857 TADA INFO   commit-id: 0b2be93cb87c38b2901fa2e6f0e7ac9ed63a2e08
+2022-03-24 23:33:59,858 __main__ INFO -- Get or create the cluster --
+2022-03-24 23:34:03,226 __main__ INFO -- Start samp.py --
+2022-03-24 23:34:08,335 TADA INFO assertion 1, start samp.py: prompt checked, passed
+2022-03-24 23:34:08,336 __main__ INFO -- Start daemons --
+2022-03-24 23:34:14,234 __main__ INFO ... wait a bit to make sure ldmsd's are up
+2022-03-24 23:34:19,807 TADA INFO assertion 2, verify data: verified, passed
+2022-03-24 23:34:23,645 TADA INFO assertion 3, samp.py adds set1 / verify data: verified, passed
+2022-03-24 23:34:27,293 TADA INFO assertion 4, samp.py removes set1 / verify data: verified, passed
+2022-03-24 23:34:30,948 TADA INFO assertion 5, samp.py quickly adds and removes set2 / verify data: verified, passed
+2022-03-24 23:34:35,956 TADA INFO assertion 6, agg-1 log stays empty: verified, passed
+2022-03-24 23:34:35,957 TADA INFO test quick_set_add_rm_test ended
+2022-03-24 23:34:46 INFO: ----------------------------------------------
+2022-03-24 23:34:47 INFO: ======== set_array_hang_test ========
+2022-03-24 23:34:47 INFO: CMD: python3 set_array_hang_test --prefix /opt/ovis --src /mnt/cygnus/data/2022-03-24-230001 --data_root /mnt/cygnus/data/2022-03-24-230001/data/set_array_hang_test
+2022-03-24 23:34:47,340 TADA INFO starting test `set_array_hang_test`
+2022-03-24 23:34:47,340 TADA INFO   test-id: d249916fdd3d99b3f77f38b690f66f7145026020dbc7c08b1999a3a86db119f3
+2022-03-24 23:34:47,340 TADA INFO   test-suite: LDMSD
+2022-03-24 23:34:47,340 TADA INFO   test-name: set_array_hang_test
+2022-03-24 23:34:47,341 TADA INFO   test-user: narate
+2022-03-24 23:34:47,341 TADA INFO   commit-id: 0b2be93cb87c38b2901fa2e6f0e7ac9ed63a2e08
+2022-03-24 23:34:47,341 __main__ INFO -- Get or create the cluster --
+2022-03-24 23:34:48,760 __main__ INFO -- Start processes --
+2022-03-24 23:34:48,761 __main__ INFO starting interactive set_array_samp.py
+2022-03-24 23:34:50,867 TADA INFO assertion 1, start set_array_samp.py: data verified, passed
+2022-03-24 23:34:52,973 TADA INFO assertion 2, start set_array_agg.py: data verified, passed
+2022-03-24 23:34:54,777 TADA INFO assertion 3, agg update before the 1st sample: data verified, passed
+2022-03-24 23:34:56,581 TADA INFO assertion 4, sampling 2 times then agg update: data verified, passed
+2022-03-24 23:34:57,484 TADA INFO assertion 5, agg update w/o new sampling: data verified, passed
+2022-03-24 23:34:59,388 TADA INFO assertion 6, sampling 5 times then agg update: data verified, passed
+2022-03-24 23:34:59,389 TADA INFO test set_array_hang_test ended
+2022-03-24 23:35:09 INFO: ----------------------------------------------
+2022-03-24 23:35:10 INFO: ======== ldmsd_autointerval_test ========
+2022-03-24 23:35:10 INFO: CMD: python3 ldmsd_autointerval_test --prefix /opt/ovis --src /mnt/cygnus/data/2022-03-24-230001 --data_root /mnt/cygnus/data/2022-03-24-230001/data/ldmsd_autointerval_test
+2022-03-24 23:35:10,428 TADA INFO starting test `ldmsd_autointerval_test`
+2022-03-24 23:35:10,429 TADA INFO   test-id: ffa390e18b1f7479a8b2518c7a147fa84cd38b9b4c6567bbc5678130e514f9c9
+2022-03-24 23:35:10,429 TADA INFO   test-suite: LDMSD
+2022-03-24 23:35:10,429 TADA INFO   test-name: ldmsd_autointerval_test
+2022-03-24 23:35:10,429 TADA INFO   test-user: narate
+2022-03-24 23:35:10,429 TADA INFO   commit-id: 0b2be93cb87c38b2901fa2e6f0e7ac9ed63a2e08
+2022-03-24 23:35:10,430 __main__ INFO -- Get or create the cluster --
+2022-03-24 23:35:13,593 __main__ INFO -- Start daemons --
+2022-03-24 23:35:14,322 __main__ INFO ... wait a bit to make sure ldmsd's are up
+2022-03-24 23:35:19,930 TADA INFO assertion 1, start all daemons and interactive controller: OK, passed
+2022-03-24 23:35:20,231 TADA INFO assertion 2, verify sampling interval and update hints: verified, passed
+2022-03-24 23:35:20,231 __main__ INFO Let them run for a while to collect data ...
+2022-03-24 23:35:30,237 __main__ INFO Setting sample interval to 1000000 ...
+2022-03-24 23:35:32,943 TADA INFO assertion 3, set and verify 2nd sampling interval / update hints: verified, passed
+2022-03-24 23:35:32,944 __main__ INFO Let them run for a while to collect data ...
+2022-03-24 23:35:42,953 __main__ INFO Setting sample interval to 2000000 ...
+2022-03-24 23:35:45,657 TADA INFO assertion 4, set and verify 3rd sampling interval / update hints: verified, passed
+2022-03-24 23:35:45,657 __main__ INFO Let them run for a while to collect data ...
+2022-03-24 23:35:55,686 TADA INFO assertion 5, verify SOS data: timestamp differences in SOS show all 3 intervals, passed
+2022-03-24 23:35:55,689 TADA INFO assertion 6, verify 'oversampled' in the agg2 log: OK, passed
+2022-03-24 23:35:55,690 TADA INFO test ldmsd_autointerval_test ended
+2022-03-24 23:36:06 INFO: ----------------------------------------------
+2022-03-24 23:36:06 INFO: ==== Summary ====
+ldmsd_ctrl_test: [01;32mPASSED[0m
+failover_test: [01;32mPASSED[0m
+papi_store_test: [01;32mPASSED[0m
+ldmsd_auth_ovis_test: [01;32mPASSED[0m
+store_app_test: [01;32mPASSED[0m
+quick_set_add_rm_test: [01;32mPASSED[0m
+set_array_test: [01;32mPASSED[0m
+ovis_ev_test: [01;32mPASSED[0m
+setgroup_test: [01;32mPASSED[0m
+ldms_list_test: [01;32mPASSED[0m
+mt-slurm-test: [01;32mPASSED[0m
+slurm_stream_test: [01;32mPASSED[0m
+maestro_cfg_test: [01;32mPASSED[0m
+papi_sampler_test: [01;32mPASSED[0m
+syspapi_test: [01;32mPASSED[0m
+spank_notifier_test: [01;32mPASSED[0m
+agg_slurm_test: [01;32mPASSED[0m
+ldmsd_autointerval_test: [01;32mPASSED[0m
+ldmsd_stream_test: [01;32mPASSED[0m
+direct_ldms_ls_conn_test: [01;31mFAILED[0m
+set_array_hang_test: [01;32mPASSED[0m
+direct_prdcr_subscribe_test: [01;31mFAILED[0m
+ldmsd_auth_test: [01;32mPASSED[0m
+agg_test: [01;32mPASSED[0m
+prdcr_subscribe_test: [01;32mPASSED[0m
+------------------------------------------
+Total tests passed: 23/25
+------------------------------------------
