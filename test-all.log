@@ -1,31 +1,156 @@
-+ INFO 'WORK_DIR: /mnt/300G/data/2022-07-25-165632'
-+ LOG_MSG INFO: 'WORK_DIR: /mnt/300G/data/2022-07-25-165632'
++ INFO 'WORK_DIR: /mnt/300G/data/2022-07-25-170105'
++ LOG_MSG INFO: 'WORK_DIR: /mnt/300G/data/2022-07-25-170105'
 ++ date '+%F %T'
-+ echo 2022-07-25 16:56:32 INFO: 'WORK_DIR: /mnt/300G/data/2022-07-25-165632'
-2022-07-25 16:56:32 INFO: WORK_DIR: /mnt/300G/data/2022-07-25-165632
-+ INFO 'LOG: /mnt/300G/data/2022-07-25-165632/cygnus-weekly.log'
-+ LOG_MSG INFO: 'LOG: /mnt/300G/data/2022-07-25-165632/cygnus-weekly.log'
++ echo 2022-07-25 17:01:05 INFO: 'WORK_DIR: /mnt/300G/data/2022-07-25-170105'
+2022-07-25 17:01:05 INFO: WORK_DIR: /mnt/300G/data/2022-07-25-170105
++ INFO 'LOG: /mnt/300G/data/2022-07-25-170105/cygnus-weekly.log'
++ LOG_MSG INFO: 'LOG: /mnt/300G/data/2022-07-25-170105/cygnus-weekly.log'
 ++ date '+%F %T'
-+ echo 2022-07-25 16:56:32 INFO: 'LOG: /mnt/300G/data/2022-07-25-165632/cygnus-weekly.log'
-2022-07-25 16:56:32 INFO: LOG: /mnt/300G/data/2022-07-25-165632/cygnus-weekly.log
++ echo 2022-07-25 17:01:05 INFO: 'LOG: /mnt/300G/data/2022-07-25-170105/cygnus-weekly.log'
+2022-07-25 17:01:05 INFO: LOG: /mnt/300G/data/2022-07-25-170105/cygnus-weekly.log
 + pushd /home/narate/cron/ldms-test
 ~/cron/ldms-test ~/cron/ldms-test
 + set -e
 + ./remove_cluster --all
-+ pushd /mnt/300G/data/2022-07-25-165632
-/mnt/300G/data/2022-07-25-165632 ~/cron/ldms-test ~/cron/ldms-test
++ pushd /mnt/300G/data/2022-07-25-170105
+/mnt/300G/data/2022-07-25-170105 ~/cron/ldms-test ~/cron/ldms-test
 + [[ f86034de6982a18f56555f2edb74b0c750812ece != '' ]]
 + /home/narate/cron/ldms-test/scripts/clean-build.sh
-/mnt/300G/data/2022-07-25-165632 /mnt/300G/data/2022-07-25-165632
-2022-07-25 16:56:33 INFO: == Checking out SOS ==
+======= ENVIRONMENT =======
+BASH=/bin/bash
+BASHOPTS=checkwinsize:cmdhist:complete_fullquote:extquote:force_fignore:hostcomplete:interactive_comments:progcomp:promptvars:sourcepath
+BASH_ALIASES=()
+BASH_ARGC=()
+BASH_ARGV=()
+BASH_CMDS=()
+BASH_LINENO=([0]="0")
+BASH_SOURCE=([0]="/home/narate/cron/ldms-test/scripts/clean-build.sh")
+BASH_VERSINFO=([0]="4" [1]="4" [2]="23" [3]="1" [4]="release" [5]="x86_64-suse-linux-gnu")
+BASH_VERSION='4.4.23(1)-release'
+COLORTERM=1
+CONFIG_SITE=/usr/share/site/x86_64-unknown-linux-gnu
+CPU=x86_64
+CSHEDIT=emacs
+CVS_RSH=ssh
+DIRSTACK=()
+EUID=3030
+FROM_HEADER=
+GITHUB_REPORT=1
+GPG_TTY=/dev/pts/3
+GROUPS=()
+G_BROKEN_FILENAMES=1
+G_FILENAME_ENCODING=@locale,UTF-8,ISO-8859-15,CP1252
+HISTSIZE=1000
+HOME=/home/narate
+HOST=cygnus-08
+HOSTNAME=cygnus-08
+HOSTTYPE=x86_64
+IFS=$' \t\n'
+LANG=en_US.UTF-8
+LDMSD_PLUGIN_LIBPATH=/opt/ovis/lib64/ovis-ldms
+LDMS_AUTH_FILE=/opt/ovis/etc/ldms/ldmsauth.conf
+LESS='-M -I -R'
+LESSCLOSE='lessclose.sh %s %s'
+LESSKEY=/etc/lesskey.bin
+LESSOPEN='lessopen.sh %s'
+LESS_ADVANCED_PREPROCESSOR=no
+LESS_TERMCAP_mb=$'\E[01;31m'
+LESS_TERMCAP_md=$'\E[01;38;5;74m'
+LESS_TERMCAP_me=$'\E[0m'
+LESS_TERMCAP_se=$'\E[0m'
+LESS_TERMCAP_so=$'\E[38;5;016m\E[48;5;220m'
+LESS_TERMCAP_ue=$'\E[0m'
+LESS_TERMCAP_us=$'\E[04;38;5;146m'
+LOGNAME=narate
+LS_COLORS='no=00:fi=00:di=01;34:ln=00;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=41;33;01:ex=00;32:*.cmd=00;32:*.exe=01;32:*.com=01;32:*.bat=01;32:*.btm=01;32:*.dll=01;32:*.tar=00;31:*.tbz=00;31:*.tgz=00;31:*.rpm=00;31:*.deb=00;31:*.arj=00;31:*.taz=00;31:*.lzh=00;31:*.lzma=00;31:*.zip=00;31:*.zoo=00;31:*.z=00;31:*.Z=00;31:*.gz=00;31:*.bz2=00;31:*.tb2=00;31:*.tz2=00;31:*.tbz2=00;31:*.xz=00;31:*.avi=01;35:*.bmp=01;35:*.dl=01;35:*.fli=01;35:*.gif=01;35:*.gl=01;35:*.jpg=01;35:*.jpeg=01;35:*.mkv=01;35:*.mng=01;35:*.mov=01;35:*.mp4=01;35:*.mpg=01;35:*.pcx=01;35:*.pbm=01;35:*.pgm=01;35:*.png=01;35:*.ppm=01;35:*.svg=01;35:*.tga=01;35:*.tif=01;35:*.webm=01;35:*.webp=01;35:*.wmv=01;35:*.xbm=01;35:*.xcf=01;35:*.xpm=01;35:*.aiff=00;32:*.ape=00;32:*.au=00;32:*.flac=00;32:*.m4a=00;32:*.mid=00;32:*.mp3=00;32:*.mpc=00;32:*.ogg=00;32:*.voc=00;32:*.wav=00;32:*.wma=00;32:*.wv=00;32:'
+LS_OPTIONS='-N --color=tty -T 0'
+MACHTYPE=x86_64-suse-linux
+MAIL=/var/spool/mail/narate
+MANPATH=/usr/share/man:/usr/local/man:/usr/man
+MINICOM='-c on'
+MORE=-sl
+OLDPWD=/home/narate/cron/ldms-test
+OLD_GIT_SHA=
+OPTERR=1
+OPTIND=1
+OSTYPE=linux
+OVIS_GIT_SHA=f86034de6982a18f56555f2edb74b0c750812ece
+PAGER=less
+PATH=/opt/ovis/sbin:/opt/ovis/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+PIPESTATUS=([0]="0")
+PPID=16085
+PREFIX=/opt/ovis
+PROFILEREAD=true
+PROMPT_COMMAND=myprompt
+PS4='+ '
+PWD=/mnt/300G/data/2022-07-25-170105
+PYTHONPATH=:/opt/ovis/lib/python3.6/site-packages
+SHELL=/bin/bash
+SHELLOPTS=braceexpand:errexit:hashall:interactive-comments
+SHLVL=3
+TERM=screen
+UID=3030
+USER=narate
+WINDOWMANAGER=xterm
+WORK_DIR=/mnt/300G/data/2022-07-25-170105
+XDG_CONFIG_DIRS=/etc/xdg
+XDG_DATA_DIRS=/usr/share
+XKEYSYMDB=/usr/X11R6/lib/X11/XKeysymDB
+XNLSPATH=/usr/X11R6/lib/X11/nls
+ZAP_LIBPATH=/opt/ovis/lib64/ovis-ldms
+_='======= ENVIRONMENT ======='
+ERROR () 
+{ 
+    LOG_MSG "ERROR:" "$@"
+}
+INFO () 
+{ 
+    LOG_MSG "INFO:" "$@"
+}
+LOG_MSG () 
+{ 
+    echo $( date +"%F %T" ) "$@"
+}
+assert () 
+{ 
+    "$@" || { 
+        ERROR "cmd: '$*' failed";
+        exit -1
+    }
+}
+myprompt () 
+{ 
+    if test -z "$parent"; then
+        if ((PPID)); then
+            parent=`ps -o cmd --no-headers $PPID | awk '{ print $1 }'`;
+        else
+            parent="--";
+        fi;
+    fi;
+    if test -z "$left"; then
+        if (( $UID )); then
+            left='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[01;33m\]@\h\[\033[01;34m\] \w';
+        else
+            left='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u\[\033[01;33m\]@\h\[\033[01;34m\] \w';
+        fi;
+    fi;
+    _branch="$(git symbolic-ref HEAD --short 2>/dev/null || echo '--')";
+    _git_sym_ref="\\033[0;32m(git-branch: $_branch)";
+    right="\\[\\033[01;31m\\][$parent]";
+    [[ "$TERM" = "linux" ]] || echo -ne "\033]0;${USER}@${HOSTNAME}:$PWD\007";
+    PS1=$(printf "\n%s %s\n%s\n\\[\\033[01;34m\\]\$\\[\\033[00m\\] " "$right" "$_git_sym_ref" "$left" )
+}
+======= ----------- =======
+/mnt/300G/data/2022-07-25-170105 /mnt/300G/data/2022-07-25-170105
+2022-07-25 17:01:05 INFO: == Checking out SOS ==
 Cloning into 'sos'...
-2022-07-25 16:56:34 INFO: == Checking out OVIS ==
+2022-07-25 17:01:06 INFO: == Checking out OVIS ==
 Cloning into 'ovis'...
-2022-07-25 16:56:37 INFO: == Checkout maestro ==
+2022-07-25 17:01:09 INFO: == Checkout maestro ==
 Cloning into 'maestro'...
-2022-07-25 16:56:37 INFO: Purging /opt/ovis/
-2022-07-25 16:56:37 INFO: == Building/Installing SOS ==
-/mnt/300G/data/2022-07-25-165632/sos /mnt/300G/data/2022-07-25-165632 /mnt/300G/data/2022-07-25-165632
+2022-07-25 17:01:10 INFO: Purging /opt/ovis/
+2022-07-25 17:01:10 INFO: == Building/Installing SOS ==
+/mnt/300G/data/2022-07-25-170105/sos /mnt/300G/data/2022-07-25-170105 /mnt/300G/data/2022-07-25-170105
 + autoreconf -v --force --install -I m4
 autoreconf: Entering directory `.'
 autoreconf: configure.ac: not using Gettext
@@ -51,7 +176,7 @@ configure.ac:8: installing 'config/missing'
 lib/json/Makefile.am: installing 'config/depcomp'
 sos/python/Makefile.am:18: installing 'config/py-compile'
 autoreconf: Leaving directory `.'
-/mnt/300G/data/2022-07-25-165632/sos/build-cygnus-08 /mnt/300G/data/2022-07-25-165632/sos /mnt/300G/data/2022-07-25-165632 /mnt/300G/data/2022-07-25-165632
+/mnt/300G/data/2022-07-25-170105/sos/build-cygnus-08 /mnt/300G/data/2022-07-25-170105/sos /mnt/300G/data/2022-07-25-170105 /mnt/300G/data/2022-07-25-170105
 configure: loading site script /usr/share/site/x86_64-unknown-linux-gnu
 checking whether make supports nested variables... yes
 checking for a BSD-compatible install... /usr/bin/install -c
