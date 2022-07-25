@@ -1,5 +1,19 @@
-2022-07-25 16:54:54 INFO: WORK_DIR: /mnt/300G/data/2022-07-25-165453
-2022-07-25 16:54:54 INFO: LOG: /mnt/300G/data/2022-07-25-165453/cygnus-weekly.log
++ INFO 'WORK_DIR: /mnt/300G/data/2022-07-25-165528'
++ LOG_MSG INFO: 'WORK_DIR: /mnt/300G/data/2022-07-25-165528'
+++ date '+%F %T'
++ echo 2022-07-25 16:55:29 INFO: 'WORK_DIR: /mnt/300G/data/2022-07-25-165528'
+2022-07-25 16:55:29 INFO: WORK_DIR: /mnt/300G/data/2022-07-25-165528
++ INFO 'LOG: /mnt/300G/data/2022-07-25-165528/cygnus-weekly.log'
++ LOG_MSG INFO: 'LOG: /mnt/300G/data/2022-07-25-165528/cygnus-weekly.log'
+++ date '+%F %T'
++ echo 2022-07-25 16:55:29 INFO: 'LOG: /mnt/300G/data/2022-07-25-165528/cygnus-weekly.log'
+2022-07-25 16:55:29 INFO: LOG: /mnt/300G/data/2022-07-25-165528/cygnus-weekly.log
++ pushd /home/narate/cron/ldms-test
 ~/cron/ldms-test ~/cron/ldms-test
-/mnt/300G/data/2022-07-25-165453 ~/cron/ldms-test ~/cron/ldms-test
-./cygnus-weekly.sh: line 119: /home/narate/cron/ldms-test/scripts/clean_build.sh: No such file or directory
++ set -e
++ ./remove_cluster --all
++ pushd /mnt/300G/data/2022-07-25-165528
+/mnt/300G/data/2022-07-25-165528 ~/cron/ldms-test ~/cron/ldms-test
++ [[ f86034de6982a18f56555f2edb74b0c750812ece != '' ]]
++ /home/narate/cron/ldms-test/scripts/clean_build.sh
+./cygnus-weekly.sh: line 120: /home/narate/cron/ldms-test/scripts/clean_build.sh: No such file or directory
