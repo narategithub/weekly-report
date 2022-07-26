@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
   "label": "weekly test on f86034d",
-  "message": "in progress",
-  "color": "blue"
+  "message": "35/41 tests pased",
+  "color": "red"
 }
