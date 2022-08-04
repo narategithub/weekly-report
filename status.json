@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "label": "weekly test on 71e7914",
-  "message": "41/41 tests pased",
-  "color": "brightgreen"
+  "label": "weekly test on 2ec02a2",
+  "message": "build/install failed",
+  "color": "red"
 }
