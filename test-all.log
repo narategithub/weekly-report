@@ -1,5 +1,5 @@
-2022-08-05 20:22:02 INFO: WORK_DIR: /mnt/300G/data/2022-08-05-202201
-2022-08-05 20:22:02 INFO: LOG: /mnt/300G/data/2022-08-05-202201/cygnus-weekly.log
+2022-08-05 20:29:01 INFO: WORK_DIR: /mnt/300G/data/2022-08-05-202901
+2022-08-05 20:29:01 INFO: LOG: /mnt/300G/data/2022-08-05-202901/cygnus-weekly.log
 ~/cron/ldms-test ~
-/mnt/300G/data/2022-08-05-202201 ~/cron/ldms-test ~
-2022-08-05 20:22:02 INFO: ==== start building on host ====
+/mnt/300G/data/2022-08-05-202901 ~/cron/ldms-test ~
+2022-08-05 20:29:02 INFO: ==== start building on host ====
