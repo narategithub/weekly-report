@@ -1,97 +1,12 @@
-2022-09-19 12:53:04 INFO: WORK_DIR: /mnt/300G/data/2022-09-19-125303
-2022-09-19 12:53:04 INFO: LOG: /mnt/300G/data/2022-09-19-125303/cygnus-weekly.log
+2022-09-19 13:10:13 INFO: WORK_DIR: /mnt/300G/data/2022-09-19-131013
+2022-09-19 13:10:13 INFO: LOG: /mnt/300G/data/2022-09-19-131013/cygnus-weekly.log
 ~/projects/ldms-test ~/projects/ldms-test
-/mnt/300G/data/2022-09-19-125303 ~/projects/ldms-test ~/projects/ldms-test
-2022-09-19 12:53:04 INFO: Does not have RDMA, skip building on host
+/mnt/300G/data/2022-09-19-131013 ~/projects/ldms-test ~/projects/ldms-test
+2022-09-19 13:10:14 INFO: Does not have RDMA, skip building on host
 d0f0efc0919dafdb8387c7a7dc69027d5e8949d5
-2022-09-19 12:53:04 INFO: Skip building containerized binary because GIT SHA has not changed: c7577d494f5924b98137084e73d2e95f2e804958
-2022-09-19 12:53:04 INFO: -- Installation process succeeded --
-2022-09-19 12:53:04 INFO: ---------------------------------------------------------------
-~/projects/ldms-test /mnt/300G/data/2022-09-19-125303
-~/projects/ldms-test/weekly-report ~/projects/ldms-test /mnt/300G/data/2022-09-19-125303
-HEAD is now at cf52fa4 2022-09-19-123808
-[master 41ee243] 2022-09-19-125303
- 2 files changed, 14 insertions(+), 78 deletions(-)
- rewrite test-all.log (94%)
-To github.com:narategithub/weekly-report
-   cf52fa4..41ee243  master -> master
-~/projects/ldms-test /mnt/300G/data/2022-09-19-125303
-2022-09-19 12:53:06 INFO: ==== OVIS+SOS Installation Completed ====
-2022-09-19 12:53:06 INFO: ==== Start batch testing ====
-~/projects/ldms-test /mnt/300G/data/2022-09-19-125303 ~/projects/ldms-test ~/projects/ldms-test
-2022-09-19 12:53:06 INFO: ======== agg_slurm_test ========
-2022-09-19 12:53:06 INFO: CMD: python3 agg_slurm_test --prefix /home/narate/projects/ldms-test/ldms-containers/ovis --runtime docker --image ovishpc/ldms-dev --src /mnt/300G/data --data_root /mnt/300G/data/2022-09-19-125303/data/agg_slurm_test
-2022-09-19 12:53:06,714 TADA INFO starting test `agg_slurm_test`
-2022-09-19 12:53:06,715 TADA INFO   test-id: a5c180e76a167183b06394660676a75ee52feba2c7d83e90b1c5bc6d7ea25fed
-2022-09-19 12:53:06,715 TADA INFO   test-suite: LDMSD
-2022-09-19 12:53:06,715 TADA INFO   test-name: agg_slurm_test
-2022-09-19 12:53:06,715 TADA INFO   test-user: narate
-2022-09-19 12:53:06,715 TADA INFO   commit-id: d0f0efc0919dafdb8387c7a7dc69027d5e8949d5
-2022-09-19 12:53:06,715 __main__ INFO -- Get or create the cluster --
-2022-09-19 12:53:14,283 __main__ INFO -- Preparing syspapi JSON file --
-2022-09-19 12:53:14,375 __main__ INFO -- Preparing jobpapi JSON file --
-2022-09-19 12:53:14,425 __main__ INFO -- Preparing job script & programs --
-2022-09-19 12:53:15,246 __main__ INFO -- Start daemons --
-2022-09-19 12:53:24,422 __main__ INFO ... wait a bit to make sure ldmsd's are up
-2022-09-19 12:53:29,425 __main__ INFO -- ldms_ls to agg-2 --
-2022-09-19 12:53:29,557 TADA INFO assertion 1, ldms_ls agg-2: dir result verified, passed
-2022-09-19 12:53:29,668 __main__ INFO -- Give syspapi some time to work before submitting job --
-2022-09-19 12:53:34,673 __main__ INFO -- Submitting jobs --
-2022-09-19 12:53:34,822 __main__ INFO job_one: 1
-2022-09-19 12:53:34,878 __main__ INFO job_two: 2
-2022-09-19 12:53:44,885 __main__ INFO -- Cancelling jobs --
-2022-09-19 12:53:44,885 __main__ INFO job_one: 1
-2022-09-19 12:53:45,017 __main__ INFO job_two: 2
-2022-09-19 12:54:51,214 TADA INFO assertion 2, slurm data verification: get expected data from store, passed
-2022-09-19 12:54:51,214 TADA INFO assertion 3, meminfo data verification: No data missing, passed
-2022-09-19 12:54:51,214 TADA INFO assertion 4, (SYS/JOB) PAPI data verification: No data missing, passed
-2022-09-19 12:54:51,214 TADA INFO test agg_slurm_test ended
-2022-09-19 12:55:03 INFO: ----------------------------------------------
-2022-09-19 12:55:04 INFO: ======== maestro_cfg_test ========
-2022-09-19 12:55:04 INFO: CMD: python3 maestro_cfg_test --prefix /home/narate/projects/ldms-test/ldms-containers/ovis --runtime docker --image ovishpc/ldms-dev --src /mnt/300G/data --data_root /mnt/300G/data/2022-09-19-125303/data/maestro_cfg_test
-2022-09-19 12:55:04,286 TADA INFO starting test `maestro_cfg_test`
-2022-09-19 12:55:04,287 TADA INFO   test-id: 31a069044117a55d921a0b30baa349b45d41ac68c1e18cc2624cb23cd13cc640
-2022-09-19 12:55:04,287 TADA INFO   test-suite: LDMSD
-2022-09-19 12:55:04,287 TADA INFO   test-name: maestro_cfg_test
-2022-09-19 12:55:04,287 TADA INFO   test-user: narate
-2022-09-19 12:55:04,287 TADA INFO   commit-id: d0f0efc0919dafdb8387c7a7dc69027d5e8949d5
-2022-09-19 12:55:14,293 __main__ INFO -- Get or create cluster --
-2022-09-19 12:55:28,314 __main__ INFO -- Start daemons --
-2022-09-19 12:55:38,438 __main__ INFO ... make sure ldmsd's are up
-2022-09-19 12:55:43,887 TADA INFO assertion 1, load maestro etcd cluster: etcd cluster loaded successfully, passed
-2022-09-19 12:56:23,926 TADA INFO assertion 2, config ldmsd cluster with maestro: Maestro ldmsd configuration successful, passed
-2022-09-19 12:56:25,015 TADA INFO assertion 3, verify sampler daemons: OK, passed
-2022-09-19 12:56:25,414 TADA INFO assertion 4, verify L1 aggregator daemons: OK, passed
-2022-09-19 12:56:25,590 TADA INFO assertion 5, verify L2 aggregator daemon: OK, passed
-2022-09-19 12:56:25,720 TADA INFO assertion 6, verify data storage: OK, passed
----Wait for config to write to file---
-2022-09-19 12:56:25,720 TADA INFO test maestro_cfg_test ended
-2022-09-19 12:56:40 INFO: ----------------------------------------------
-rm: cannot remove '/mnt/300G/data/2022-09-19-125303/data/maestro_cfg_test/containers/ldms_data': Permission denied
-2022-09-19 12:56:41 INFO: ======== test-ldms ========
-2022-09-19 12:56:41 INFO: CMD: /home/narate/projects/ldms-test/ldms-containers/test/test-ldms/test.sh
-2022-09-19T12:56:41-05:00 INFO: starting test-samp-1
-6d98be021276f0e7ffd3fb83638fb8c233a3c8e5fc94fb0b6890bcd5e2cc562f
-docker: Error response from daemon: Could not attach to network test: rpc error: code = NotFound desc = network test not found.
-ERROR: test-samp-1 not running
-2022-09-19T12:56:43-05:00 INFO: starting test-samp-2
-f8c61cd2a53be7a9e33ba5cc159698b6836735db050ff68a8e5b0aaade3c4aca
-docker: Error response from daemon: Could not attach to network test: rpc error: code = NotFound desc = network test not found.
-ERROR: test-samp-2 not running
-2022-09-19T12:56:46-05:00 INFO: starting test-samp-3
-7f79ddbabaacdecbaf54f05c3561c8f81f1faf67c0d4d947b9a35e4d341f1ca4
-docker: Error response from daemon: Could not attach to network test: rpc error: code = NotFound desc = network test not found.
-ERROR: test-samp-3 not running
-2022-09-19T12:56:49-05:00 INFO: starting test-samp-4
-20c855218ac5c3a36d17776592a8f438de2466d4c6008830057cc826dab7d4c2
-docker: Error response from daemon: Could not attach to network test: rpc error: code = NotFound desc = network test not found.
-ERROR: test-samp-4 not running
-2022-09-19T12:56:57-05:00 ERROR: test-samp-1 is not running
-2022-09-19 12:57:07 INFO: ----------------------------------------------
-2022-09-19 12:57:07 INFO: ==== Summary ====
-agg_slurm_test: [01;32mPASSED[0m
-maestro_cfg_test: [01;32mPASSED[0m
-cont-test-ldms: [01;32mPASSED[0m
-------------------------------------------
-Total tests passed: 3/3
-------------------------------------------
+2022-09-19 13:10:14 INFO: Skip building containerized binary because GIT SHA has not changed: c7577d494f5924b98137084e73d2e95f2e804958
+2022-09-19 13:10:14 INFO: -- Installation process succeeded --
+2022-09-19 13:10:14 INFO: ---------------------------------------------------------------
+~/projects/ldms-test /mnt/300G/data/2022-09-19-131013
+~/projects/ldms-test/weekly-report ~/projects/ldms-test /mnt/300G/data/2022-09-19-131013
+HEAD is now at 9e9d495 2022-09-19-125303
