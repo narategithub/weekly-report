@@ -1,0 +1,17 @@
+2022-09-19T12:56:41-05:00 INFO: starting test-samp-1
+6d98be021276f0e7ffd3fb83638fb8c233a3c8e5fc94fb0b6890bcd5e2cc562f
+docker: Error response from daemon: Could not attach to network test: rpc error: code = NotFound desc = network test not found.
+ERROR: test-samp-1 not running
+2022-09-19T12:56:43-05:00 INFO: starting test-samp-2
+f8c61cd2a53be7a9e33ba5cc159698b6836735db050ff68a8e5b0aaade3c4aca
+docker: Error response from daemon: Could not attach to network test: rpc error: code = NotFound desc = network test not found.
+ERROR: test-samp-2 not running
+2022-09-19T12:56:46-05:00 INFO: starting test-samp-3
+7f79ddbabaacdecbaf54f05c3561c8f81f1faf67c0d4d947b9a35e4d341f1ca4
+docker: Error response from daemon: Could not attach to network test: rpc error: code = NotFound desc = network test not found.
+ERROR: test-samp-3 not running
+2022-09-19T12:56:49-05:00 INFO: starting test-samp-4
+20c855218ac5c3a36d17776592a8f438de2466d4c6008830057cc826dab7d4c2
+docker: Error response from daemon: Could not attach to network test: rpc error: code = NotFound desc = network test not found.
+ERROR: test-samp-4 not running
+2022-09-19T12:56:57-05:00 ERROR: test-samp-1 is not running
