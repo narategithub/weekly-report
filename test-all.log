@@ -1,79 +1,12 @@
-2022-09-19 12:30:35 INFO: WORK_DIR: /mnt/300G/data/2022-09-19-123035
-2022-09-19 12:30:35 INFO: LOG: /mnt/300G/data/2022-09-19-123035/cygnus-weekly.log
+2022-09-19 12:36:39 INFO: WORK_DIR: /mnt/300G/data/2022-09-19-123639
+2022-09-19 12:36:39 INFO: LOG: /mnt/300G/data/2022-09-19-123639/cygnus-weekly.log
 ~/projects/ldms-test ~/projects/ldms-test
-/mnt/300G/data/2022-09-19-123035 ~/projects/ldms-test ~/projects/ldms-test
-2022-09-19 12:30:36 INFO: Does not have RDMA, skip building on host
+/mnt/300G/data/2022-09-19-123639 ~/projects/ldms-test ~/projects/ldms-test
+2022-09-19 12:36:39 INFO: Does not have RDMA, skip building on host
 d0f0efc0919dafdb8387c7a7dc69027d5e8949d5
-2022-09-19 12:30:36 INFO: Skip building containerized binary because GIT SHA has not changed: c7577d494f5924b98137084e73d2e95f2e804958
-2022-09-19 12:30:36 INFO: -- Installation process succeeded --
-2022-09-19 12:30:36 INFO: ---------------------------------------------------------------
-~/projects/ldms-test /mnt/300G/data/2022-09-19-123035
-2022-09-19 12:30:36 INFO: weekly-report directory not found
-2022-09-19 12:30:36 INFO: cloning weekly-report from github
-Cloning into 'weekly-report'...
-~/projects/ldms-test/weekly-report ~/projects/ldms-test /mnt/300G/data/2022-09-19-123035
-HEAD is now at 488645b 2022-08-31-003001
-[master c5d6a90] 2022-09-19-123035
- 2 files changed, 18 insertions(+), 12394 deletions(-)
- rewrite test-all.log (99%)
-To github.com:narategithub/weekly-report
-   488645b..c5d6a90  master -> master
-~/projects/ldms-test /mnt/300G/data/2022-09-19-123035
-2022-09-19 12:30:39 INFO: ==== OVIS+SOS Installation Completed ====
-2022-09-19 12:30:39 INFO: ==== Start batch testing ====
-~/projects/ldms-test /mnt/300G/data/2022-09-19-123035 ~/projects/ldms-test ~/projects/ldms-test
-2022-09-19 12:30:39 INFO: ======== agg_slurm_test ========
-2022-09-19 12:30:39 INFO: CMD: python3 agg_slurm_test --prefix /home/narate/projects/ldms-test/ldms-containers/ovis --runtime docker --image ovishpc/ldms-dev --src /mnt/300G/data --data_root /mnt/300G/data/2022-09-19-123035/data/agg_slurm_test
-2022-09-19 12:30:39,746 TADA INFO starting test `agg_slurm_test`
-2022-09-19 12:30:39,746 TADA INFO   test-id: 3380feced970cae779742259b91e6fc4a8e9e6e3f5d645a02f8e713b3b8440d4
-2022-09-19 12:30:39,746 TADA INFO   test-suite: LDMSD
-2022-09-19 12:30:39,747 TADA INFO   test-name: agg_slurm_test
-2022-09-19 12:30:39,747 TADA INFO   test-user: narate
-2022-09-19 12:30:39,747 TADA INFO   commit-id: d0f0efc0919dafdb8387c7a7dc69027d5e8949d5
-2022-09-19 12:30:39,747 __main__ INFO -- Get or create the cluster --
-2022-09-19 12:30:47,240 __main__ INFO -- Preparing syspapi JSON file --
-2022-09-19 12:30:47,293 __main__ INFO -- Preparing jobpapi JSON file --
-2022-09-19 12:30:47,376 __main__ INFO -- Preparing job script & programs --
-2022-09-19 12:30:48,178 __main__ INFO -- Start daemons --
-2022-09-19 12:30:57,404 __main__ INFO ... wait a bit to make sure ldmsd's are up
-2022-09-19 12:31:02,409 __main__ INFO -- ldms_ls to agg-2 --
-2022-09-19 12:31:02,530 TADA INFO assertion 1, ldms_ls agg-2: dir result verified, passed
-2022-09-19 12:31:02,611 __main__ INFO -- Give syspapi some time to work before submitting job --
-2022-09-19 12:31:07,613 __main__ INFO -- Submitting jobs --
-2022-09-19 12:31:07,742 __main__ INFO job_one: 1
-2022-09-19 12:31:07,846 __main__ INFO job_two: 2
-2022-09-19 12:31:17,848 __main__ INFO -- Cancelling jobs --
-2022-09-19 12:31:17,848 __main__ INFO job_one: 1
-2022-09-19 12:31:17,960 __main__ INFO job_two: 2
-2022-09-19 12:32:24,262 TADA INFO assertion 2, slurm data verification: get expected data from store, passed
-2022-09-19 12:32:24,262 TADA INFO assertion 3, meminfo data verification: No data missing, passed
-2022-09-19 12:32:24,263 TADA INFO assertion 4, (SYS/JOB) PAPI data verification: No data missing, passed
-2022-09-19 12:32:24,263 TADA INFO test agg_slurm_test ended
-2022-09-19 12:32:36 INFO: ----------------------------------------------
-2022-09-19 12:32:37 INFO: ======== maestro_cfg_test ========
-2022-09-19 12:32:37 INFO: CMD: python3 maestro_cfg_test --prefix /home/narate/projects/ldms-test/ldms-containers/ovis --runtime docker --image ovishpc/ldms-dev --src /mnt/300G/data --data_root /mnt/300G/data/2022-09-19-123035/data/maestro_cfg_test
-2022-09-19 12:32:37,278 TADA INFO starting test `maestro_cfg_test`
-2022-09-19 12:32:37,278 TADA INFO   test-id: d00535e49e6240134d80d6621d3eed520ffe2b18181cc43c2e68ed3e2ffe10a8
-2022-09-19 12:32:37,278 TADA INFO   test-suite: LDMSD
-2022-09-19 12:32:37,278 TADA INFO   test-name: maestro_cfg_test
-2022-09-19 12:32:37,278 TADA INFO   test-user: narate
-2022-09-19 12:32:37,278 TADA INFO   commit-id: d0f0efc0919dafdb8387c7a7dc69027d5e8949d5
-2022-09-19 12:32:47,289 __main__ INFO -- Get or create cluster --
-2022-09-19 12:33:01,366 __main__ INFO -- Start daemons --
-2022-09-19 12:33:11,137 __main__ INFO ... make sure ldmsd's are up
-2022-09-19 12:33:16,570 TADA INFO assertion 1, load maestro etcd cluster: etcd cluster loaded successfully, passed
-2022-09-19 12:33:56,604 TADA INFO assertion 2, config ldmsd cluster with maestro: Maestro ldmsd configuration successful, passed
-2022-09-19 12:33:57,655 TADA INFO assertion 3, verify sampler daemons: OK, passed
-2022-09-19 12:33:58,045 TADA INFO assertion 4, verify L1 aggregator daemons: OK, passed
-2022-09-19 12:33:58,228 TADA INFO assertion 5, verify L2 aggregator daemon: OK, passed
-2022-09-19 12:33:58,348 TADA INFO assertion 6, verify data storage: OK, passed
----Wait for config to write to file---
-2022-09-19 12:33:58,348 TADA INFO test maestro_cfg_test ended
-2022-09-19 12:34:13 INFO: ----------------------------------------------
-rm: cannot remove '/mnt/300G/data/2022-09-19-123035/data/maestro_cfg_test/containers/ldms_data': Permission denied
-2022-09-19 12:34:13 INFO: ==== Summary ====
-agg_slurm_test: [01;32mPASSED[0m
-maestro_cfg_test: [01;32mPASSED[0m
-------------------------------------------
-Total tests passed: 2/2
-------------------------------------------
+2022-09-19 12:36:39 INFO: Skip building containerized binary because GIT SHA has not changed: c7577d494f5924b98137084e73d2e95f2e804958
+2022-09-19 12:36:39 INFO: -- Installation process succeeded --
+2022-09-19 12:36:39 INFO: ---------------------------------------------------------------
+~/projects/ldms-test /mnt/300G/data/2022-09-19-123639
+~/projects/ldms-test/weekly-report ~/projects/ldms-test /mnt/300G/data/2022-09-19-123639
+HEAD is now at 150d8c0 2022-09-19-123035
