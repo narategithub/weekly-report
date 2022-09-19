@@ -1,29 +1,29 @@
-2022-09-19T13:23:40-05:00 INFO: starting test-samp-1
-53471eb91adb8fa38eb965f4d1e0b24c245172e25fc3245888050dd5cd8ae6c3
-2022-09-19T13:23:42-05:00 INFO: starting test-samp-2
-600b721004fc69ccd80b654395c3e5078276ca4b74fa4308e896eae2f547cff4
-2022-09-19T13:23:43-05:00 INFO: starting test-samp-3
-edb6047773babd270d4c53afbec9c4d266db9448b32d28c50c274631266e0e6a
-2022-09-19T13:23:44-05:00 INFO: starting test-samp-4
-07cb0929050c21c347db5271c24e7d8ade4c4fcb2d60172cbd395f344f0280e2
-2022-09-19T13:23:44-05:00 INFO: test-samp-1 is running
-2022-09-19T13:23:45-05:00 INFO: test-samp-2 is running
-2022-09-19T13:23:45-05:00 INFO: test-samp-3 is running
-2022-09-19T13:23:45-05:00 INFO: test-samp-4 is running
-2022-09-19T13:23:45-05:00 INFO: starting test-agg-11
-9fe133073a329ae0db304de453ced4d42e9944294a5ea2c157792b6080959c7e
-2022-09-19T13:23:46-05:00 INFO: starting test-agg-12
-f47b4d35f37cd7ab6201fd10a418e83a65074077ef004453e362b09b12704be5
-2022-09-19T13:23:46-05:00 INFO: test-agg-11 is running
-2022-09-19T13:23:47-05:00 INFO: test-agg-12 is running
-2022-09-19T13:23:47-05:00 INFO: starting test-agg-2
-6b9ed49ab7a1ac37a9ad0041d77ed696565a9b80c236f4bf7ca56e417416c351
-2022-09-19T13:23:47-05:00 INFO: test-agg-2 is running
-2022-09-19T13:23:47-05:00 INFO: Collecting data (into SOS)
-2022-09-19T13:23:57-05:00 INFO: Checking SOS data
+2022-09-19T14:20:22-05:00 INFO: starting test-samp-1
+ff3962382970ac488cc66b32536c69aa59398d14a76cabde785b3d8bb9af475a
+2022-09-19T14:20:24-05:00 INFO: starting test-samp-2
+b310f4913120da6a22605bd7d2b89c2847a04081a497c931713d27c7e74dea44
+2022-09-19T14:20:25-05:00 INFO: starting test-samp-3
+a7b4f3539f32fc36cecf7ef71e8bedafba6f7530094d5077bedb95a3ce94a1ae
+2022-09-19T14:20:26-05:00 INFO: starting test-samp-4
+7ed814299e8fbc28edf5978f288488d4e53192b65196cfd2d5c70e3c380029b4
+2022-09-19T14:20:27-05:00 INFO: test-samp-1 is running
+2022-09-19T14:20:27-05:00 INFO: test-samp-2 is running
+2022-09-19T14:20:27-05:00 INFO: test-samp-3 is running
+2022-09-19T14:20:27-05:00 INFO: test-samp-4 is running
+2022-09-19T14:20:27-05:00 INFO: starting test-agg-11
+e392d6dc2ce71f58de9752e416561add1e23da6cae33cb7a44028baf63aa2337
+2022-09-19T14:20:28-05:00 INFO: starting test-agg-12
+2df0dbea6400db564e87a5954af5de3f2ebd2835b84c1fc1c22f2dd7aadbf5f4
+2022-09-19T14:20:29-05:00 INFO: test-agg-11 is running
+2022-09-19T14:20:29-05:00 INFO: test-agg-12 is running
+2022-09-19T14:20:29-05:00 INFO: starting test-agg-2
+710e040c719c9c0ea54a8e17464e3434a22b863523b4c7290d44c794be8b5dee
+2022-09-19T14:20:30-05:00 INFO: test-agg-2 is running
+2022-09-19T14:20:30-05:00 INFO: Collecting data (into SOS)
+2022-09-19T14:20:40-05:00 INFO: Checking SOS data
 Component IDs: {1, 2, 3, 4}
-2022-09-19T13:23:59-05:00 INFO: check rc: 0
-2022-09-19T13:23:59-05:00 INFO: Cleaning up ...
+2022-09-19T14:20:41-05:00 INFO: check rc: 0
+2022-09-19T14:20:41-05:00 INFO: Cleaning up ...
 test-samp-1
 test-samp-2
 test-samp-3
@@ -31,4 +31,4 @@ test-samp-4
 test-agg-11
 test-agg-12
 test-agg-2
-2022-09-19T13:24:01-05:00 INFO: DONE
+2022-09-19T14:20:44-05:00 INFO: DONE

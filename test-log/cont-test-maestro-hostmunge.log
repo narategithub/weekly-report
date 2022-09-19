@@ -1,84 +1,49 @@
-2022-09-19T13:24:53-05:00 INFO: Checking munge on localhost
-2022-09-19T13:24:53-05:00 INFO: munge encode/decode successfully
-2022-09-19T13:24:53-05:00 INFO: starting mtest-maestro
-b27e1a96d5db73d2b93f0a69316553b722827551239568b20d6b55ea2197ad92
-2022-09-19T13:24:54-05:00 INFO: starting mtest-samp-1
-81bbbb924c21e81ca2b67a424d0ecfb9343922beec6a6f4b3f2e5e3a9f0bb6e6
-2022-09-19T13:24:55-05:00 INFO: starting mtest-samp-2
-7cbc3d05411294a835085c776e7ce278a0b34cd53dc8b62e8b09fc068bbac58b
-2022-09-19T13:24:56-05:00 INFO: starting mtest-samp-3
-b44dc793c3f99c2b38e183b0e9a37eb971f293590d78efaeb7ea0e858c4049a3
-2022-09-19T13:24:56-05:00 INFO: starting mtest-samp-4
-4b9343131bfc508ccb4523bc4523fa5873289f538c0ae77258399db07c9e4f7d
-2022-09-19T13:24:57-05:00 INFO: mtest-samp-1 is running
-2022-09-19T13:24:57-05:00 INFO: mtest-samp-2 is running
-2022-09-19T13:24:57-05:00 INFO: mtest-samp-3 is running
-2022-09-19T13:24:57-05:00 INFO: mtest-samp-4 is running
-2022-09-19T13:24:57-05:00 INFO: starting mtest-agg-11
-b873924f3e6e4a44eea3526909a6199997b295b3a52f7c91f3ae604e05dff86c
-2022-09-19T13:24:58-05:00 INFO: starting mtest-agg-12
-ec849e049d4f3b7eb10fb4fb8597ebd73d976357f69e37b77b34881a11916628
-2022-09-19T13:24:59-05:00 INFO: mtest-agg-11 is running
-2022-09-19T13:24:59-05:00 INFO: mtest-agg-12 is running
-2022-09-19T13:24:59-05:00 INFO: starting mtest-agg-2
-bbf48f16c2f629b1e23012a7cf4bd174945200c2a0d8e88f7e0c38755ded31e9
-2022-09-19T13:25:00-05:00 INFO: mtest-agg-2 is running
-2022-09-19T13:25:00-05:00 INFO: Collecting data (into SOS)
+2022-09-19T14:21:45-05:00 INFO: Checking munge on localhost
+2022-09-19T14:21:45-05:00 INFO: munge encode/decode successfully
+2022-09-19T14:21:45-05:00 INFO: starting mtest-maestro
+faab7d1b755cafaef92eca45ebd058da00e5b36f82a46a43184383e6a49165c3
+2022-09-19T14:21:46-05:00 INFO: starting mtest-samp-1
+3d81ca9a40aee3e0a7d3b1574880cb9d1320b4aa10f63978ebf4bc08c34f47f8
+2022-09-19T14:21:47-05:00 INFO: starting mtest-samp-2
+865fac2ee830050a8cdd8efa3606944980c750caa1b4c52fd45a6a9d46475416
+2022-09-19T14:21:48-05:00 INFO: starting mtest-samp-3
+aed324ce54003ba061704e86551778f21f9b974b94faec6795c763aa393440a8
+2022-09-19T14:21:48-05:00 INFO: starting mtest-samp-4
+ce7a40d193468b124aa585c0b96233583f187ed577edc3f865c4c4a33ca9d31b
+2022-09-19T14:21:49-05:00 INFO: mtest-samp-1 is running
+2022-09-19T14:21:49-05:00 INFO: mtest-samp-2 is running
+2022-09-19T14:21:49-05:00 INFO: mtest-samp-3 is running
+2022-09-19T14:21:49-05:00 INFO: mtest-samp-4 is running
+2022-09-19T14:21:49-05:00 INFO: starting mtest-agg-11
+b47dc5d7d823bf0fa1fcce1301374e01543c934742486f858fbc6b2db6f0e133
+2022-09-19T14:21:50-05:00 INFO: starting mtest-agg-12
+ecb0ec8b00a826c6eb43dd1463f6104f837e354c631eaec853a49f73ce20ed30
+2022-09-19T14:21:51-05:00 INFO: mtest-agg-11 is running
+2022-09-19T14:21:51-05:00 INFO: mtest-agg-12 is running
+2022-09-19T14:21:51-05:00 INFO: starting mtest-agg-2
+dbfc3b3d688467377dc6f69cfa0096d54cdf3e0700aa60c27f7ff3a48e46b7f7
+2022-09-19T14:21:52-05:00 INFO: mtest-agg-2 is running
+2022-09-19T14:21:52-05:00 INFO: Collecting data (into SOS)
 mtest-agg-11
 mtest-agg-12
-2022-09-19T13:25:10-05:00 INFO: Checking SOS data
+2022-09-19T14:22:02-05:00 INFO: Checking SOS data
 Component IDs: {1, 2, 3, 4}
-2022-09-19T13:25:11-05:00 INFO: sos check rc: 0
-2022-09-19T13:25:12-05:00 INFO: starting mtest-ui
-060935b4d2c39ae2cb5937ce369a6195c88b72d29cd67c7d24069e3da551b447
-2022-09-19T13:25:13-05:00 INFO: Checking query from mtest-ui: http://mtest-ui/grafana/query
-Traceback (most recent call last):
-  File "<stdin>", line 11, in <module>
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 519, in open
-    response = self._open(req, data)
-  File "/usr/lib/python3.10/urllib/request.py", line 536, in _open
-    result = self._call_chain(self.handle_open, protocol, protocol +
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 1377, in http_open
-    return self.do_open(http.client.HTTPConnection, req)
-  File "/usr/lib/python3.10/urllib/request.py", line 1352, in do_open
-    r = h.getresponse()
-  File "/usr/lib/python3.10/http/client.py", line 1374, in getresponse
-    response.begin()
-  File "/usr/lib/python3.10/http/client.py", line 318, in begin
-    version, status, reason = self._read_status()
-  File "/usr/lib/python3.10/http/client.py", line 287, in _read_status
-    raise RemoteDisconnected("Remote end closed connection without"
-http.client.RemoteDisconnected: Remote end closed connection without response
-2022-09-19T13:25:15-05:00 INFO: query check RC: 1
-43a034697a32e3a14a2ac2a5ce04576a2127571686017a300867179c6c7b8bd1
-2022-09-19T13:25:20-05:00 INFO: Adding DSOS data source in Grafana
+2022-09-19T14:22:03-05:00 INFO: sos check rc: 0
+2022-09-19T14:22:05-05:00 INFO: starting mtest-ui
+9dc8eeebd1c512709a0a151536a2af41e00d09c0b1a219db3a58c01c4417488e
+2022-09-19T14:22:05-05:00 INFO: Checking query from mtest-ui: http://mtest-ui/grafana/query
+query results: b'[{"target": "Active", "datapoints": [[2564620, 1663615315001.7139], [2564620, 1663615315001.916], [2540560, 1663615316001.013], [2540560, 1663615316001.881], [2540560, 1663615316001.8828], [2540560, 1663615316002.029], [2541108, 1663615317001.09], [2541108, 1663615317001.102], [2541336, 1663615317001.898], [2541336, 1663615317001.903], [2540828, 1663615318001.1992], [2540828, 1663615318001.1992], [2540828, 1663615318001.918], [2540828, 1663615318002.006], [2540828, 1663615319001.138], [2540828, 1663615319001.3079], [2540828, 1663615319001.3088], [2540828, 1663615319002.0212], [2538984, 1663615320000.5388], [2538984, 1663615320001.119], [2538984, 1663615320001.458], [2538984, 1663615320001.474], [2539108, 1663615321001.2778], [2539108, 1663615321001.304], [2539108, 1663615321001.585], [2539108, 1663615321001.588]]}, {"target": "component_id", "datapoints": [[3, 1663615315001.7139], [1, 1663615315001.916], [2, 1663615316001.013], [3, 1663615316001.881], [4, 1663615316001.8828], [1, 1663615316002.029], [2, 1663615317001.09], [1, 1663615317001.102], [4, 1663615317001.898], [3, 1663615317001.903], [1, 1663615318001.1992], [2, 1663615318001.1992], [3, 1663615318001.918], [4, 1663615318002.006], [4, 1663615319001.138], [1, 1663615319001.3079], [2, 1663615319001.3088], [3, 1663615319002.0212], [4, 1663615320000.5388], [3, 1663615320001.119], [2, 1663615320001.458], [1, 1663615320001.474], [3, 1663615321001.2778], [4, 1663615321001.304], [2, 1663615321001.585], [1, 1663615321001.588]]}, {"target": "job_id", "datapoints": [[0, 1663615315001.7139], [0, 1663615315001.916], [0, 1663615316001.013], [0, 1663615316001.881], [0, 1663615316001.8828], [0, 1663615316002.029], [0, 1663615317001.09], [0, 1663615317001.102], [0, 1663615317001.898], [0, 1663615317001.903], [0, 1663615318001.1992], [0, 1663615318001.1992], [0, 1663615318001.918], [0, 1663615318002.006], [0, 1663615319001.138], [0, 1663615319001.3079], [0, 1663615319001.3088], [0, 1663615319002.0212], [0, 1663615320000.5388], [0, 1663615320001.119], [0, 1663615320001.458], [0, 1663615320001.474], [0, 1663615321001.2778], [0, 1663615321001.304], [0, 1663615321001.585], [0, 1663615321001.588]]}]'
+comp_ids:{1, 2, 3, 4}
+2022-09-19T14:22:07-05:00 INFO: query check RC: 0
+a0232151acc4073ef00b968bdedc54a1879e7ed75f23d4de1b0ffc5fc0eed02c
+2022-09-19T14:22:12-05:00 INFO: Adding DSOS data source in Grafana
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   479  100   366  100   113   7469   2306 --:--:-- --:--:-- --:--:--  9775
-{"datasource":{"id":1,"uid":"u0kIHhn4z","orgId":1,"name":"SOS-2","type":"dsosds","typeLogoUrl":"","access":"proxy","url":"http://mtest-ui/grafana","user":"","database":"","basicAuth":false,"basicAuthUser":"","withCredentials":false,"isDefault":true,"jsonData":{},"secureJsonFields":{},"version":1,"readOnly":false},"id":1,"message":"Datasource added","name":"SOS-2"}
-2022-09-19T13:25:21-05:00 INFO: Checking grafana data
-Traceback (most recent call last):
-  File "/home/narate/projects/ldms-test/ldms-containers/test/test-maestro-hostmunge/grafana_check.py", line 24, in <module>
-    rsp = urllib.request.urlopen(req)
-  File "/usr/lib/python3.8/urllib/request.py", line 222, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.8/urllib/request.py", line 531, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.8/urllib/request.py", line 640, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.8/urllib/request.py", line 569, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.8/urllib/request.py", line 502, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.8/urllib/request.py", line 649, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 502: Bad Gateway
-2022-09-19T13:25:22-05:00 INFO: Grafana data check, rc: 1
-2022-09-19T13:25:22-05:00 INFO: Cleaning up ...
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   479  100   366  100   113   6905   2132 --:--:-- --:--:-- --:--:--  9037
+{"datasource":{"id":1,"uid":"HpnTK274k","orgId":1,"name":"SOS-2","type":"dsosds","typeLogoUrl":"","access":"proxy","url":"http://mtest-ui/grafana","user":"","database":"","basicAuth":false,"basicAuthUser":"","withCredentials":false,"isDefault":true,"jsonData":{},"secureJsonFields":{},"version":1,"readOnly":false},"id":1,"message":"Datasource added","name":"SOS-2"}
+2022-09-19T14:22:13-05:00 INFO: Checking grafana data
+2022-09-19T14:22:13-05:00 INFO: Grafana data check, rc: 0
+2022-09-19T14:22:13-05:00 INFO: Cleaning up ...
 mtest-samp-1
 mtest-samp-2
 mtest-samp-3
@@ -89,4 +54,4 @@ mtest-agg-2
 mtest-maestro
 mtest-ui
 mtest-grafana
-2022-09-19T13:25:24-05:00 INFO: DONE
+2022-09-19T14:22:16-05:00 INFO: DONE
