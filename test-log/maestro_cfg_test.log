@@ -1,17 +1,127 @@
-2022-09-19 14:18:46,077 TADA INFO starting test `maestro_cfg_test`
-2022-09-19 14:18:46,078 TADA INFO   test-id: 47969ea2ecea82b3cbf500c129726578a88c48abb481894ba67e43f5e8b364ab
-2022-09-19 14:18:46,078 TADA INFO   test-suite: LDMSD
-2022-09-19 14:18:46,078 TADA INFO   test-name: maestro_cfg_test
-2022-09-19 14:18:46,078 TADA INFO   test-user: narate
-2022-09-19 14:18:46,078 TADA INFO   commit-id: d0f0efc0919dafdb8387c7a7dc69027d5e8949d5
-2022-09-19 14:18:56,089 __main__ INFO -- Get or create cluster --
-2022-09-19 14:19:10,118 __main__ INFO -- Start daemons --
-2022-09-19 14:19:20,162 __main__ INFO ... make sure ldmsd's are up
-2022-09-19 14:19:25,665 TADA INFO assertion 1, load maestro etcd cluster: etcd cluster loaded successfully, passed
-2022-09-19 14:20:05,711 TADA INFO assertion 2, config ldmsd cluster with maestro: Maestro ldmsd configuration successful, passed
-2022-09-19 14:20:06,800 TADA INFO assertion 3, verify sampler daemons: OK, passed
-2022-09-19 14:20:07,183 TADA INFO assertion 4, verify L1 aggregator daemons: OK, passed
-2022-09-19 14:20:07,319 TADA INFO assertion 5, verify L2 aggregator daemon: OK, passed
-2022-09-19 14:20:07,451 TADA INFO assertion 6, verify data storage: OK, passed
+2022-09-19 15:06:53,383 TADA INFO starting test `maestro_cfg_test`
+2022-09-19 15:06:53,383 TADA INFO   test-id: 78cfa183918e37ffbcfaf449565386ea8a5a10e0af92d643a6a546119a19d284
+2022-09-19 15:06:53,383 TADA INFO   test-suite: LDMSD
+2022-09-19 15:06:53,383 TADA INFO   test-name: maestro_cfg_test
+2022-09-19 15:06:53,383 TADA INFO   test-user: narate
+2022-09-19 15:06:53,383 TADA INFO   commit-id: d0f0efc0919dafdb8387c7a7dc69027d5e8949d5
+2022-09-19 15:07:03,394 __main__ INFO -- Get or create cluster --
 ---Wait for config to write to file---
-2022-09-19 14:20:07,451 TADA INFO test maestro_cfg_test ended
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/docker/api/client.py", line 261, in _raise_for_status
+    response.raise_for_status()
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: http+docker://localhost/v1.35/networks/narate-maestro_cfg_test-d0f0efc
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/narate/projects/ldms-test/runtime/docker.py", line 664, in _get
+    net = dc.networks.get(name)
+  File "/usr/lib/python3/dist-packages/docker/models/networks.py", line 180, in get
+    self.client.api.inspect_network(network_id, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/docker/utils/decorators.py", line 19, in wrapped
+    return f(self, resource_id, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/docker/api/network.py", line 213, in inspect_network
+    return self._result(res, json=True)
+  File "/usr/lib/python3/dist-packages/docker/api/client.py", line 267, in _result
+    self._raise_for_status(response)
+  File "/usr/lib/python3/dist-packages/docker/api/client.py", line 263, in _raise_for_status
+    raise create_api_error_from_http_exception(e)
+  File "/usr/lib/python3/dist-packages/docker/errors.py", line 31, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation)
+docker.errors.NotFound: 404 Client Error: Not Found ("network narate-maestro_cfg_test-d0f0efc not found")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/narate/projects/ldms-test/LDMS_Test.py", line 1615, in get
+    cluster = _cls._get(name)
+  File "/home/narate/projects/ldms-test/runtime/docker.py", line 667, in _get
+    raise LookupError()
+LookupError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 159, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 387, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.8/http/client.py", line 1256, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1302, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1251, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1011, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.8/http/client.py", line 951, in send
+    self.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 171, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f5e33f7e160>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='whiteknight', port=2375): Max retries exceeded with url: /v1.35/info (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f5e33f7e160>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "maestro_cfg_test", line 289, in <module>
+    cluster = LDMSDCluster.get(spec['name'], create = True, spec = spec)
+  File "/home/narate/projects/ldms-test/LDMS_Test.py", line 1622, in get
+    return _cls.create(spec)
+  File "/home/narate/projects/ldms-test/LDMS_Test.py", line 1593, in create
+    cluster = _cls._create(spec)
+  File "/home/narate/projects/ldms-test/runtime/docker.py", line 416, in _create
+    return cls.__create(**kwargs)
+  File "/home/narate/projects/ldms-test/runtime/docker.py", line 498, in __create
+    tbl = [ [ cl.info()["ContainersRunning"], 0, cl ] for cl in clients ]
+  File "/home/narate/projects/ldms-test/runtime/docker.py", line 498, in <listcomp>
+    tbl = [ [ cl.info()["ContainersRunning"], 0, cl ] for cl in clients ]
+  File "/usr/lib/python3/dist-packages/docker/client.py", line 179, in info
+    return self.api.info(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/docker/api/daemon.py", line 95, in info
+    return self._result(self._get(self._url("/info")), True)
+  File "/usr/lib/python3/dist-packages/docker/utils/decorators.py", line 46, in inner
+    return f(self, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/docker/api/client.py", line 230, in _get
+    return self.get(url, **self._set_request_timeout(kwargs))
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 546, in get
+    return self.request('GET', url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='whiteknight', port=2375): Max retries exceeded with url: /v1.35/info (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f5e33f7e160>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2022-09-19 15:07:03,430 TADA INFO assertion 1, load maestro etcd cluster: skipped
+2022-09-19 15:07:03,430 TADA INFO assertion 2, config ldmsd cluster with maestro: skipped
+2022-09-19 15:07:03,431 TADA INFO assertion 3, verify sampler daemons: skipped
+2022-09-19 15:07:03,431 TADA INFO assertion 4, verify L1 aggregator daemons: skipped
+2022-09-19 15:07:03,431 TADA INFO assertion 5, verify L2 aggregator daemon: skipped
+2022-09-19 15:07:03,431 TADA INFO assertion 6, verify data storage: skipped
+2022-09-19 15:07:03,431 TADA INFO test maestro_cfg_test ended
