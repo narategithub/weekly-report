@@ -10,3 +10,67 @@ d0f0efc0919dafdb8387c7a7dc69027d5e8949d5
 ~/projects/ldms-test /mnt/300G/data/2022-09-19-123808
 ~/projects/ldms-test/weekly-report ~/projects/ldms-test /mnt/300G/data/2022-09-19-123808
 HEAD is now at 9372685 2022-09-19-123639
+[master 784e4f6] 2022-09-19-123808
+ 1 file changed, 12 insertions(+), 12 deletions(-)
+ rewrite test-all.log (67%)
+To github.com:narategithub/weekly-report
+   9372685..784e4f6  master -> master
+~/projects/ldms-test /mnt/300G/data/2022-09-19-123808
+2022-09-19 12:38:11 INFO: ==== OVIS+SOS Installation Completed ====
+2022-09-19 12:38:11 INFO: ==== Start batch testing ====
+~/projects/ldms-test /mnt/300G/data/2022-09-19-123808 ~/projects/ldms-test ~/projects/ldms-test
+2022-09-19 12:38:11 INFO: ======== agg_slurm_test ========
+2022-09-19 12:38:11 INFO: CMD: python3 agg_slurm_test --prefix /home/narate/projects/ldms-test/ldms-containers/ovis --runtime docker --image ovishpc/ldms-dev --src /mnt/300G/data --data_root /mnt/300G/data/2022-09-19-123808/data/agg_slurm_test
+2022-09-19 12:38:11,482 TADA INFO starting test `agg_slurm_test`
+2022-09-19 12:38:11,483 TADA INFO   test-id: 50a3147daf9716eb1810ddb935ac9bc8c63152e960057f49161f7f7255def97b
+2022-09-19 12:38:11,483 TADA INFO   test-suite: LDMSD
+2022-09-19 12:38:11,483 TADA INFO   test-name: agg_slurm_test
+2022-09-19 12:38:11,483 TADA INFO   test-user: narate
+2022-09-19 12:38:11,483 TADA INFO   commit-id: d0f0efc0919dafdb8387c7a7dc69027d5e8949d5
+2022-09-19 12:38:11,483 __main__ INFO -- Get or create the cluster --
+2022-09-19 12:38:18,956 __main__ INFO -- Preparing syspapi JSON file --
+2022-09-19 12:38:19,006 __main__ INFO -- Preparing jobpapi JSON file --
+2022-09-19 12:38:19,095 __main__ INFO -- Preparing job script & programs --
+2022-09-19 12:38:19,886 __main__ INFO -- Start daemons --
+2022-09-19 12:38:29,212 __main__ INFO ... wait a bit to make sure ldmsd's are up
+2022-09-19 12:38:34,217 __main__ INFO -- ldms_ls to agg-2 --
+2022-09-19 12:38:34,328 TADA INFO assertion 1, ldms_ls agg-2: dir result verified, passed
+2022-09-19 12:38:34,421 __main__ INFO -- Give syspapi some time to work before submitting job --
+2022-09-19 12:38:39,425 __main__ INFO -- Submitting jobs --
+2022-09-19 12:38:39,538 __main__ INFO job_one: 1
+2022-09-19 12:38:39,626 __main__ INFO job_two: 2
+2022-09-19 12:38:49,636 __main__ INFO -- Cancelling jobs --
+2022-09-19 12:38:49,636 __main__ INFO job_one: 1
+2022-09-19 12:38:49,741 __main__ INFO job_two: 2
+2022-09-19 12:39:55,993 TADA INFO assertion 2, slurm data verification: get expected data from store, passed
+2022-09-19 12:39:55,993 TADA INFO assertion 3, meminfo data verification: No data missing, passed
+2022-09-19 12:39:55,994 TADA INFO assertion 4, (SYS/JOB) PAPI data verification: No data missing, passed
+2022-09-19 12:39:55,994 TADA INFO test agg_slurm_test ended
+2022-09-19 12:40:08 INFO: ----------------------------------------------
+2022-09-19 12:40:08 INFO: ======== maestro_cfg_test ========
+2022-09-19 12:40:08 INFO: CMD: python3 maestro_cfg_test --prefix /home/narate/projects/ldms-test/ldms-containers/ovis --runtime docker --image ovishpc/ldms-dev --src /mnt/300G/data --data_root /mnt/300G/data/2022-09-19-123808/data/maestro_cfg_test
+2022-09-19 12:40:08,993 TADA INFO starting test `maestro_cfg_test`
+2022-09-19 12:40:08,993 TADA INFO   test-id: 3292b1bda5c20d26dc26b3ce0537365bc7bd64b874ad08b70ca05b898d223391
+2022-09-19 12:40:08,993 TADA INFO   test-suite: LDMSD
+2022-09-19 12:40:08,993 TADA INFO   test-name: maestro_cfg_test
+2022-09-19 12:40:08,993 TADA INFO   test-user: narate
+2022-09-19 12:40:08,993 TADA INFO   commit-id: d0f0efc0919dafdb8387c7a7dc69027d5e8949d5
+2022-09-19 12:40:19,004 __main__ INFO -- Get or create cluster --
+2022-09-19 12:40:32,952 __main__ INFO -- Start daemons --
+2022-09-19 12:40:43,179 __main__ INFO ... make sure ldmsd's are up
+2022-09-19 12:40:48,611 TADA INFO assertion 1, load maestro etcd cluster: etcd cluster loaded successfully, passed
+2022-09-19 12:41:28,636 TADA INFO assertion 2, config ldmsd cluster with maestro: Maestro ldmsd configuration successful, passed
+2022-09-19 12:41:29,717 TADA INFO assertion 3, verify sampler daemons: OK, passed
+2022-09-19 12:41:30,130 TADA INFO assertion 4, verify L1 aggregator daemons: OK, passed
+2022-09-19 12:41:30,306 TADA INFO assertion 5, verify L2 aggregator daemon: OK, passed
+2022-09-19 12:41:30,432 TADA INFO assertion 6, verify data storage: OK, passed
+---Wait for config to write to file---
+2022-09-19 12:41:30,433 TADA INFO test maestro_cfg_test ended
+2022-09-19 12:41:45 INFO: ----------------------------------------------
+rm: cannot remove '/mnt/300G/data/2022-09-19-123808/data/maestro_cfg_test/containers/ldms_data': Permission denied
+2022-09-19 12:41:45 INFO: ==== Summary ====
+agg_slurm_test: [01;32mPASSED[0m
+maestro_cfg_test: [01;32mPASSED[0m
+------------------------------------------
+Total tests passed: 2/2
+------------------------------------------
