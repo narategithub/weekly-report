@@ -1,0 +1,90 @@
+2022-09-19T13:24:11-05:00 INFO: starting mtest-maestro
+80616813c8f292b5f4639b214804fd50fb381d59c10f1b5afd1ced61dcb2bdf4
+2022-09-19T13:24:13-05:00 INFO: starting mtest-samp-1
+3843f4654668699caed48ecebf5c26d02e5f3d3633091373889c968ba1c39fc0
+2022-09-19T13:24:13-05:00 INFO: starting mtest-samp-2
+51764a371acfcc910a395852ccfe20ef267d4070fed352840be4afaf92576511
+2022-09-19T13:24:14-05:00 INFO: starting mtest-samp-3
+2cf0ac854c4d8293ae236d9db1f96ba28e4724487ba332897f5c551a367cddce
+2022-09-19T13:24:15-05:00 INFO: starting mtest-samp-4
+86191ebd6f0d86f99db74a7e2c8f617cf7c64148a2eafb1dae430f8b7d145266
+2022-09-19T13:24:16-05:00 INFO: mtest-samp-1 is running
+2022-09-19T13:24:16-05:00 INFO: mtest-samp-2 is running
+2022-09-19T13:24:16-05:00 INFO: mtest-samp-3 is running
+2022-09-19T13:24:16-05:00 INFO: mtest-samp-4 is running
+2022-09-19T13:24:16-05:00 INFO: starting mtest-agg-11
+3e979f6d1284af7899375bfbaf5a4046b58af5fc77a3b5e266ef4300308ead29
+2022-09-19T13:24:16-05:00 INFO: starting mtest-agg-12
+a92b129ca2fa2666d6e223ccbe08c9c863604274713c1b1616d67f707c806b17
+2022-09-19T13:24:17-05:00 INFO: mtest-agg-11 is running
+2022-09-19T13:24:17-05:00 INFO: mtest-agg-12 is running
+2022-09-19T13:24:17-05:00 INFO: starting mtest-agg-2
+53d4007514a1ac8a0483fc297b737fd2398a2480e39abe7bbfb371be4801d4db
+2022-09-19T13:24:18-05:00 INFO: mtest-agg-2 is running
+2022-09-19T13:24:18-05:00 INFO: Collecting data (into SOS)
+mtest-agg-11
+mtest-agg-12
+2022-09-19T13:24:29-05:00 INFO: Checking SOS data
+Component IDs: {1, 2, 3, 4}
+2022-09-19T13:24:30-05:00 INFO: sos check rc: 0
+2022-09-19T13:24:31-05:00 INFO: starting mtest-ui
+8f21c98fd518757ad762bdc5b04b0cb60dd4efc5d8fb87595ec1a360c8a811a1
+2022-09-19T13:24:32-05:00 INFO: Checking query from mtest-ui: http://mtest-ui/grafana/query
+Traceback (most recent call last):
+  File "<stdin>", line 11, in <module>
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 519, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.10/urllib/request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 1377, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "/usr/lib/python3.10/urllib/request.py", line 1352, in do_open
+    r = h.getresponse()
+  File "/usr/lib/python3.10/http/client.py", line 1374, in getresponse
+    response.begin()
+  File "/usr/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.10/http/client.py", line 287, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+2022-09-19T13:24:33-05:00 INFO: query check RC: 1
+33df7d74979e28e37af3c6b6a2032e9de9466f89e7dc63d860488c9a01d5426e
+2022-09-19T13:24:39-05:00 INFO: Adding DSOS data source in Grafana
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   479  100   366  100   113   7176   2215 --:--:-- --:--:-- --:--:--  9392
+{"datasource":{"id":1,"uid":"V4QnNh74z","orgId":1,"name":"SOS-2","type":"dsosds","typeLogoUrl":"","access":"proxy","url":"http://mtest-ui/grafana","user":"","database":"","basicAuth":false,"basicAuthUser":"","withCredentials":false,"isDefault":true,"jsonData":{},"secureJsonFields":{},"version":1,"readOnly":false},"id":1,"message":"Datasource added","name":"SOS-2"}
+2022-09-19T13:24:40-05:00 INFO: Checking grafana data
+Traceback (most recent call last):
+  File "/home/narate/projects/ldms-test/ldms-containers/test/test-maestro/grafana_check.py", line 24, in <module>
+    rsp = urllib.request.urlopen(req)
+  File "/usr/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.8/urllib/request.py", line 531, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.8/urllib/request.py", line 640, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.8/urllib/request.py", line 569, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.8/urllib/request.py", line 502, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.8/urllib/request.py", line 649, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 502: Bad Gateway
+2022-09-19T13:24:40-05:00 INFO: Grafana data check, rc: 1
+2022-09-19T13:24:40-05:00 INFO: Cleaning up ...
+mtest-samp-1
+mtest-samp-2
+mtest-samp-3
+mtest-samp-4
+mtest-agg-11
+mtest-agg-12
+mtest-agg-2
+mtest-maestro
+mtest-ui
+mtest-grafana
+2022-09-19T13:24:43-05:00 INFO: DONE
