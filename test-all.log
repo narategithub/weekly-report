@@ -1,12 +1,12 @@
-2022-09-19 20:25:37 INFO: WORK_DIR: /mnt/300G/data/2022-09-19-202536
-2022-09-19 20:25:37 INFO: LOG: /mnt/300G/data/2022-09-19-202536/cygnus-weekly.log
+2022-09-19 20:27:30 INFO: WORK_DIR: /mnt/300G/data/2022-09-19-202730
+2022-09-19 20:27:30 INFO: LOG: /mnt/300G/data/2022-09-19-202730/cygnus-weekly.log
 ~/projects/ldms-test ~/projects/ldms-test
-/mnt/300G/data/2022-09-19-202536 ~/projects/ldms-test ~/projects/ldms-test
-2022-09-19 20:25:37 INFO: Does not have RDMA, skip building on host
+/mnt/300G/data/2022-09-19-202730 ~/projects/ldms-test ~/projects/ldms-test
+2022-09-19 20:27:30 INFO: Does not have RDMA, skip building on host
 d0f0efc0919dafdb8387c7a7dc69027d5e8949d5
-2022-09-19 20:25:37 INFO: Skip building containerized binary because GIT SHA has not changed: c7577d494f5924b98137084e73d2e95f2e804958
-2022-09-19 20:25:37 INFO: -- Installation process succeeded --
-2022-09-19 20:25:37 INFO: ---------------------------------------------------------------
-~/projects/ldms-test /mnt/300G/data/2022-09-19-202536
-~/projects/ldms-test/weekly-report ~/projects/ldms-test /mnt/300G/data/2022-09-19-202536
-HEAD is now at 195d2e9 2022-09-19-201810
+2022-09-19 20:27:30 INFO: Skip building containerized binary because GIT SHA has not changed: c7577d494f5924b98137084e73d2e95f2e804958
+2022-09-19 20:27:30 INFO: -- Installation process succeeded --
+2022-09-19 20:27:30 INFO: ---------------------------------------------------------------
+~/projects/ldms-test /mnt/300G/data/2022-09-19-202730
+~/projects/ldms-test/weekly-report ~/projects/ldms-test /mnt/300G/data/2022-09-19-202730
+HEAD is now at cda8867 2022-09-19-202536
